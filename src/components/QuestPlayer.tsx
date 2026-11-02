@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { Action, GameState } from "../game/types";
 import { findQuest } from "../game/content";
+import { SceneDetails } from "./SceneDetails";
 import { Icon } from "./Icon";
 export function QuestPlayer({
   state,
@@ -106,75 +107,23 @@ export function QuestPlayer({
             </button>
           )}
         </div>
-        {q.kind === "scene" && !textOnly && (
-          <div
-            className="scene"
-            aria-label="Symbolischer Technikraum, die Befunde stehen in der Auswahlliste"
-          >
-            <svg viewBox="0 0 600 230" aria-hidden="true">
-              <path
-                d="M0 210H600M40 0V180H190V225M550 0V60H410V120"
-                stroke="#788f86"
-                strokeWidth="12"
-                fill="none"
-              />
-              <rect
-                x="220"
-                y="35"
-                width="155"
-                height="170"
-                rx="12"
-                fill="#526b62"
-              />
-              <rect
-                x="237"
-                y="51"
-                width="121"
-                height="90"
-                rx="5"
-                fill="#a7bca8"
-              />
-              <circle cx="298" cy="95" r="25" fill="#274c41" />
-              <path d="m298 95 10-13" stroke="#d5f793" strokeWidth="3" />
-              <rect
-                x="240"
-                y="160"
-                width="48"
-                height="21"
-                rx="3"
-                fill="#d6ddca"
-              />
-              <path
-                d="m100 176 20-20m-20 0 20 20"
-                stroke="#ddaf73"
-                strokeWidth="6"
-              />
-              <rect x="450" y="140" width="85" height="70" fill="#af8655" />
-            </svg>
-            {q.options.map((o, i) => (
-              <span
-                className="scene-label"
-                key={o.id}
-                style={{
-                  left: `${[17, 80, 50][i]}%`,
-                  top: `${[58, 40, 67][i]}%`,
-                }}
-              >
-                {String.fromCharCode(65 + i)}
-              </span>
-            ))}
-            <small>Symbolische Ansicht · Befunde unten auswählen</small>
-          </div>
-        )}
+        {q.kind === "scene" && <SceneDetails questionId={q.id} textOnly={textOnly} />}
         <fieldset disabled={busy || !!result} className="answer-list">
           <legend className="sr-only">Antworten</legend>
           {q.options.map((o, i) => {
             const index = selected.indexOf(o.id);
+            const checked = result ? result.answer.indexOf(o.id) : index;
+            const right = q.kind === "order" ? checked === q.correct.indexOf(o.id) : q.correct.includes(o.id);
+            const wrong = !!result && checked >= 0 && !right;
+            const label = !result ? "" : q.kind === "order"
+              ? right ? "Richtige Position" : `Falsche Position · richtig: ${q.correct.indexOf(o.id) + 1}`
+              : checked >= 0 ? right ? "Deine Antwort: richtig" : "Deine Antwort: falsch"
+              : right ? "Richtig, nicht ausgewählt" : "";
             return (
               <button
                 type="button"
                 key={o.id}
-                className={`answer ${index >= 0 ? "selected" : ""} ${result && q.correct.includes(o.id) ? "correct-answer" : ""}`}
+                className={`answer ${!result && index >= 0 ? "selected" : ""} ${result && right ? "correct-answer" : ""} ${wrong ? "wrong-answer" : ""}`}
                 aria-label={o.text}
                 aria-pressed={index >= 0}
                 onClick={() => select(o.id)}
@@ -184,8 +133,8 @@ export function QuestPlayer({
                     ? index + 1
                     : String.fromCharCode(65 + i)}
                 </span>
-                <span>{o.text}</span>
-                {index >= 0 && <Icon name="check" size={18} />}
+                <span>{o.text}{label && <strong className="answer-verdict">{label}</strong>}</span>
+                {result ? (wrong ? <Icon name="close" /> : right ? <Icon name="check" /> : null) : index >= 0 && <span className="selection-dot" aria-label="Ausgewählt">●</span>}
               </button>
             );
           })}
@@ -225,22 +174,23 @@ export function QuestPlayer({
         )}
         {result ? (
           <div
-            className={`feedback ${result.correct ? "positive" : ""}`}
+            className={`feedback ${result.correct ? "positive" : "negative"}`}
             ref={feedback}
             tabIndex={-1}
             role="status"
           >
             <div>
-              <Icon name={result.correct ? "done" : "hint"} size={25} />
-              <h2>{result.correct ? "Gut gelöst!" : "Jetzt wird’s klar."}</h2>
+              <Icon name={result.correct ? "done" : "close"} size={25} />
+              <h2>{result.correct ? "Gut gelöst!" : "Nicht richtig"}</h2>
             </div>
+            {!result.correct && <p>Das war noch nicht die richtige Lösung. Vergleiche deine Auswahl mit der Korrektur.</p>}
             <p>{q.explanation}</p>
             {!result.correct && (
               <p className="solution">
                 <b>
                   {q.kind === "order"
                     ? "Richtige Reihenfolge:"
-                    : "Passende Antwort:"}
+                    : "Richtige Antwort:"}
                 </b>{" "}
                 {q.correct
                   .map((id) => q.options.find((o) => o.id === id)!.text)
@@ -248,7 +198,7 @@ export function QuestPlayer({
               </p>
             )}
             {result.hinted && (
-              <small>Mit Hinweis gelöst. Das zählt als Übung.</small>
+              <small>Hinweis genutzt. Das zählt als Übung.</small>
             )}
             <button
               className="primary"

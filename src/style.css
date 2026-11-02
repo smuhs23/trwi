@@ -2132,3 +2132,21 @@ main {
   padding: 14px 24px 0;
   color: #c6d6b5;
 }
+/* Selection is neutral; only evaluated answers use success/error colours. */
+.answer.selected { background:#2b4352; border-color:#9ccbe8; color:#f1f7fc; }
+.answer.selected > .answer-letter { background:#9ccbe8; border-color:#9ccbe8; color:#183344; }
+.answer:disabled { opacity:1; }
+.answer.correct-answer { background:#254737; border:2px solid #b0df90; }
+.answer.wrong-answer { background:#4b2b30; border:2px solid #ffaba7; color:#fff0ed; }
+.answer.wrong-answer .answer-letter { background:#ffaba7; color:#452027; border-color:#ffaba7; }
+.answer-verdict { display:block; margin-top:5px; font-size:12px; color:inherit; }
+.feedback.negative { background:#432a30; border:2px solid #ffaba7; }
+.feedback.negative > div { color:#ffb8b3; }
+.feedback.negative p, .feedback.negative .solution { color:#fff0ed; }
+.scene-details { display:grid; gap:14px; margin:20px 0; }
+.scene-intro { font-size:14px; line-height:1.6; color:#cedcda; }
+.scene-detail { margin:0; padding:16px; border:1px solid #627c80; border-radius:12px; background:#20353c; }
+.scene-detail figcaption { display:flex; gap:12px; align-items:center; }
+.scene-detail figcaption b { border-radius:7px; background:#c6dae3; color:#20353c; padding:5px 12px; }
+.scene-detail svg { display:block; width:100%; max-height:210px; margin:12px auto; background:#192c32; border-radius:8px; }
+.scene-detail p { color:#e0e9e6; font-size:14px; line-height:1.6; margin:10px 0 0; }
