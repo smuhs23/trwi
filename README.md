@@ -10,6 +10,28 @@ Fachwissen zu Trinkwasser- und Gasinstallationen in kurzen, abwechslungsreichen 
 
 Die App soll auf dem Smartphone und am Computer funktionieren und sich auf dem Startbildschirm installieren lassen. Sie ist ein unabhängiges Lernprojekt, kein offizielles Angebot der HWK oder des Landesinstallateurausschusses.
 
+## Verbindliche Produktrichtung
+
+Die App soll sich wie eine Spiele-App anfühlen. Quests, Level, Herausforderungen und Belohnungen bilden den Kern des Produkts. Fachwissen wird durch Handlungen und Entscheidungen im Spiel erworben und angewendet.
+
+## Vorgeschlagene Spielschleife
+
+**Quest wählen → kurze Herausforderung lösen → Rückmeldung erhalten → XP und Belohnung bekommen → Fortschritt in der Spielwelt sehen.**
+
+Konkrete Mechaniken als Vorschlag:
+
+- **Kampagne:** Gas und Wasser als eigene Bereiche mit Kapiteln und mehreren kurzen Quests.
+- **Spielerlevel:** Erfahrungspunkte erhöhen das Level; fachliche Beherrschung wird separat erfasst.
+- **Herausforderungen:** Fehler finden, Bauteile zuordnen, Abläufe ordnen und Rechenwege Schritt für Schritt lösen. Bedienung auch per Tippen und Tastatur, nicht ausschließlich per Drag-and-drop.
+- **Kapitelabschluss:** Ein zusammenhängender Praxisfall kombiniert zuvor geübte Fähigkeiten als „Boss-Mission“.
+- **Belohnungen:** Sichtbare Aufwertung einer eigenen virtuellen Werkstatt, Abzeichen und kosmetische Avatar-Elemente.
+- **Wiederholungsquests:** Unsichere Lernziele erscheinen später in neuen Fällen. Wiederholtes Anklicken derselben Antwort gilt nicht als fachlicher Fortschritt.
+- **Freiwillige Tagesquests:** Kleine zusätzliche Ziele ohne Verlust bei verpassten Tagen.
+- **Sofortiger Wiedereinstieg:** Angefangene Quests bleiben gespeichert; ein klarer „Weiterspielen“-Einstieg führt zurück.
+- **Faire Motivation:** Keine Lootboxen, kaufbaren Lernvorteile, Energiebegrenzung oder verlorenen Leben. Hinweise und Wiederholungen bleiben verfügbar.
+
+Beispiel für den Ablauf, noch keine ausgearbeitete Fachaufgabe: Ein Auftrag führt in einen virtuellen Technikraum. Dort werden Auffälligkeiten gesucht, passende Bauteile ausgewählt und ein Vorgehen zusammengestellt. Nach der verständlichen Auswertung gibt es XP und einen sichtbaren Werkstattfortschritt.
+
 ## Vorgeschlagenes Spielerlebnis
 
 - **Kurze Missionen:** Eine Runde dauert ungefähr 3 bis 5 Minuten; jederzeit pausierbar.
