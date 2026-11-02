@@ -14,6 +14,10 @@ Die App soll auf dem Smartphone und am Computer funktionieren und sich auf dem S
 
 Die App soll sich wie eine Spiele-App anfühlen. Quests, Level, Herausforderungen und Belohnungen bilden den Kern des Produkts. Fachwissen wird durch Handlungen und Entscheidungen im Spiel erworben und angewendet.
 
+**Gewählte Spielrichtung:** Quest-Abenteuer und Werkstatt-Simulator werden kombiniert. Kundenaufträge auf einer Spielkarte liefern XP und Belohnungen, mit denen eine eigene virtuelle Werkstatt sichtbar ausgebaut wird.
+
+Der [konkrete Spielentwurf](docs/superpowers/specs/2026-11-02-lernquest-design.md) beschreibt die vorgeschlagene erste Version mit vier Quests, einer Boss-Mission und drei Werkstattausbauten. Der Entwurf ist noch zur Freigabe; es gibt weiterhin keine implementierte App.
+
 ## Vorgeschlagene Spielschleife
 
 **Quest wählen → kurze Herausforderung lösen → Rückmeldung erhalten → XP und Belohnung bekommen → Fortschritt in der Spielwelt sehen.**
