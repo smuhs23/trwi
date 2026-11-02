@@ -26,6 +26,7 @@ test("completed introduction opens the course, lessons persist and mistakes retu
   s.contentVersion = "demo-1";
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
+  await page.getByRole("button", { name: "Lernen", exact: true }).click();
   await expect(
     page.getByRole("button", { name: "Quest starten", exact: true }),
   ).toBeVisible();
@@ -46,6 +47,7 @@ test("completed introduction opens the course, lessons persist and mistakes retu
     s,
   );
   await page.reload();
+  await page.getByRole("button", { name: "Lernen", exact: true }).click();
   await page
     .getByRole("button", { name: "Quest starten", exact: true })
     .click();
@@ -63,6 +65,7 @@ test("completed introduction opens the course, lessons persist and mistakes retu
     fullPage: true,
   });
   await page.reload();
+  await page.getByRole("button", { name: "Lernen", exact: true }).click();
   await page
     .getByRole("button", { name: "Weiterspielen", exact: true })
     .click();

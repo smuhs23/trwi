@@ -5,6 +5,7 @@ test("city jobs give clear acceptance feedback and open the garage", async ({
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
+  await page.getByRole("button", { name: "Stadt", exact: true }).click();
   await expect(
     page.getByRole("heading", { name: "Heute wartet ein neuer Kunde." }),
   ).toBeVisible();
@@ -30,6 +31,7 @@ test("city jobs give clear acceptance feedback and open the garage", async ({
     page.getByRole("heading", { name: "Nachbesserung offen" }),
   ).toBeVisible();
   await page.getByRole("button", { name: "Zur Karte", exact: true }).click();
+  await page.getByRole("button", { name: "Stadt", exact: true }).click();
   await page.getByRole("button", { name: "Gewerbepark", exact: true }).click();
   await expect(
     page.getByText("Benötigt: Großer Werkstattwagen + Materiallager").first(),

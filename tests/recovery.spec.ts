@@ -5,6 +5,7 @@ test("startup recovery keeps the backup confirmation visible", async ({
   page,
 }) => {
   await page.goto("/");
+  await page.getByRole("button", { name: "Lernen", exact: true }).click();
   await expect(
     page.getByRole("button", { name: "Quest starten", exact: true }),
   ).toBeVisible();
@@ -25,19 +26,18 @@ test("startup recovery keeps the backup confirmation visible", async ({
   );
   await page.reload();
   await expect(page.getByRole("alert")).toContainText("nicht geladen");
-  await page
-    .getByLabel("Sicherung wiederherstellen")
-    .setInputFiles({
-      name: "backup.json",
-      mimeType: "application/json",
-      buffer: Buffer.from(JSON.stringify(initialState())),
-    });
+  await page.getByLabel("Sicherung wiederherstellen").setInputFiles({
+    name: "backup.json",
+    mimeType: "application/json",
+    buffer: Buffer.from(JSON.stringify(initialState())),
+  });
   await expect(
     page.getByRole("heading", { name: "Sicherung übernehmen?" }),
   ).toBeVisible();
   await page
     .getByRole("button", { name: "Spielstand ersetzen", exact: true })
     .click();
+  await page.getByRole("button", { name: "Lernen", exact: true }).click();
   await expect(
     page.getByRole("button", { name: "Quest starten", exact: true }),
   ).toBeVisible();
@@ -59,6 +59,7 @@ test("content migration explains why an old mission is restarted", async ({
     reviewToken: null,
   };
   await page.goto("/");
+  await page.getByRole("button", { name: "Lernen", exact: true }).click();
   await expect(
     page.getByRole("button", { name: "Quest starten", exact: true }),
   ).toBeVisible();
@@ -82,6 +83,7 @@ test("content migration explains why an old mission is restarted", async ({
   await expect(page.getByRole("status")).toContainText(
     "Inhalte wurden aktualisiert",
   );
+  await page.getByRole("button", { name: "Lernen", exact: true }).click();
   await expect(
     page.getByRole("button", { name: "Quest starten", exact: true }),
   ).toBeVisible();
@@ -91,6 +93,7 @@ test("a paused quest makes other mission routes explicitly unavailable", async (
   page,
 }) => {
   await page.goto("/");
+  await page.getByRole("button", { name: "Lernen", exact: true }).click();
   await page
     .getByRole("button", { name: "Quest starten", exact: true })
     .click();

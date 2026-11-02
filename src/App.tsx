@@ -7,16 +7,17 @@ import { parseImport } from "./game/validation";
 import type { Action, GameState } from "./game/types";
 import { Icon } from "./components/Icon";
 import { WorkshopArt } from "./components/WorkshopArt";
+import { GameWorld } from "./components/GameWorld";
 import { Business, Garage } from "./components/Business";
 import { QuestPlayer } from "./components/QuestPlayer";
 import "./style.css";
 
-type View = "map" | "workshop" | "progress" | "settings";
+type View = "home" | "city" | "map" | "workshop" | "progress" | "settings";
 const navigation = [
-  { id: "map", name: "Aufträge", icon: "map" },
-  { id: "workshop", name: "Werkstatt", icon: "wrench" },
-  { id: "progress", name: "Fortschritt", icon: "trophy" },
-  { id: "settings", name: "Einstellungen", icon: "settings" },
+  { id: "home", name: "Betrieb", icon: "house" },
+  { id: "city", name: "Stadt", icon: "map" },
+  { id: "map", name: "Lernen", icon: "book" },
+  { id: "workshop", name: "Shop", icon: "wrench" },
 ] as const;
 export default function App() {
   const [state, setState] = useState<GameState>(initialState),
@@ -24,7 +25,7 @@ export default function App() {
     [loadFailed, setLoadFailed] = useState(false),
     [importRecovery, setImportRecovery] = useState(false),
     [error, setError] = useState(""),
-    [view, setView] = useState<View>("map"),
+    [view, setView] = useState<View>("home"),
     [routeFilter, setRouteFilter] = useState("next"),
     [playing, setPlaying] = useState(false),
     [busy, setBusy] = useState(false),
@@ -279,14 +280,16 @@ export default function App() {
       </div>
     );
   return (
-    <div className="app-shell">
+    <div
+      className={`app-shell${view === "home" && !playing && !state.lastResult ? " world-home" : ""}`}
+    >
       <aside className="sidebar">
         <a
           className="brand"
           href="#"
           onClick={(e) => {
             e.preventDefault();
-            go("map");
+            go("home");
           }}
         >
           <span className="brand-mark">
@@ -329,7 +332,8 @@ export default function App() {
             <strong>
               {playing
                 ? "Mission"
-                : navigation.find((n) => n.id === view)?.name}
+                : (navigation.find((n) => n.id === view)?.name ??
+                  (view === "progress" ? "Fortschritt" : "Einstellungen"))}
             </strong>
           </div>
           <div className="player-stats">
@@ -338,13 +342,25 @@ export default function App() {
               <b>{state.marks}</b>
               <span>Marken</span>
             </span>
-            <span className="xp-stat" data-testid="xp-total">
+            <button
+              className="xp-stat"
+              data-testid="xp-total"
+              aria-label="Fortschritt"
+              onClick={() => go("progress")}
+            >
               <Icon name="zap" size={17} />
               {state.xp} XP
-            </span>
+            </button>
             <span className="avatar" aria-label={`Spielerlevel ${level}`}>
               {String(level).padStart(2, "0")}
             </span>
+            <button
+              className="hud-settings"
+              aria-label="Einstellungen"
+              onClick={() => go("settings")}
+            >
+              <Icon name="settings" size={20} />
+            </button>
           </div>
         </header>
         <main id="main-content">
@@ -465,6 +481,22 @@ export default function App() {
                 <Icon name="wrench" />
               </button>
             </section>
+          ) : view === "home" ? (
+            <GameWorld
+              purchaseError={error}
+              state={state}
+              busy={busy}
+              onNavigate={go}
+              onStart={(id) => void enter(id)}
+              onBuy={(id) => void act({ type: "buy", id })}
+            />
+          ) : view === "city" ? (
+            <Business
+              state={state}
+              busy={busy}
+              enter={(id) => void enter(id)}
+              shop={() => go("workshop")}
+            />
           ) : view === "map" ? (
             <>
               <section className="page-heading">
@@ -535,12 +567,7 @@ export default function App() {
                 </div>
                 <span className="hero-number">01</span>
               </section>
-              <Business
-                state={state}
-                busy={busy}
-                enter={(id) => void enter(id)}
-                shop={() => go("workshop")}
-              />
+
               <section className="panel practice-panel">
                 <h2>Dein Wiederholungsauftrag</h2>
                 <p>

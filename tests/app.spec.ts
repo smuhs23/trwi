@@ -5,6 +5,7 @@ test("mission survives reload with hint and selected answer", async ({
   page,
 }) => {
   await page.goto("/");
+  await page.getByRole("button", { name: "Lernen", exact: true }).click();
   await page
     .getByRole("button", { name: "Quest starten", exact: true })
     .click();
@@ -16,6 +17,7 @@ test("mission survives reload with hint and selected answer", async ({
     })
     .click();
   await page.reload();
+  await page.getByRole("button", { name: "Lernen", exact: true }).click();
   await page
     .getByRole("button", { name: "Weiterspielen", exact: true })
     .click();
@@ -39,6 +41,7 @@ test("visual layouts and keyboard ordering", async ({ page }) => {
   mkdirSync("docs/screenshots", { recursive: true });
   await page.setViewportSize({ width: 1440, height: 1100 });
   await page.goto("/");
+  await page.getByRole("button", { name: "Lernen", exact: true }).click();
   await expect(
     page.getByRole("button", { name: "Quest starten", exact: true }),
   ).toBeVisible();
@@ -100,6 +103,7 @@ test("visual layouts and keyboard ordering", async ({ page }) => {
 test("complete campaign and buy every upgrade", async ({ page }) => {
   test.setTimeout(180000);
   await page.goto("/");
+  await page.getByRole("button", { name: "Lernen", exact: true }).click();
   for (const quest of quests) {
     await page
       .getByRole("button", { name: "Quest starten", exact: true })
@@ -135,7 +139,7 @@ test("complete campaign and buy every upgrade", async ({ page }) => {
     ).toBeVisible();
     await page.getByRole("button", { name: "Zur Karte", exact: true }).click();
   }
-  await page.getByRole("button", { name: "Werkstatt", exact: true }).click();
+  await page.getByRole("button", { name: "Shop", exact: true }).click();
   for (const name of ["Werkzeugwand", "Profi-Werkbank", "Diagnoseplatz"])
     await page
       .getByRole("button", { name: `${name} freischalten`, exact: true })
@@ -144,6 +148,7 @@ test("complete campaign and buy every upgrade", async ({ page }) => {
     page.getByText(`3 / ${upgrades.length} Ausbauten`, { exact: true }),
   ).toBeVisible();
   await page.reload();
+  await page.getByRole("button", { name: "Lernen", exact: true }).click();
   await expect(page.getByTestId("xp-total")).toHaveText(
     `${quests.reduce((total, q) => total + (q.boss ? 200 : 100), 0)} XP`,
   );
@@ -154,6 +159,7 @@ test("mobile layout, settings import and offline reload", async ({
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
+  await page.getByRole("button", { name: "Lernen", exact: true }).click();
   await expect(
     page.getByRole("button", { name: "Quest starten", exact: true }),
   ).toBeVisible();
@@ -175,9 +181,11 @@ test("mobile layout, settings import and offline reload", async ({
     await navigator.serviceWorker.ready;
   });
   await page.reload();
+  await page.getByRole("button", { name: "Lernen", exact: true }).click();
   await page.waitForFunction(() => !!navigator.serviceWorker.controller);
   await context.setOffline(true);
   await page.reload();
+  await page.getByRole("button", { name: "Lernen", exact: true }).click();
   await expect(
     page.getByRole("button", { name: "Quest starten", exact: true }),
   ).toBeVisible();

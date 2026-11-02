@@ -2133,31 +2133,388 @@ main {
   color: #c6d6b5;
 }
 /* Selection is neutral; only evaluated answers use success/error colours. */
-.answer.selected { background:#2b4352; border-color:#9ccbe8; color:#f1f7fc; }
-.answer.selected > .answer-letter { background:#9ccbe8; border-color:#9ccbe8; color:#183344; }
-.answer:disabled { opacity:1; }
-.answer.correct-answer { background:#254737; border:2px solid #b0df90; }
-.answer.wrong-answer { background:#4b2b30; border:2px solid #ffaba7; color:#fff0ed; }
-.answer.wrong-answer .answer-letter { background:#ffaba7; color:#452027; border-color:#ffaba7; }
-.answer-verdict { display:block; margin-top:5px; font-size:12px; color:inherit; }
-.feedback.negative { background:#432a30; border:2px solid #ffaba7; }
-.feedback.negative > div { color:#ffb8b3; }
-.feedback.negative p, .feedback.negative .solution { color:#fff0ed; }
-.scene-details { display:grid; gap:14px; margin:20px 0; }
-.scene-intro { font-size:14px; line-height:1.6; color:#cedcda; }
-.scene-detail { margin:0; padding:16px; border:1px solid #627c80; border-radius:12px; background:#20353c; }
-.scene-detail figcaption { display:flex; gap:12px; align-items:center; }
-.scene-detail figcaption b { border-radius:7px; background:#c6dae3; color:#20353c; padding:5px 12px; }
-.scene-detail svg { display:block; width:100%; max-height:210px; margin:12px auto; background:#192c32; border-radius:8px; }
-.scene-detail p { color:#e0e9e6; font-size:14px; line-height:1.6; margin:10px 0 0; }
-.mini-lesson { background:#253d44; border:1px solid #738f99; border-radius:10px; padding:14px; margin:18px 0; }
-.mini-lesson small { display:block; color:#c9d9dd; margin-top:10px; line-height:1.6; }
-.mini-lesson p { color:#edf5ef; line-height:1.7; margin:12px 0; }
-.practice-panel { margin:22px 0; padding:24px; }
-.practice-panel p { color:#cbdad4; line-height:1.6; margin:12px 0; }
-.practice-panel button { margin:8px 10px 8px 0; }
-.practice-panel details { margin-top:15px; color:#dce8dd; }
-.course-filter { display:block; margin:18px 0; color:#d8e5de; font-size:14px; }
-.course-filter select { display:block; margin-top:8px; padding:12px; width:100%; background:#243b42; color:#edf4ed; border:1px solid #77908c; border-radius:8px; }
-.business {padding:26px;margin:24px 0}.business-heading{display:flex;justify-content:space-between;gap:15px}.business p,.contract-brief p{color:#cadbd1;line-height:1.7;font-size:14px;margin:14px 0}.town-map{position:relative;height:300px;border-radius:18px;overflow:hidden;margin:22px 0;border:1px solid #658279}.town-map>svg{width:100%;height:100%}.district{position:absolute;display:flex;align-items:center;gap:8px;padding:13px;background:#172f35;color:#e7f4de;border:2px solid #7b9a8d;border-radius:12px;box-shadow:0 6px 16px #11282766}.district.selected{border-color:#d5f793;background:#354d35}.district-0{left:5%;top:8%}.district-1{right:5%;top:10%}.district-2{left:7%;bottom:12%}.district-3{right:5%;bottom:8%}.business-balance{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:24px}.business-balance>span{display:flex;gap:8px;align-items:center}.contract-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:16px}.contract-card{background:#233b40;border:1px solid #57766c;border-radius:14px;padding:20px;display:flex;flex-direction:column;align-items:flex-start}.contract-card h3{font-size:20px;margin:12px 0}.contract-card small{color:#afc6bb}.contract-card button{margin-top:auto;width:100%;display:flex;justify-content:space-between}.requirements{color:#f0cc9d!important}.garage{padding:24px;margin:22px 0}.fleet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.vehicle{padding:12px;text-align:center;border:1px dashed #62796f;border-radius:12px;margin-top:20px}.vehicle.owned{border:1px solid #b8d595;background:#29443b}.vehicle svg{width:100%;max-height:150px}.vehicle small{display:block;color:#c7d8cf;margin-top:8px}.contract-brief{border-left:4px solid #d5f793;background:#243b35;padding:20px;margin:20px 0;border-radius:10px}.contract-brief h2{margin-top:10px}.contract-brief small{color:#d5f793}@media(max-width:600px){.business{padding:16px}.district{font-size:12px;padding:10px;gap:5px}.town-map{height:260px}.fleet-grid{grid-template-columns:1fr}.business-heading{display:block}.business-heading .count-pill{display:inline-block;margin-top:12px}.business-balance{flex-wrap:wrap}.contract-grid{grid-template-columns:1fr}}
-.upgrade-dots { flex-wrap:wrap; }
+.answer.selected {
+  background: #2b4352;
+  border-color: #9ccbe8;
+  color: #f1f7fc;
+}
+.answer.selected > .answer-letter {
+  background: #9ccbe8;
+  border-color: #9ccbe8;
+  color: #183344;
+}
+.answer:disabled {
+  opacity: 1;
+}
+.answer.correct-answer {
+  background: #254737;
+  border: 2px solid #b0df90;
+}
+.answer.wrong-answer {
+  background: #4b2b30;
+  border: 2px solid #ffaba7;
+  color: #fff0ed;
+}
+.answer.wrong-answer .answer-letter {
+  background: #ffaba7;
+  color: #452027;
+  border-color: #ffaba7;
+}
+.answer-verdict {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: inherit;
+}
+.feedback.negative {
+  background: #432a30;
+  border: 2px solid #ffaba7;
+}
+.feedback.negative > div {
+  color: #ffb8b3;
+}
+.feedback.negative p,
+.feedback.negative .solution {
+  color: #fff0ed;
+}
+.scene-details {
+  display: grid;
+  gap: 14px;
+  margin: 20px 0;
+}
+.scene-intro {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cedcda;
+}
+.scene-detail {
+  margin: 0;
+  padding: 16px;
+  border: 1px solid #627c80;
+  border-radius: 12px;
+  background: #20353c;
+}
+.scene-detail figcaption {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.scene-detail figcaption b {
+  border-radius: 7px;
+  background: #c6dae3;
+  color: #20353c;
+  padding: 5px 12px;
+}
+.scene-detail svg {
+  display: block;
+  width: 100%;
+  max-height: 210px;
+  margin: 12px auto;
+  background: #192c32;
+  border-radius: 8px;
+}
+.scene-detail p {
+  color: #e0e9e6;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 10px 0 0;
+}
+.mini-lesson {
+  background: #253d44;
+  border: 1px solid #738f99;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 18px 0;
+}
+.mini-lesson small {
+  display: block;
+  color: #c9d9dd;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+.mini-lesson p {
+  color: #edf5ef;
+  line-height: 1.7;
+  margin: 12px 0;
+}
+.practice-panel {
+  margin: 22px 0;
+  padding: 24px;
+}
+.practice-panel p {
+  color: #cbdad4;
+  line-height: 1.6;
+  margin: 12px 0;
+}
+.practice-panel button {
+  margin: 8px 10px 8px 0;
+}
+.practice-panel details {
+  margin-top: 15px;
+  color: #dce8dd;
+}
+.course-filter {
+  display: block;
+  margin: 18px 0;
+  color: #d8e5de;
+  font-size: 14px;
+}
+.course-filter select {
+  display: block;
+  margin-top: 8px;
+  padding: 12px;
+  width: 100%;
+  background: #243b42;
+  color: #edf4ed;
+  border: 1px solid #77908c;
+  border-radius: 8px;
+}
+.business {
+  padding: 26px;
+  margin: 24px 0;
+}
+.business-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.business p,
+.contract-brief p {
+  color: #cadbd1;
+  line-height: 1.7;
+  font-size: 14px;
+  margin: 14px 0;
+}
+.town-map {
+  position: relative;
+  height: 300px;
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 22px 0;
+  border: 1px solid #658279;
+}
+.town-map > svg {
+  width: 100%;
+  height: 100%;
+}
+.district {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px;
+  background: #172f35;
+  color: #e7f4de;
+  border: 2px solid #7b9a8d;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px #11282766;
+}
+.district.selected {
+  border-color: #d5f793;
+  background: #354d35;
+}
+.district-0 {
+  left: 5%;
+  top: 8%;
+}
+.district-1 {
+  right: 5%;
+  top: 10%;
+}
+.district-2 {
+  left: 7%;
+  bottom: 12%;
+}
+.district-3 {
+  right: 5%;
+  bottom: 8%;
+}
+.business-balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.business-balance > span {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.contract-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.contract-card {
+  background: #233b40;
+  border: 1px solid #57766c;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contract-card h3 {
+  font-size: 20px;
+  margin: 12px 0;
+}
+.contract-card small {
+  color: #afc6bb;
+}
+.contract-card button {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.requirements {
+  color: #f0cc9d !important;
+}
+.garage {
+  padding: 24px;
+  margin: 22px 0;
+}
+.fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.vehicle {
+  padding: 12px;
+  text-align: center;
+  border: 1px dashed #62796f;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.vehicle.owned {
+  border: 1px solid #b8d595;
+  background: #29443b;
+}
+.vehicle svg {
+  width: 100%;
+  max-height: 150px;
+}
+.vehicle small {
+  display: block;
+  color: #c7d8cf;
+  margin-top: 8px;
+}
+.contract-brief {
+  border-left: 4px solid #d5f793;
+  background: #243b35;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+.contract-brief h2 {
+  margin-top: 10px;
+}
+.contract-brief small {
+  color: #d5f793;
+}
+@media (max-width: 600px) {
+  .business {
+    padding: 16px;
+  }
+  .district {
+    font-size: 12px;
+    padding: 10px;
+    gap: 5px;
+  }
+  .town-map {
+    height: 260px;
+  }
+  .fleet-grid {
+    grid-template-columns: 1fr;
+  }
+  .business-heading {
+    display: block;
+  }
+  .business-heading .count-pill {
+    display: inline-block;
+    margin-top: 12px;
+  }
+  .business-balance {
+    flex-wrap: wrap;
+  }
+  .contract-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.upgrade-dots {
+  flex-wrap: wrap;
+}
+
+/* Game HUD: progress and settings stay within reach on every screen. */
+.xp-stat {
+  background: transparent;
+  border: 0;
+  padding: 8px 2px;
+}
+.hud-settings {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #263d3d;
+  color: #dce9dc;
+  border: 1px solid #49615a;
+}
+.world-home .app-main {
+  background: radial-gradient(ellipse at top, #3b6256, #142c2c 75%);
+}
+.world-home main {
+  padding: 18px 24px 36px;
+}
+.world-home .topbar {
+  background: #193936;
+  border-bottom: 1px solid #7e96724d;
+}
+.world-home .coin-stat {
+  border: 1px solid #a28742;
+  border-radius: 12px;
+  background: #384631;
+  padding: 8px 12px;
+  color: #ffe6a2;
+}
+.world-home .avatar {
+  background: #f1cd77;
+  color: #47391d;
+  border: 2px solid #fff0b5;
+  box-shadow: 0 3px 0 #947440;
+}
+@media (max-width: 760px) {
+  .topbar {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .player-stats {
+    gap: 10px;
+  }
+  .world-home main {
+    padding: 0 0 26px;
+  }
+  .world-home .gw-scene {
+    border-radius: 0;
+  }
+  .world-home .topbar {
+    height: 66px;
+  }
+  .world-home .breadcrumb {
+    display: none;
+  }
+  .world-home .player-stats {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .world-home .coin-stat span {
+    display: inline;
+  }
+  .world-home .gw-mission-card {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
