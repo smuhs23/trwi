@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { Action, GameState } from "../game/types";
 import { findQuest } from "../game/content";
+import { optionOrder } from "../game/option-order";
 import { SceneDetails } from "./SceneDetails";
 import { Icon } from "./Icon";
 export function QuestPlayer({
@@ -78,7 +79,13 @@ export function QuestPlayer({
           <strong>{quest.client}</strong>
           <span>{quest.title}</span>
         </div>
-        <span className="tag">Demo</span>
+        <span className="tag">
+          {q.status === "demo"
+            ? "Demo"
+            : q.status === "draft"
+              ? "Kursübung"
+              : "Geprüft"}
+        </span>
       </div>
       <div className="task-panel">
         <span className="eyebrow">
@@ -91,6 +98,26 @@ export function QuestPlayer({
         <h1 ref={title} tabIndex={-1}>
           {q.title}
         </h1>
+        {q.lesson && !result && (
+          <div className="mini-lesson">
+            <button
+              className="quiet"
+              disabled={busy || session.hinted}
+              onClick={() => void act({ type: "hint" })}
+            >
+              <Icon name="book" />
+              Kurz verstehen
+            </button>
+            {session.hinted ? (
+              <p>{q.lesson}</p>
+            ) : (
+              <small>
+                Erst selbst versuchen oder die Erklärung öffnen. Mit Erklärung
+                zählt es als unterstützte Übung.
+              </small>
+            )}
+          </div>
+        )}
         <p className="task-prompt">{q.prompt}</p>
         <div className="answer-instruction">
           {q.kind === "order"
@@ -107,18 +134,32 @@ export function QuestPlayer({
             </button>
           )}
         </div>
-        {q.kind === "scene" && <SceneDetails questionId={q.id} textOnly={textOnly} />}
+        {q.kind === "scene" && (
+          <SceneDetails questionId={q.id} textOnly={textOnly} />
+        )}
         <fieldset disabled={busy || !!result} className="answer-list">
           <legend className="sr-only">Antworten</legend>
-          {q.options.map((o, i) => {
+          {optionOrder(q, session.id).map((o, i) => {
             const index = selected.indexOf(o.id);
             const checked = result ? result.answer.indexOf(o.id) : index;
-            const right = q.kind === "order" ? checked === q.correct.indexOf(o.id) : q.correct.includes(o.id);
+            const right =
+              q.kind === "order"
+                ? checked === q.correct.indexOf(o.id)
+                : q.correct.includes(o.id);
             const wrong = !!result && checked >= 0 && !right;
-            const label = !result ? "" : q.kind === "order"
-              ? right ? "Richtige Position" : `Falsche Position · richtig: ${q.correct.indexOf(o.id) + 1}`
-              : checked >= 0 ? right ? "Deine Antwort: richtig" : "Deine Antwort: falsch"
-              : right ? "Richtig, nicht ausgewählt" : "";
+            const label = !result
+              ? ""
+              : q.kind === "order"
+                ? right
+                  ? "Richtige Position"
+                  : `Falsche Position · richtig: ${q.correct.indexOf(o.id) + 1}`
+                : checked >= 0
+                  ? right
+                    ? "Deine Antwort: richtig"
+                    : "Deine Antwort: falsch"
+                  : right
+                    ? "Richtig, nicht ausgewählt"
+                    : "";
             return (
               <button
                 type="button"
@@ -133,8 +174,23 @@ export function QuestPlayer({
                     ? index + 1
                     : String.fromCharCode(65 + i)}
                 </span>
-                <span>{o.text}{label && <strong className="answer-verdict">{label}</strong>}</span>
-                {result ? (wrong ? <Icon name="close" /> : right ? <Icon name="check" /> : null) : index >= 0 && <span className="selection-dot" aria-label="Ausgewählt">●</span>}
+                <span>
+                  {o.text}
+                  {label && <strong className="answer-verdict">{label}</strong>}
+                </span>
+                {result ? (
+                  wrong ? (
+                    <Icon name="close" />
+                  ) : right ? (
+                    <Icon name="check" />
+                  ) : null
+                ) : (
+                  index >= 0 && (
+                    <span className="selection-dot" aria-label="Ausgewählt">
+                      ●
+                    </span>
+                  )
+                )}
               </button>
             );
           })}
@@ -183,7 +239,12 @@ export function QuestPlayer({
               <Icon name={result.correct ? "done" : "close"} size={25} />
               <h2>{result.correct ? "Gut gelöst!" : "Nicht richtig"}</h2>
             </div>
-            {!result.correct && <p>Das war noch nicht die richtige Lösung. Vergleiche deine Auswahl mit der Korrektur.</p>}
+            {!result.correct && (
+              <p>
+                Das war noch nicht die richtige Lösung. Vergleiche deine Auswahl
+                mit der Korrektur.
+              </p>
+            )}
             <p>{q.explanation}</p>
             {!result.correct && (
               <p className="solution">
@@ -252,8 +313,10 @@ export function QuestPlayer({
           <summary>Quelle & Inhaltsstatus</summary>
           <p>{q.source}</p>
           <p>
-            Diese Demo ist keine Arbeitsanweisung oder offizielle Prüfungsfrage.
-            Inhalt: {q.id}, Version {q.version}.
+            Diese Übung ist keine Arbeitsanweisung oder offizielle
+            Prüfungsfrage. Kursinhalte sind quellenbasiert aufbereitet, aber
+            noch nicht unabhängig fachlich freigegeben. Inhalt: {q.id}, Version{" "}
+            {q.version}.
           </p>
         </details>
       </div>

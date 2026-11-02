@@ -147,3 +147,55 @@ describe("grading and learning", () => {
     expect(new Date(m!.due).getDate()).toBe(13);
   });
 });
+
+it("schedules course practice without marking unreviewed content secure", () => {
+  const a = {
+    questionId: "course-a",
+    sessionId: "s1",
+    now: "2026-11-02T10:00:00Z",
+    correct: true,
+    hinted: false,
+    status: "draft",
+  };
+  const first = recordLearning(undefined, a)!;
+  expect(first.due).toBe("2026-11-03T10:00:00.000Z");
+  const second = recordLearning(first, {
+    ...a,
+    questionId: "course-b",
+    sessionId: "s2",
+    now: "2026-11-03T10:00:00Z",
+  })!;
+  expect(second.stage).toBe("practicing");
+  expect(second.due).toBe("2026-11-06T10:00:00.000Z");
+});
+it("mistakes on course questions become due today", () => {
+  const m = recordLearning(undefined, {
+    questionId: "x",
+    sessionId: "s",
+    now: "2026-11-02T10:00:00Z",
+    correct: false,
+    hinted: false,
+    status: "draft",
+  })!;
+  expect(m.due).toBe("2026-11-02T00:00:00.000Z");
+});
+it("a later correct answer in the same round does not erase an earlier mistake", () => {
+  const a = {
+    questionId: "x",
+    sessionId: "s",
+    now: "2026-11-02T10:00:00Z",
+    correct: false,
+    hinted: false,
+    status: "draft",
+  };
+  const m = recordLearning(undefined, a)!;
+  expect(recordLearning(m, { ...a, questionId: "y", correct: true })).toEqual(
+    m,
+  );
+  expect(
+    recordLearning(m, { ...a, questionId: "y", correct: true, hinted: true }),
+  ).toEqual(m);
+  expect(
+    recordLearning(m, { ...a, sessionId: "new", correct: true })!.streak,
+  ).toBe(1);
+});

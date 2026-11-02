@@ -1,4 +1,5 @@
 import "fake-indexeddb/auto";
+import { CONTENT_VERSION } from "./content";
 import { beforeEach, it, expect } from "vitest";
 import { initialState } from "./engine";
 import { loadGame, saveGame, mutateGame } from "./storage";
@@ -63,7 +64,7 @@ it("recovers an old content session without resetting currency", () => {
   };
   const next = reconcile(s);
   expect(next.session).toBeNull();
-  expect(next.contentVersion).toBe("demo-1");
+  expect(next.contentVersion).toBe(CONTENT_VERSION);
   expect(next.xp).toBe(0);
 });
 it("serializes concurrent actions instead of losing a hint", async () => {
@@ -124,7 +125,7 @@ it("rejects malformed review tokens before a replay can become stranded", () => 
   s.session = {
     id: "replay",
     questId: "q1",
-    version: "demo-1",
+    version: CONTENT_VERSION,
     index: 0,
     answers: [],
     selection: [],

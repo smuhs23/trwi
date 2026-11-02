@@ -1,0 +1,1917 @@
+[
+  {
+    "id": "trgi-7a",
+    "title": "Wenn die Sicherheit abschaltet",
+    "subtitle": "Modul 7 · Geräteschutz verstehen",
+    "icon": "wrench",
+    "client": "Mila · Gerätewerkstatt",
+    "location": "Lernwerkstatt",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-7a-1",
+        "title": "Zu wenig Wasser",
+        "prompt": "Im Lernmodell fließt kaum Wasser durch den Wärmetauscher. Welche Einrichtung soll verhindern, dass die Feuerung ihn weiter aufheizt?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Strömungssicherung"
+          },
+          {
+            "id": "b",
+            "text": "Wassermangelsicherung"
+          },
+          {
+            "id": "c",
+            "text": "Gaszähler"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Die Wassermangelsicherung verhindert eine Feuerung bei fehlendem oder zu geringem Wasserdurchfluss. Ein Gaszähler übernimmt diese Funktion nicht.",
+        "hint": "Denke an das zu schützende Bauteil.",
+        "goal": "trgi-wassermangelsicherung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "36-07-1-Lehrbrief-TRGI.pdf, PDF-Seite 6–8. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Sicherheitseinrichtungen haben unterschiedliche Aufgaben. Eine Abschaltung ist ein Befund, dessen Ursache fachlich geklärt werden muss."
+      },
+      {
+        "id": "trgi-7a-2",
+        "title": "Wärme hält das Ventil",
+        "prompt": "Welche Zuordnung passt zur im Kurs beschriebenen thermoelektrischen Zündsicherung?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Thermoelement – Haltemagnet – Zündbrenner"
+          },
+          {
+            "id": "b",
+            "text": "Gaszähler – Wasserzähler – Druckminderer"
+          },
+          {
+            "id": "c",
+            "text": "Abgasventilator – Raumthermostat – Schornstein"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Die Zündflamme erwärmt das Thermoelement. Der entstehende Thermostrom hält über den Magneten das Sicherheitsventil offen.",
+        "hint": "Welche Komponenten wandeln Flammenwärme in eine Haltefunktion um?",
+        "goal": "trgi-thermoelektrische-zuendsicherung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "36-07-1-Lehrbrief-TRGI.pdf, PDF-Seite 8–9. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Zündflamme erwärmt das Thermoelement."
+      },
+      {
+        "id": "trgi-7a-3",
+        "title": "Flamme erlischt",
+        "prompt": "Ordne die vereinfachte Wirkungskette der thermoelektrischen Sicherung im Lernmodell.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Das Sicherheitsventil schließt durch Federkraft."
+          },
+          {
+            "id": "b",
+            "text": "Die Zündflamme erlischt."
+          },
+          {
+            "id": "c",
+            "text": "Der Thermostrom und die magnetische Haltekraft nehmen ab."
+          }
+        ],
+        "correct": ["b", "c", "a"],
+        "explanation": "Ohne Flammenwärme nimmt der Thermostrom ab. Reicht die Haltekraft nicht mehr, schließt das Ventil. Das ist ein Funktionsmodell, keine Prüfanweisung.",
+        "hint": "Beginne mit dem Verlust der Wärmequelle.",
+        "goal": "trgi-thermoelektrische-zuendsicherung",
+        "kind": "order",
+        "status": "draft",
+        "source": "36-07-1-Lehrbrief-TRGI.pdf, PDF-Seite 9. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Ohne Flammenwärme nimmt der Thermostrom ab."
+      },
+      {
+        "id": "trgi-7a-4",
+        "title": "Ein Drahtkontakt ist keine Flamme",
+        "prompt": "Warum ersetzt ein direkter Kontakt zwischen Ionisationselektrode und Brenner im Kursmodell kein gültiges Flammensignal?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Er macht die Flamme unsichtbar."
+          },
+          {
+            "id": "b",
+            "text": "Er erzeugt nur einen höheren Gasdruck."
+          },
+          {
+            "id": "c",
+            "text": "Der Kontakt bildet nicht den Gleichrichtereffekt der Flamme nach."
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Die Überwachung nutzt die gleichrichtende Wirkung der Flamme. Ein metallischer Kontakt liefert nicht dasselbe charakteristische Signal.",
+        "hint": "Welche elektrische Eigenschaft wird ausgewertet?",
+        "goal": "trgi-ionisationsueberwachung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "36-07-1-Lehrbrief-TRGI.pdf, PDF-Seite 10–11. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Überwachung nutzt die gleichrichtende Wirkung der Flamme."
+      },
+      {
+        "id": "trgi-7a-5",
+        "title": "Zwei Temperaturen",
+        "prompt": "Bei der beschriebenen Abgasüberwachung wird der äußere Sensor wärmer und die Temperaturdifferenz kleiner. Was kann das bedeuten?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Der Gaszähler ist blockiert."
+          },
+          {
+            "id": "b",
+            "text": "Abgas erreicht den äußeren Bereich der Strömungssicherung."
+          },
+          {
+            "id": "c",
+            "text": "Die Wasserversorgung ist sicher ausreichend."
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Im beschriebenen System vergleicht die Elektronik einen Sensor im Abgasstrom mit einem äußeren Sensor. Erwärmt austretendes Abgas den äußeren, sinkt die Differenz.",
+        "hint": "Wo sitzt der zweite Sensor?",
+        "goal": "trgi-abgasueberwachung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "36-07-1-Lehrbrief-TRGI.pdf, PDF-Seite 12–13. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Im beschriebenen System vergleicht die Elektronik einen Sensor im Abgasstrom mit einem äußeren Sensor."
+      },
+      {
+        "id": "trgi-7a-6",
+        "title": "STB-Meldung",
+        "prompt": "Welche Aussage erklärt das Ansprechen eines Sicherheitstemperaturbegrenzers?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine unzulässig hohe Gerätetemperatur wurde erkannt."
+          },
+          {
+            "id": "b",
+            "text": "Der Anschlusswert wurde erfolgreich gemessen."
+          },
+          {
+            "id": "c",
+            "text": "Die Abgasanlage ist dadurch freigegeben."
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Der STB dient der Temperaturbegrenzung. Seine Auslösung bestätigt weder eine korrekte Gaseinstellung noch eine sichere Abgasanlage.",
+        "hint": "Löse die Abkürzung gedanklich auf.",
+        "goal": "trgi-sicherheitstemperaturbegrenzer",
+        "kind": "choice",
+        "status": "draft",
+        "source": "36-07-1-Lehrbrief-TRGI.pdf, PDF-Seite 13–14. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Der STB dient der Temperaturbegrenzung."
+      }
+    ]
+  },
+  {
+    "id": "trgi-7b",
+    "title": "Messwerte mit Bedeutung",
+    "subtitle": "Modul 7 · Einstellung und Abgaskontrolle",
+    "icon": "search",
+    "client": "Jonas · Messraum",
+    "location": "Messraum",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-7b-1",
+        "title": "Zugschwankungen abfangen",
+        "prompt": "Welche Aufgabe hat die Strömungssicherung eines B1-Geräts im Kursmodell?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Gasdruck für jeden Brenner erhöhen"
+          },
+          {
+            "id": "b",
+            "text": "Schwankungen des Abgaszuges vom Brennverhalten entkoppeln"
+          },
+          {
+            "id": "c",
+            "text": "Die Verbrennungsluft vollständig ersetzen"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Die Strömungssicherung soll negative Einflüsse von zu starkem Zug, Stau oder Rückstrom auf die Feuerung begrenzen. Sie ersetzt keine einwandfreie Abgasführung.",
+        "hint": "Es geht um den Weg hinter der Flamme.",
+        "goal": "trgi-stroemungssicherung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "36-07-1-Lehrbrief-TRGI.pdf, PDF-Seite 15–16. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Strömungssicherung soll negative Einflüsse von zu starkem Zug, Stau oder Rückstrom auf die Feuerung begrenzen."
+      },
+      {
+        "id": "trgi-7b-2",
+        "title": "Der Spiegel beschlägt",
+        "prompt": "Was soll die im Lehrbrief beschriebene Taupunktspiegelkontrolle sichtbar machen?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Leckrate der Gasleitung"
+          },
+          {
+            "id": "b",
+            "text": "Den Heizwert des Brenngases"
+          },
+          {
+            "id": "c",
+            "text": "Feuchtes Abgas, das an der Strömungssicherung austritt"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Feuchte Abgase können am kühleren Spiegel kondensieren. Der Befund gehört zur Kontrolle des Abgasabzugs, nicht zur Gasleitungsprüfung.",
+        "hint": "Woher kommt die Feuchtigkeit?",
+        "goal": "trgi-taupunktspiegel",
+        "kind": "choice",
+        "status": "draft",
+        "source": "36-07-1-Lehrbrief-TRGI.pdf, PDF-Seite 16–17. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Feuchte Abgase können am kühleren Spiegel kondensieren."
+      },
+      {
+        "id": "trgi-7b-3",
+        "title": "Ruhend oder fließend?",
+        "prompt": "Für den Anschlussdruck vor einer Gaseinstellung nennt der Kurs welchen Messzustand?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Gerät läuft in der Volllaststufe: Fließdruck"
+          },
+          {
+            "id": "b",
+            "text": "Gerät bleibt abgeschaltet: ausschließlich Ruhedruck"
+          },
+          {
+            "id": "c",
+            "text": "Gasleitung ist drucklos: Umgebungsdruck"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Der Lehrbrief nennt den Gas-Fließdruck bei Volllast. Der zulässige Bereich ist anhand der gerätespezifischen Unterlagen zu beurteilen.",
+        "hint": "Der Messzustand soll den Betrieb abbilden.",
+        "goal": "trgi-gasanschlussdruck",
+        "kind": "choice",
+        "status": "draft",
+        "source": "36-07-1-Lehrbrief-TRGI.pdf, PDF-Seite 18. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Der Lehrbrief nennt den Gas-Fließdruck bei Volllast."
+      },
+      {
+        "id": "trgi-7b-4",
+        "title": "Die passenden Ausgangsdaten",
+        "prompt": "Welche Datenkombination ist für die volumetrische Einstellbetrachtung im Kurs wesentlich?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Raumhöhe und Außentemperatur"
+          },
+          {
+            "id": "b",
+            "text": "Nennbelastung und Betriebsheizwert"
+          },
+          {
+            "id": "c",
+            "text": "Zählerfarbe und Rohrlänge"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Aus Wärmebelastung und Betriebsheizwert ergibt sich der benötigte Gasvolumenstrom. Das verwechselt die zugeführte Leistung nicht mit der nutzbaren Wärmeleistung.",
+        "hint": "Welche Größen verbinden Energie und Gasvolumen?",
+        "goal": "trgi-volumetrische-einstellung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "36-07-1-Lehrbrief-TRGI.pdf, PDF-Seite 19–21. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Aus Wärmebelastung und Betriebsheizwert ergibt sich der benötigte Gasvolumenstrom."
+      },
+      {
+        "id": "trgi-7b-5",
+        "title": "Zwei Messziele",
+        "prompt": "Warum ersetzt ein günstiger Abgasverlustwert keine CO-Bewertung?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Beide Messungen haben unterschiedliche Beurteilungsziele."
+          },
+          {
+            "id": "b",
+            "text": "CO lässt sich grundsätzlich nicht messen."
+          },
+          {
+            "id": "c",
+            "text": "Der Abgasverlust zeigt immer auch die Gasleitungsdichtheit."
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Die Abgasverlustmessung beurteilt die energetische Qualität. Die CO-Messung bewertet einen anderen, sicherheitsrelevanten Verbrennungsbefund.",
+        "hint": "Wirtschaftlichkeit und Verbrennungsbefund sind getrennte Fragen.",
+        "goal": "trgi-abgasmessung-zwecke",
+        "kind": "choice",
+        "status": "draft",
+        "source": "36-07-1-Lehrbrief-TRGI.pdf, PDF-Seite 21–24. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Abgasverlustmessung beurteilt die energetische Qualität."
+      },
+      {
+        "id": "trgi-7b-6",
+        "title": "Mehrere Messpunkte",
+        "prompt": "Weshalb beschreibt der Kurs eine Mehrlochsonde für CO?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sie ersetzt die Geräteanleitung."
+          },
+          {
+            "id": "b",
+            "text": "Sie erhöht absichtlich den CO-Gehalt."
+          },
+          {
+            "id": "c",
+            "text": "CO kann ungleichmäßig im Abgasstrom verteilt sein."
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "CO kann in Schlieren auftreten. Mehrere Entnahmestellen erfassen den Querschnitt besser als eine einzelne Stelle; die Auswertung berücksichtigt zudem die Verdünnung.",
+        "hint": "Ein einzelner Messpunkt kann einen Teilstrom verfehlen.",
+        "goal": "trgi-co-probenahme",
+        "kind": "choice",
+        "status": "draft",
+        "source": "36-07-1-Lehrbrief-TRGI.pdf, PDF-Seite 24. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "CO kann in Schlieren auftreten."
+      }
+    ]
+  },
+  {
+    "id": "trgi-7c",
+    "title": "Der Weg ins Freie",
+    "subtitle": "Modul 7 · Abgassysteme beurteilen",
+    "icon": "wind",
+    "client": "Lea · Planung",
+    "location": "Planungsbüro",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-7c-1",
+        "title": "Gemeinsam planen",
+        "prompt": "Wozu dient die frühe Abstimmung mit dem Schornsteinfeger im Lehrbrief?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Damit der Installateur keine Verantwortung mehr trägt"
+          },
+          {
+            "id": "b",
+            "text": "Damit Anforderungen an die Abgasführung schon in der Planung berücksichtigt werden"
+          },
+          {
+            "id": "c",
+            "text": "Damit jede beliebige Abgasleitung verwendbar wird"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Der Kurs beschreibt Beratung und Kontrolle sowie eine frühe Abstimmung. Daraus folgt keine Übertragung der Ausführungsverantwortung.",
+        "hint": "Eine frühe Rückmeldung kann Planungsänderungen vermeiden.",
+        "goal": "trgi-abgasplanung-abstimmung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "36-07-1-Lehrbrief-TRGI.pdf, PDF-Seite 25–26. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Der Kurs beschreibt Beratung und Kontrolle sowie eine frühe Abstimmung."
+      },
+      {
+        "id": "trgi-7c-2",
+        "title": "Ein geprüftes System",
+        "prompt": "Ein Gerät und seine Luft-Abgasführung bilden laut Unterlagen eine Einheit. Was ist für die Planung wesentlich?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Festlegungen des Geräteherstellers für dieses System"
+          },
+          {
+            "id": "b",
+            "text": "Nur der Außendurchmesser der verfügbaren Rohre"
+          },
+          {
+            "id": "c",
+            "text": "Nur die Farbe des Prüfzeichens"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Bei der beschriebenen gemeinsamen Prüfung ist die Ausführung an die Systemvorgaben des Herstellers gebunden. Ähnliche Abmessungen belegen keine Austauschbarkeit.",
+        "hint": "Die Einheit wurde als Kombination betrachtet.",
+        "goal": "trgi-luft-abgas-system",
+        "kind": "choice",
+        "status": "draft",
+        "source": "36-07-1-Lehrbrief-TRGI.pdf, PDF-Seite 27–28. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Bei der beschriebenen gemeinsamen Prüfung ist die Ausführung an die Systemvorgaben des Herstellers gebunden."
+      },
+      {
+        "id": "trgi-7c-3",
+        "title": "Fassade oder Dach?",
+        "prompt": "Wie ordnet der Kurs Außenwandgeräte der Art C1 grundsätzlich ein?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Als Standardlösung für jede Gebäudesituation"
+          },
+          {
+            "id": "b",
+            "text": "Als Geräte ohne Abgase"
+          },
+          {
+            "id": "c",
+            "text": "Als Ausnahme gegenüber der Abgasabführung über Dach"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Der Lehrbrief behandelt C1 als Ausnahme und beschreibt Einschränkungen für Außenwandausmündungen. Eine konkrete Zulässigkeit braucht die einschlägigen aktuellen Unterlagen.",
+        "hint": "Welche Abgasführung ist im Lehrbrief der Grundsatz?",
+        "goal": "trgi-aussenwandausmuendung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "36-07-1-Lehrbrief-TRGI.pdf, PDF-Seite 29–31. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Der Lehrbrief behandelt C1 als Ausnahme und beschreibt Einschränkungen für Außenwandausmündungen."
+      },
+      {
+        "id": "trgi-7c-4",
+        "title": "Trocken ist nicht feucht",
+        "prompt": "Im Kennzeichnungsbeispiel steht D für trockene Betriebsweise. Was folgt für einen geplanten Betrieb mit anfallendem Kondensat?",
+        "options": [
+          {
+            "id": "a",
+            "text": "D allein bestätigt dafür keine Eignung."
+          },
+          {
+            "id": "b",
+            "text": "Die Temperaturklasse ersetzt die Kondensateignung."
+          },
+          {
+            "id": "c",
+            "text": "Jede Abgasanlage mit D ist automatisch für Brennwertbetrieb geeignet."
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Die Kondensatbeständigkeitsklasse ist ein eigenes Eignungsmerkmal. Eine hohe zulässige Temperatur belegt keine Eignung für feuchte Betriebsweise.",
+        "hint": "Prüfe die Betriebsbedingung, nicht nur die Temperatur.",
+        "goal": "trgi-abgasklassifizierung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "36-07-1-Lehrbrief-TRGI.pdf, PDF-Seite 40–42. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Kondensatbeständigkeitsklasse ist ein eigenes Eignungsmerkmal."
+      },
+      {
+        "id": "trgi-7c-5",
+        "title": "Gemeinsam angeschlossen",
+        "prompt": "Was muss bei einer gemeinsamen Abgasanlage grundsätzlich sichergestellt sein?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nur identische Geräteleistung"
+          },
+          {
+            "id": "b",
+            "text": "Sichere Abgasabführung und Vermeidung der Übertragung von Rauch und Feuer"
+          },
+          {
+            "id": "c",
+            "text": "Ausschließlich ein möglichst großer Querschnitt"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Mehrfachbelegung braucht eine passende Auslegung. Ein großer Querschnitt allein beweist weder sicheren Abzug noch Schutz gegen Übertragung.",
+        "hint": "Mehrere Geräte beeinflussen ein gemeinsames System.",
+        "goal": "trgi-mehrfachbelegung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "36-07-1-Lehrbrief-TRGI.pdf, PDF-Seite 43–45. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Mehrfachbelegung braucht eine passende Auslegung."
+      },
+      {
+        "id": "trgi-7c-6",
+        "title": "Zugänglich bleiben",
+        "prompt": "Welchem Zweck dienen Reinigungs- und Kontrollöffnungen der Abgasanlage?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sie liefern zusätzliche Verbrennungsluft für jedes Gerät."
+          },
+          {
+            "id": "b",
+            "text": "Sie ersetzen die Klassifizierung."
+          },
+          {
+            "id": "c",
+            "text": "Sie ermöglichen Reinigung und Kontrolle des freien Querschnitts."
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Der Lehrbrief verlangt eine sichere Reinigungs- und Kontrollmöglichkeit. Lage und Anzahl hängen von der konkreten Abgasführung ab.",
+        "hint": "Eine geschlossene Anlage muss trotzdem kontrollierbar sein.",
+        "goal": "trgi-abgas-kontrolloeffnungen",
+        "kind": "choice",
+        "status": "draft",
+        "source": "36-07-1-Lehrbrief-TRGI.pdf, PDF-Seite 46–48. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Der Lehrbrief verlangt eine sichere Reinigungs- und Kontrollmöglichkeit."
+      }
+    ]
+  },
+  {
+    "id": "trgi-8a",
+    "title": "Welche Prüfung beantwortet was?",
+    "subtitle": "Modul 8 · Prüfzwecke unterscheiden",
+    "icon": "search",
+    "client": "Jonas · Prüflabor",
+    "location": "Prüflabor",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-8a-1",
+        "title": "Material belasten",
+        "prompt": "Welches Ziel unterscheidet die Belastungsprüfung von einer bloßen Sichtung des Protokolls?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Schwachstellen des Materials durch Belastung aufdecken"
+          },
+          {
+            "id": "b",
+            "text": "Brennwert des Gases bestimmen"
+          },
+          {
+            "id": "c",
+            "text": "Abgasverlust des Geräts errechnen"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Der Kurs beschreibt eine Belastungsprobe des Materials. Ihre Aufgabe ist nicht die Ermittlung der Verbrennungsqualität.",
+        "hint": "Die Bezeichnung verrät den Schwerpunkt.",
+        "goal": "trgi-belastungspruefung-zweck",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 5–7. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Hier werden Prüfzwecke zugeordnet. Druckwerte, Prüfaufbau und Ausführung gehören in die fachlich freigegebene Arbeitsanweisung."
+      },
+      {
+        "id": "trgi-8a-2",
+        "title": "Leitung oder Gerät?",
+        "prompt": "Warum werden Gasgeräte im beschriebenen Verfahren nicht in die Dichtheitsprüfung der Leitung einbezogen?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Weil Gasgeräte nie undicht werden können"
+          },
+          {
+            "id": "b",
+            "text": "Weil Regelbauteile für andere Druckbeanspruchungen ausgelegt sein können"
+          },
+          {
+            "id": "c",
+            "text": "Weil ein Gaszähler alle Geräte automatisch prüft"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Der Lehrbrief trennt die Leitungsprüfung von der Geräteprüfung und verweist auf die zulässige Belastung der Regelbauteile.",
+        "hint": "Der zulässige Druck ist nicht bei jedem Bauteil gleich.",
+        "goal": "trgi-dichtheitspruefung-abgrenzung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 7–8. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Der Lehrbrief trennt die Leitungsprüfung von der Geräteprüfung und verweist auf die zulässige Belastung der Regelbauteile.."
+      },
+      {
+        "id": "trgi-8a-3",
+        "title": "Größeres Volumen",
+        "prompt": "Was bedeutet ein größeres Leitungsvolumen für die erforderliche Prüfdauer im beschriebenen Verfahren?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Dauer ist immer gleich."
+          },
+          {
+            "id": "b",
+            "text": "Die Prüfung kann generell entfallen."
+          },
+          {
+            "id": "c",
+            "text": "Es kann eine längere Prüfdauer nötig sein."
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Bei größeren Volumina muss die Dauer passend gewählt werden, damit Druckänderungen zuverlässig erkennbar sind. Ein einzelner Zeitwert ersetzt diese Beurteilung nicht.",
+        "hint": "Das Messsystem reagiert abhängig vom Volumen.",
+        "goal": "trgi-pruefdauer-volumen",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 10–11. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Bei größeren Volumina muss die Dauer passend gewählt werden, damit Druckänderungen zuverlässig erkennbar sind."
+      },
+      {
+        "id": "trgi-8a-4",
+        "title": "Spät verbundene Stellen",
+        "prompt": "Nach der Leitungsprüfung werden noch Verschraubungen hergestellt. Welcher Prüfzweck gehört zur Schlussprüfung?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Diese noch nicht erfassten Verbindungsstellen auf Leckagen kontrollieren"
+          },
+          {
+            "id": "b",
+            "text": "Den Gasverbrauch des gesamten Jahres feststellen"
+          },
+          {
+            "id": "c",
+            "text": "Die Raumgröße neu berechnen"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Die Schlussprüfung ergänzt die vorangegangenen Prüfungen an Verbindungen, die dabei nicht erfasst waren, etwa Zählerverschraubungen.",
+        "hint": "Was wurde durch die frühere Prüfung noch nicht abgedeckt?",
+        "goal": "trgi-schlusspruefung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 11–13. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Schlussprüfung ergänzt die vorangegangenen Prüfungen an Verbindungen, die dabei nicht erfasst waren, etwa Zählerverschraubungen.."
+      },
+      {
+        "id": "trgi-8a-5",
+        "title": "Gas-Spürgerät ohne Brenngas",
+        "prompt": "Warum belegt ein ausbleibendes Signal eines im Kurs beschriebenen Kohlenwasserstoff-Spürgeräts an einer nur mit Luft gefüllten Leitung keine Dichtheit?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Luft erhöht immer den Gasdruck."
+          },
+          {
+            "id": "b",
+            "text": "Das Gerät reagiert nicht auf ausströmende Prüfluft."
+          },
+          {
+            "id": "c",
+            "text": "Jede Luftfüllung verschließt Lecks von selbst."
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Ein auf Kohlenwasserstoffe reagierendes Gerät kann austretende Luft nicht als Brenngasleck nachweisen. Messmittel und Prüfmedium müssen zusammenpassen.",
+        "hint": "Was genau kann der Sensor erkennen?",
+        "goal": "trgi-pruefmittel-pruefmedium",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 12–14. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Ein auf Kohlenwasserstoffe reagierendes Gerät kann austretende Luft nicht als Brenngasleck nachweisen."
+      },
+      {
+        "id": "trgi-8a-6",
+        "title": "Ein Messwert genügt nicht",
+        "prompt": "Eine Bestandsleitung hat einen kleinen gemessenen Leckwert, zeigt aber starke Korrosion. Welche Bewertung passt zum Kurs?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Der kleine Wert erledigt die Sicherheitsbewertung."
+          },
+          {
+            "id": "b",
+            "text": "Korrosion ist nur ein optischer Mangel."
+          },
+          {
+            "id": "c",
+            "text": "Leckwert und baulicher Zustand müssen gemeinsam betrachtet werden."
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Die Leckmenge ist nur ein Indiz. Korrosion, Gasgeruch und ungünstige Leitungsführung können eine andere sicherheitstechnische Bewertung verlangen.",
+        "hint": "Welche Mängel erkennt die Leckmessung nicht?",
+        "goal": "trgi-gebrauchsfaehigkeit-gesamtbefund",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 19–21. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Leckmenge ist nur ein Indiz."
+      }
+    ]
+  },
+  {
+    "id": "trgi-8b",
+    "title": "Den Anlagenzustand einordnen",
+    "subtitle": "Modul 8 · Auswahl der Prüfverfahren",
+    "icon": "compass",
+    "client": "Lea · Einsatzplanung",
+    "location": "Planungsbüro",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-8b-1",
+        "title": "Neue Leitung",
+        "prompt": "Warum genügt für eine neue Erdgasleitung nicht allein die Aussage „geringe Leckmenge“?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Neu verlegte Leitungen müssen im Kursmodell dicht sein."
+          },
+          {
+            "id": "b",
+            "text": "Neue Leitungen werden grundsätzlich nicht geprüft."
+          },
+          {
+            "id": "c",
+            "text": "Eine geringe Leckmenge beweist die richtige Befestigung."
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Der Lehrbrief fordert für neue Leitungen Dichtheit. Die Gebrauchsfähigkeitsbewertung einer Bestandsleitung ersetzt diesen Nachweis nicht.",
+        "hint": "Neuinstallation und Bestandsbewertung haben verschiedene Voraussetzungen.",
+        "goal": "trgi-neuleitung-dichtheit",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 27–28. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Der Lehrbrief fordert für neue Leitungen Dichtheit."
+      },
+      {
+        "id": "trgi-8b-2",
+        "title": "Niederdruck und Mitteldruck",
+        "prompt": "Welches Verfahren nennt der Kurs für eine neu verlegte Mitteldruck-Erdgasleitung?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nur einen Gerätestart"
+          },
+          {
+            "id": "b",
+            "text": "Eine kombinierte Belastungsprobe und Dichtheitsprüfung"
+          },
+          {
+            "id": "c",
+            "text": "Nur eine Abgasverlustmessung"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Der Lehrbrief beschreibt für Mitteldruck eine kombinierte Prüfung. Das Niederdruckschema lässt sich nicht ungeprüft übertragen.",
+        "hint": "Der Druckbereich beeinflusst das Prüfkonzept.",
+        "goal": "trgi-mitteldruck-pruefkonzept",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 23–25, 28. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Der Lehrbrief beschreibt für Mitteldruck eine kombinierte Prüfung."
+      },
+      {
+        "id": "trgi-8b-3",
+        "title": "Nach längerer Stilllegung",
+        "prompt": "Eine dauerhaft getrennte Leitung soll wieder genutzt werden. Welche Annahme wäre im Kurs falsch?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Vorgeschichte beeinflusst die Prüfplanung."
+          },
+          {
+            "id": "b",
+            "text": "Eine erfolgreiche frühere Nutzung belegt nicht den heutigen Zustand."
+          },
+          {
+            "id": "c",
+            "text": "Eine geringe Leckrate ersetzt bei der Wiederinbetriebnahme nach Stilllegung den Dichtheitsnachweis."
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Der Kurs verlangt nach einer Stilllegung Dichtheit. Die Geschichte der Anlage und die erforderlichen Prüfungen müssen geklärt werden.",
+        "hint": "Stilllegung ist kein kurzzeitiges Unterbrechen.",
+        "goal": "trgi-stilllegung-wiederinbetriebnahme",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 26–27, 30–31. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Der Kurs verlangt nach einer Stilllegung Dichtheit."
+      },
+      {
+        "id": "trgi-8b-4",
+        "title": "Kurze Unterbrechung",
+        "prompt": "Warum kann vor dem erneuten Gaseinlassen zusätzlich zur Druckmessung eine Inaugenscheinnahme nötig sein?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Druckmessung zeigt nicht, ob Anschlüsse fachgerecht verschlossen sind."
+          },
+          {
+            "id": "b",
+            "text": "Eine Sichtkontrolle ermittelt immer die genaue Leckrate."
+          },
+          {
+            "id": "c",
+            "text": "Das Aussehen ersetzt jede Druckmessung."
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Ein angezeigter Druck allein erklärt nicht die Ausführung der Leitungsverschlüsse. Der Zustand unbekannter Anschlüsse ist zu klären.",
+        "hint": "Messwert und Ausführungszustand sind zwei Informationen.",
+        "goal": "trgi-unterbrechung-anschluesse",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 32. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Ein angezeigter Druck allein erklärt nicht die Ausführung der Leitungsverschlüsse."
+      },
+      {
+        "id": "trgi-8b-5",
+        "title": "Gasgeruch trotz kleinem Wert",
+        "prompt": "Bei einer Bestandsleitung liegt ein kleiner Leckmesswert vor, zugleich wurde Gasgeruch festgestellt. Welche Schlussfolgerung passt zur Quelle?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Den Geruch wegen des Messwerts ignorieren"
+          },
+          {
+            "id": "b",
+            "text": "Der geringe Zahlenwert allein rechtfertigt keine unbeschränkte Gebrauchsfähigkeit"
+          },
+          {
+            "id": "c",
+            "text": "Nur die Farbe der Leitung entscheidet"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Der Lehrbrief behandelt Gasgeruch als zusätzlichen entscheidenden Befund. Eine Leckmengenzahl darf nicht isoliert zur Entwarnung verwendet werden.",
+        "hint": "Die Gesamtbewertung enthält mehr als die Messzahl.",
+        "goal": "trgi-gebrauchsfaehigkeit-gasgeruch",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 20–21. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Der Lehrbrief behandelt Gasgeruch als zusätzlichen entscheidenden Befund."
+      },
+      {
+        "id": "trgi-8b-6",
+        "title": "Flüssiggas gesondert betrachten",
+        "prompt": "Welche zwei Prüfabschnitte unterscheidet der Flüssiggas-Teil des Lehrbriefs grundsätzlich?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Abgasverlust und Schornsteinreinigung"
+          },
+          {
+            "id": "b",
+            "text": "Wasserhärte und Raumtemperatur"
+          },
+          {
+            "id": "c",
+            "text": "Abnahmeprüfung und Dichtheitsprüfung"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Für Flüssiggas beschreibt der Kurs ein eigenes Prüfkapitel mit Abnahme- und Dichtheitsprüfung. Druckstufe und Versorgungssituation sind gesondert zu berücksichtigen.",
+        "hint": "Verwende die Begriffe aus dem Flüssiggas-Kapitel.",
+        "goal": "trgi-fluessiggas-pruefkonzept",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 33–36. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Für Flüssiggas beschreibt der Kurs ein eigenes Prüfkapitel mit Abnahme- und Dichtheitsprüfung."
+      }
+    ]
+  },
+  {
+    "id": "trgi-8c",
+    "title": "Übergabe mit Nachweis",
+    "subtitle": "Modul 8 · Inbetriebnahme und Sanierung",
+    "icon": "wrench",
+    "client": "Mila · Übergabe",
+    "location": "Lernbaustelle",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-8c-1",
+        "title": "Mehr als Gas einlassen",
+        "prompt": "Was umfasst die Inbetriebnahme nach dem Kursverständnis?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Alle Schritte bis zur betriebsbereiten Übergabe der gesamten Installation"
+          },
+          {
+            "id": "b",
+            "text": "Nur das Öffnen einer Absperrung"
+          },
+          {
+            "id": "c",
+            "text": "Nur das Ablesen des Gaszählers"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Inbetriebnahme betrifft die gesamte Installation einschließlich Gerätefunktion, Luft- und Abgasweg sowie Übergabe. Eine Leitungsprüfung allein bildet das nicht vollständig ab.",
+        "hint": "Wem wird die Anlage am Ende übergeben?",
+        "goal": "trgi-inbetriebnahme-umfang",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 37–38. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Inbetriebnahme betrifft die gesamte Installation einschließlich Gerätefunktion, Luft- und Abgasweg sowie Übergabe."
+      },
+      {
+        "id": "trgi-8c-2",
+        "title": "Der Betreiber braucht Wissen",
+        "prompt": "Welche Information gehört zur Übergabe?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nur die Farbe der Gasleitungen"
+          },
+          {
+            "id": "b",
+            "text": "Bedienung und Wartungsunterlagen sowie Freihalten benötigter Luftöffnungen"
+          },
+          {
+            "id": "c",
+            "text": "Eine Zusage, dass Kontrollen nie wieder nötig sind"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Der Betreiber wird eingewiesen und erhält Betriebs- und Wartungsanleitungen. Der Kurs nennt unter anderem das Freihalten der Verbrennungsluftöffnungen.",
+        "hint": "Eine Übergabe soll den späteren sicheren Umgang unterstützen.",
+        "goal": "trgi-betreibereinweisung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 38. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Der Betreiber wird eingewiesen und erhält Betriebs- und Wartungsanleitungen."
+      },
+      {
+        "id": "trgi-8c-3",
+        "title": "Nachvollziehbare Dokumentation",
+        "prompt": "Welche Angaben helfen, ein Prüfprotokoll konkret einer Anlage und einem Termin zuzuordnen?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nur der Firmen-Slogan"
+          },
+          {
+            "id": "b",
+            "text": "Nur die Zahl der Monteure"
+          },
+          {
+            "id": "c",
+            "text": "Prüfdatum, Zählernummer und Zählerstand"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Der Lehrbrief empfiehlt diese konkreten Identifikationsangaben. Sie erhöhen die Nachvollziehbarkeit; eine rechtliche Beweiskraft wird hier nicht zugesichert.",
+        "hint": "Was unterscheidet diesen Einsatz von einem anderen?",
+        "goal": "trgi-pruefprotokoll-identifikation",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 38–39. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Der Lehrbrief empfiehlt diese konkreten Identifikationsangaben."
+      },
+      {
+        "id": "trgi-8c-4",
+        "title": "Was Innenabdichtung leistet",
+        "prompt": "Welchen Schaden adressiert das im Kurs beschriebene Innenabdichtungsverfahren?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Undichte Gewindeverbindungen innerhalb seiner Anwendungsgrenzen"
+          },
+          {
+            "id": "b",
+            "text": "Beliebig große Korrosionslöcher"
+          },
+          {
+            "id": "c",
+            "text": "Mechanisch gebrochene Rohrwände"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Die Dispersion kann in feine undichte Gewindespalten eindringen. Das Verfahren ersetzt kein fehlendes oder geschädigtes Rohrmaterial.",
+        "hint": "Abdichten ist nicht gleich Erneuern der Rohrwand.",
+        "goal": "trgi-innenabdichtung-grenzen",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 40–41. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Dispersion kann in feine undichte Gewindespalten eindringen."
+      },
+      {
+        "id": "trgi-8c-5",
+        "title": "Prüfen nach der Sanierung",
+        "prompt": "Welcher Nachweis gehört im Kurs nach der Innenabdichtung dazu?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nur ein Foto des Dichtmittelgebindes"
+          },
+          {
+            "id": "b",
+            "text": "Eine abschließende Dichtheitsprüfung"
+          },
+          {
+            "id": "c",
+            "text": "Nur eine Abgasverlustmessung am Heizgerät"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Das Ergebnis muss als dichte Leitung nachgewiesen werden. Die Durchführung des Verfahrens selbst ist noch kein Prüfergebnis.",
+        "hint": "Das Verfahren und sein Erfolg sind getrennte Dinge.",
+        "goal": "trgi-innenabdichtung-nachweis",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 43–44. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Das Ergebnis muss als dichte Leitung nachgewiesen werden."
+      },
+      {
+        "id": "trgi-8c-6",
+        "title": "Später Ursachen erkennen",
+        "prompt": "Welche Dokumentationskombination hilft nach einer Innenabdichtung besonders?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nur Gesamtkosten und Wetter"
+          },
+          {
+            "id": "b",
+            "text": "Nur Gebäudefarbe und Stockwerkzahl"
+          },
+          {
+            "id": "c",
+            "text": "Verantwortliche, Prüfergebnisse sowie Dichtmittel und Charge"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Die Dokumentation enthält unter anderem Unternehmen, Fachkraft, Prüfprotokolle sowie Mittel- und Chargenangaben. Das unterstützt spätere Nachverfolgung.",
+        "hint": "Welche Angaben ermöglichen die Rückverfolgung von Arbeit und Material?",
+        "goal": "trgi-innenabdichtung-dokumentation",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 44. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Dokumentation enthält unter anderem Unternehmen, Fachkraft, Prüfprotokolle sowie Mittel- und Chargenangaben."
+      }
+    ]
+  },
+  {
+    "id": "trgi-8d",
+    "title": "Zahlen richtig zuordnen",
+    "subtitle": "Modul 8 · Kurswerte mit Kontext",
+    "icon": "search",
+    "client": "Jonas · Zahlenlabor",
+    "location": "Zahlenlabor",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-8d-1",
+        "title": "Belastung und Einheit",
+        "prompt": "Welche gleichwertige Druckangabe nennt der Lehrbrief von Juni 2019 für die Belastungsprüfung einer Niederdruck-Erdgasleitung (Betriebsdruck bis 100 hPa)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "0,1 MPa = 1 bar"
+          },
+          {
+            "id": "b",
+            "text": "0,1 MPa = 0,1 bar"
+          },
+          {
+            "id": "c",
+            "text": "0,1 MPa = 10 bar"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Die Quelle nennt 0,1 MPa. Weil 1 MPa gleich 10 bar ist, entspricht das 1 bar beziehungsweise 1000 hPa. Dieser Wert gehört zur Belastungsprüfung, nicht zur Dichtheitsprüfung.",
+        "hint": "Zehn bar ergeben ein MPa.",
+        "goal": "trgi-belastungspruefung-druck",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 5. Technischer Stand Juni 2019; Kurswissen, fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Druckwerte brauchen einen Prüfzweck und einen Druckbereich. Diese Runde prüft ausdrücklich Werte der Kursfassung Juni 2019; sie ist keine Arbeitsanweisung."
+      },
+      {
+        "id": "trgi-8d-2",
+        "title": "Dichtheitsprüfung zuordnen",
+        "prompt": "Welcher Prüfdruck gehört im Lehrbrief von Juni 2019 zur Dichtheitsprüfung der Niederdruck-Erdgasleitung (Betriebsdruck bis 100 hPa), ohne Gasgeräte und deren Regel-/Sicherheitseinrichtungen?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1 bar"
+          },
+          {
+            "id": "b",
+            "text": "150 hPa"
+          },
+          {
+            "id": "c",
+            "text": "3 bar"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Die Quelle nennt für diese Dichtheitsprüfung 150 hPa, also 150 mbar. Die Gasgeräte sind davon ausdrücklich ausgenommen. Belastungs- und Dichtheitsprüfung haben unterschiedliche Druckwerte.",
+        "hint": "Verwechsle nicht den Wert der Belastungsprüfung mit dem der Dichtheitsprüfung.",
+        "goal": "trgi-dichtheitspruefung-druck",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 7–8. Technischer Stand Juni 2019; Kurswissen, fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Eine Druckangabe ohne Prüfart kann zu einer falschen Zuordnung führen. Die Leitungsprüfung umfasst nicht automatisch die Gasgeräte."
+      },
+      {
+        "id": "trgi-8d-3",
+        "title": "Feine Druckänderung",
+        "prompt": "Welche Druckänderung muss das Messgerät für die Niederdruck-Erdgas-Dichtheitsprüfung laut Lehrbrief Juni 2019 erkennen lassen?",
+        "options": [
+          {
+            "id": "a",
+            "text": "10 hPa"
+          },
+          {
+            "id": "b",
+            "text": "1 hPa"
+          },
+          {
+            "id": "c",
+            "text": "0,1 hPa"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Die Quelle nennt eine erkennbare Druckänderung von 0,1 hPa. Das ist die Anforderung an die Erkennbarkeit einer Änderung, nicht der aufzubringende Prüfdruck.",
+        "hint": "Gesucht ist eine kleine erkennbare Änderung, nicht der gesamte Druck.",
+        "goal": "trgi-dichtheitspruefung-messaufloesung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 8. Technischer Stand Juni 2019; Kurswissen, fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Prüfdruck und Messauflösung sind unterschiedliche Größen. Ein hoher angezeigter Druck sagt nichts über die Erkennbarkeit kleiner Änderungen aus."
+      },
+      {
+        "id": "trgi-8d-4",
+        "title": "Volumenklasse lesen",
+        "prompt": "Eine reine Kursaufgabe betrachtet 150 Liter Leitungsvolumen bei der Dichtheitsprüfung einer Niederdruck-Erdgasleitung. Welche Kombination nennt die Tabelle von Juni 2019 für Anpassungszeit und anschließende Mindestprüfdauer?",
+        "options": [
+          {
+            "id": "a",
+            "text": "30 Minuten + 20 Minuten"
+          },
+          {
+            "id": "b",
+            "text": "10 Minuten + 10 Minuten"
+          },
+          {
+            "id": "c",
+            "text": "60 Minuten + 30 Minuten"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "150 Liter gehören in die Tabellenklasse ab 100 bis unter 200 Liter. Diese Zeile nennt 30 Minuten Anpassung und danach mindestens 20 Minuten Prüfung. Beide Zeiten erfüllen verschiedene Zwecke.",
+        "hint": "Ordne zuerst 150 Liter der mittleren Volumenklasse zu.",
+        "goal": "trgi-dichtheitspruefung-zeit-volumen",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 10. Technischer Stand Juni 2019; Kurswissen, fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Tabelle unterscheidet unter 100, ab 100 bis unter 200 und ab 200 Liter. Anpassungszeit und Mindestprüfdauer sind getrennt zu lesen."
+      },
+      {
+        "id": "trgi-8d-5",
+        "title": "Mehrvolumen berechnen",
+        "prompt": "Der Kurs von Juni 2019 nennt für die kombinierte Prüfung einer Mitteldruck-Erdgasleitung 2 Stunden bis 2000 Liter sowie 15 Minuten je weitere 100 Liter. Welche reine Prüfzeit ergibt sich bei 2200 Litern, ohne Anpassungs- und Vorbereitungszeit?",
+        "options": [
+          {
+            "id": "a",
+            "text": "2 Stunden 15 Minuten"
+          },
+          {
+            "id": "b",
+            "text": "2 Stunden 30 Minuten"
+          },
+          {
+            "id": "c",
+            "text": "5 Stunden 30 Minuten"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "2200 minus 2000 ergibt 200 Liter Mehrvolumen. Zwei zusätzliche 100-Liter-Schritte ergeben 30 Minuten zusätzlich zu den 2 Stunden. Die separat genannte Anpassungszeit ist hier ausdrücklich nicht gefragt.",
+        "hint": "200 Liter sind zwei Zuschläge.",
+        "goal": "trgi-mitteldruck-pruefzeit-rechnung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 24. Technischer Stand Juni 2019; Kurswissen, fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Eine Zeitrechnung muss zwischen Vorbereitung, Temperaturausgleich und eigentlicher Prüfung unterscheiden. Die Aufgabe verwendet die ausdrücklich angegebene Rechenregel der Kursquelle."
+      },
+      {
+        "id": "trgi-8d-6",
+        "title": "Die Untergrenze ist eingeschlossen",
+        "prompt": "In einer reinen Zuordnungsaufgabe zur Tabelle des Lehrbriefs Juni 2019 hat eine in Betrieb befindliche Niederdruck-Erdgasleitung exakt 1,0 l/h Leckrate. Welcher Zahlenklasse ordnet die Quelle diesen Wert zu, bevor der übrige Befund bewertet wird?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dicht"
+          },
+          {
+            "id": "b",
+            "text": "Unbeschränkt gebrauchsfähig"
+          },
+          {
+            "id": "c",
+            "text": "Vermindert gebrauchsfähig"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Die Quelle ordnet Werte ab 1,0 und unter 5,0 l/h der verminderten Gebrauchsfähigkeit zu. Unter 1,0 ist eine andere Klasse. Der Zahlenwert allein ist keine Betriebsfreigabe: Gasgeruch, baulicher Zustand und Verlegesituation sind zusätzlich entscheidend.",
+        "hint": "Achte darauf, ob der Grenzwert ein- oder ausgeschlossen ist.",
+        "goal": "trgi-gebrauchsfaehigkeit-grenzwert",
+        "kind": "choice",
+        "status": "draft",
+        "source": "41-08-1-Lehrbrief 8-TRGI.pdf, PDF-Seite 19–21. Technischer Stand Juni 2019; Kurswissen, fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Eine Leckratenklasse ist nur ein Teil der Bewertung. Die Kursquelle verlangt zusätzlich eine Betrachtung von Zustand, Verlegesituation und Gasgeruch."
+      }
+    ]
+  },
+  {
+    "id": "trgi-final1",
+    "title": "Der gemischte Auftrag",
+    "subtitle": "Abschlussübung · Grundlagen verbinden",
+    "icon": "trophy",
+    "client": "Prüfteam · Lernrunde",
+    "location": "Abschlussarena",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-final1-1",
+        "title": "Elektrische Gefahr mitdenken",
+        "prompt": "Warum thematisiert die Abschlussübung eine leitende Überbrückung beim Trennen metallischer Gasleitungen?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Zum Schutz vor gefährlicher Berührungsspannung und Funkenüberschlag"
+          },
+          {
+            "id": "b",
+            "text": "Zur Erhöhung der Gasgeschwindigkeit"
+          },
+          {
+            "id": "c",
+            "text": "Damit die Gewinde sich automatisch lösen"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Auch an einer Gasleitung können durch Fehler elektrische Gefahren bestehen. Die Frage prüft den Schutzgedanken, nicht die praktische Ausführung.",
+        "hint": "Die Gefahr kann aus einem anderen Versorgungssystem stammen.",
+        "goal": "trgi-elektrische-ueberbrueckung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "46-Abschlussübung TRGI.pdf, PDF-Seite 3. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Auch an einer Gasleitung können durch Fehler elektrische Gefahren bestehen."
+      },
+      {
+        "id": "trgi-final1-2",
+        "title": "Wärme aus Kondensation",
+        "prompt": "Zwei Kennwerte beziehen sich auf dasselbe Brenngas. Welcher berücksichtigt die Wärme bei Kondensation des entstandenen Wassers?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Heizwert"
+          },
+          {
+            "id": "b",
+            "text": "Brennwert"
+          },
+          {
+            "id": "c",
+            "text": "Anschlussdruck"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Beim Brennwert wird das entstandene Wasser im flüssigen Endzustand betrachtet. Der Heizwert berücksichtigt diesen Kondensationsanteil nicht.",
+        "hint": "Achte auf den Zustand des Wassers nach der Verbrennung.",
+        "goal": "trgi-brennwert-heizwert",
+        "kind": "choice",
+        "status": "draft",
+        "source": "46-Abschlussübung TRGI.pdf, PDF-Seite 5. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Beim Brennwert wird das entstandene Wasser im flüssigen Endzustand betrachtet."
+      },
+      {
+        "id": "trgi-final1-3",
+        "title": "Grenzen eines Kennwerts",
+        "prompt": "Was darf aus einem gleichen Wobbe-Index allein nicht abgeleitet werden?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine Aussage zur Wärmebelastung bei definierten gleichen Bedingungen"
+          },
+          {
+            "id": "b",
+            "text": "Eine Einordnung der Austauschbarkeit innerhalb der betrachteten Bedingungen"
+          },
+          {
+            "id": "c",
+            "text": "Vollständig gleiche Brenneigenschaften in jeder Hinsicht"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Der Wobbe-Index ist ein Kennwert für die Austauschbarkeit unter bestimmten Bedingungen. Er beschreibt nicht sämtliche Brenneigenschaften.",
+        "hint": "Ein Kennwert bildet nicht jede Eigenschaft ab.",
+        "goal": "trgi-wobbe-index",
+        "kind": "choice",
+        "status": "draft",
+        "source": "46-Abschlussübung TRGI.pdf, PDF-Seite 5. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Der Wobbe-Index ist ein Kennwert für die Austauschbarkeit unter bestimmten Bedingungen."
+      },
+      {
+        "id": "trgi-final1-4",
+        "title": "Volumen pro Stunde",
+        "prompt": "Welcher Ausdruck passt zum Anschlusswert im Sinne der Abschlussübung?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Gasvolumenstrom bei Nennwärmebelastung in m³/h"
+          },
+          {
+            "id": "b",
+            "text": "Gespeicherte Wärmeenergie in kWh"
+          },
+          {
+            "id": "c",
+            "text": "Abgastemperatur in °C"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Der Anschlusswert verbindet die Nennwärmebelastung mit dem dafür benötigten Gasvolumenstrom. Er ist keine Energiemenge.",
+        "hint": "Prüfe Größe und Einheit zusammen.",
+        "goal": "trgi-anschlusswert",
+        "kind": "choice",
+        "status": "draft",
+        "source": "46-Abschlussübung TRGI.pdf, PDF-Seite 6. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Der Anschlusswert verbindet die Nennwärmebelastung mit dem dafür benötigten Gasvolumenstrom."
+      },
+      {
+        "id": "trgi-final1-5",
+        "title": "Die Installation endet nicht am Brenner",
+        "prompt": "Welche Systemgrenze betont die Abschlussübung am Ende des Anlagenwegs?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nur die Geräteabsperrung ist relevant."
+          },
+          {
+            "id": "b",
+            "text": "Auch die Abgasführung bis zur Ausmündung gehört zur Betrachtung."
+          },
+          {
+            "id": "c",
+            "text": "Der Brenner ersetzt die Beurteilung des Abgaswegs."
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Die Kursfrage führt den betrachteten Bereich bis zur Ausmündung der Abgasanlage. Das unterstützt eine Betrachtung des gesamten Systems.",
+        "hint": "Was geschieht mit den Verbrennungsprodukten?",
+        "goal": "trgi-systemgrenze-abgas",
+        "kind": "choice",
+        "status": "draft",
+        "source": "46-Abschlussübung TRGI.pdf, PDF-Seite 7. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Kursfrage führt den betrachteten Bereich bis zur Ausmündung der Abgasanlage."
+      },
+      {
+        "id": "trgi-final1-6",
+        "title": "Bewegung nicht blind sperren",
+        "prompt": "Welche Planungsabsicht steckt hinter Maßnahmen am Übergang von Hausanschluss zu Innenleitung?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Alle Bewegungen durch zusätzliche Schellen an beliebiger Stelle erzwingen"
+          },
+          {
+            "id": "b",
+            "text": "Nur die Leitungsfarbe vereinheitlichen"
+          },
+          {
+            "id": "c",
+            "text": "Geringfügige Bewegungen aufnehmen, ohne die Inneninstallation zu schädigen"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Die Aufgabe fragt nach dem Schutz der Inneninstallation vor übertragenen Bewegungen. Eine starre Fixierung ist nicht automatisch eine geeignete Lösung.",
+        "hint": "Wo würden Bewegungen sonst Kräfte einleiten?",
+        "goal": "trgi-leitungsbewegung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "46-Abschlussübung TRGI.pdf, PDF-Seite 10–11. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Aufgabe fragt nach dem Schutz der Inneninstallation vor übertragenen Bewegungen."
+      }
+    ],
+    "boss": true
+  },
+  {
+    "id": "trgi-final2",
+    "title": "Das ganze System im Blick",
+    "subtitle": "Abschlussübung · Prüfen und beurteilen",
+    "icon": "trophy",
+    "client": "Prüfteam · Transfer",
+    "location": "Abschlussarena",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-final2-1",
+        "title": "Art B einordnen",
+        "prompt": "Ein Gerät der Art B wird geplant. Welche Eigenschaft muss bei der Luftversorgung berücksichtigt werden?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Es arbeitet raumluftabhängig."
+          },
+          {
+            "id": "b",
+            "text": "Es benötigt nie Verbrennungsluft."
+          },
+          {
+            "id": "c",
+            "text": "Es ist grundsätzlich raumluftunabhängig."
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Die Abschlussübung ordnet Art B der raumluftabhängigen Feuerstätte mit Abgasanlage zu. Die Verbrennungsluftversorgung ist damit Teil der Betrachtung.",
+        "hint": "Der Buchstabe beschreibt die Luft- und Abgasführung.",
+        "goal": "trgi-geraeteart-b",
+        "kind": "choice",
+        "status": "draft",
+        "source": "46-Abschlussübung TRGI.pdf, PDF-Seite 19–20. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Abschlussübung ordnet Art B der raumluftabhängigen Feuerstätte mit Abgasanlage zu."
+      },
+      {
+        "id": "trgi-final2-2",
+        "title": "Zusätzliches Zeichen",
+        "prompt": "Wie ist das DVGW-Qualitätszeichen in der Kurs-Abschlussübung eingeordnet?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Als Ersatz für jede andere Kennzeichnung"
+          },
+          {
+            "id": "b",
+            "text": "Als zusätzliche freiwillige Kennzeichnung"
+          },
+          {
+            "id": "c",
+            "text": "Als Nachweis einer abgeschlossenen Leitungsprüfung vor Ort"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Die Kursfrage unterscheidet die zusätzliche Qualitätskennzeichnung von der CE-Kennzeichnung. Ein Produktzeichen ersetzt keine Prüfung der Installation.",
+        "hint": "Produktqualität und Installationsprüfung sind verschiedene Ebenen.",
+        "goal": "trgi-kennzeichnung-dvgw",
+        "kind": "choice",
+        "status": "draft",
+        "source": "46-Abschlussübung TRGI.pdf, PDF-Seite 20. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Kursfrage unterscheidet die zusätzliche Qualitätskennzeichnung von der CE-Kennzeichnung."
+      },
+      {
+        "id": "trgi-final2-3",
+        "title": "Prüfgrenzen beachten",
+        "prompt": "Welche Aussage zur Dichtheitsprüfung der Gasleitung passt zur Abschlussübung?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Das laufende Gerät ersetzt das Prüfgerät."
+          },
+          {
+            "id": "b",
+            "text": "Alle Regelbauteile müssen immer denselben Prüfdruck aushalten."
+          },
+          {
+            "id": "c",
+            "text": "Gasgeräte und ihre Regel- und Sicherheitseinrichtungen werden nicht einbezogen."
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Die Abschlussübung grenzt die Leitungsprüfung gegenüber dem Gasgerät und dessen Einrichtungen ab. Bauteilgrenzen sind für das Prüfkonzept wesentlich.",
+        "hint": "Die Prüfung der Leitung ist nicht automatisch eine Geräteprüfung.",
+        "goal": "trgi-dichtheitspruefung-abgrenzung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "46-Abschlussübung TRGI.pdf, PDF-Seite 16. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Abschlussübung grenzt die Leitungsprüfung gegenüber dem Gasgerät und dessen Einrichtungen ab."
+      },
+      {
+        "id": "trgi-final2-4",
+        "title": "Estrich ist nicht beliebig belastbar",
+        "prompt": "Welche Gefahr nennt die Abschlussübung bei einer Gasleitung innerhalb der Estrichschicht?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Rissbildung im Estrich und mögliche Scherbeanspruchung der Leitung"
+          },
+          {
+            "id": "b",
+            "text": "Eine sichere Verbesserung jeder Schalldämmung"
+          },
+          {
+            "id": "c",
+            "text": "Automatische Beseitigung von Korrosion"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Die Aufgabe begründet die getrennte Leitungsführung unter anderem mit Estrichdicke und mechanischen Belastungen. Eine Rohrleitung ist kein neutraler Bestandteil der Estrichschicht.",
+        "hint": "Denke an Bewegungen und verbleibende Schichtdicken.",
+        "goal": "trgi-fussboden-leitungsfuehrung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "46-Abschlussübung TRGI.pdf, PDF-Seite 14. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Aufgabe begründet die getrennte Leitungsführung unter anderem mit Estrichdicke und mechanischen Belastungen."
+      },
+      {
+        "id": "trgi-final2-5",
+        "title": "Mehrere Geräte, ein Abgasweg",
+        "prompt": "Was muss eine gemeinsame Abgasanlage leisten?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nur beim Betrieb des größten Geräts funktionieren"
+          },
+          {
+            "id": "b",
+            "text": "Für die relevanten Betriebszustände eine einwandfreie Abgasableitung ermöglichen"
+          },
+          {
+            "id": "c",
+            "text": "Nur möglichst kurz sein"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Die Abschlussübung fordert eine Auslegung, die die Betriebszustände der angeschlossenen Geräte berücksichtigt. Nur einen Einzelbetrieb anzusehen reicht nicht.",
+        "hint": "Die Geräte laufen nicht zwingend immer gleichzeitig.",
+        "goal": "trgi-mehrfachbelegung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "46-Abschlussübung TRGI.pdf, PDF-Seite 22. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Abschlussübung fordert eine Auslegung, die die Betriebszustände der angeschlossenen Geräte berücksichtigt."
+      },
+      {
+        "id": "trgi-final2-6",
+        "title": "Raumgröße richtig deuten",
+        "prompt": "Warum ist der im Kurs diskutierte Verdünnungsraum bei B11-Geräten keine Erlaubnis für dauernden Abgasaustritt?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Große Räume machen jede Abgasstörung unschädlich."
+          },
+          {
+            "id": "b",
+            "text": "Raumgröße ersetzt die Abgasanlage."
+          },
+          {
+            "id": "c",
+            "text": "Die Betrachtung vorübergehender Anfahrbedingungen ersetzt keine funktionierende Abgasführung."
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Die Abschlussübung unterscheidet kurze Anfahrbedingungen von einer gestörten Abgasanlage. Aus einer Raumanforderung folgt keine Freigabe für dauernden Abgasaustritt.",
+        "hint": "Trenne Anfahrzustand und anhaltende Störung.",
+        "goal": "trgi-abgas-verduennungsraum",
+        "kind": "choice",
+        "status": "draft",
+        "source": "46-Abschlussübung TRGI.pdf, PDF-Seite 25. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Abschlussübung unterscheidet kurze Anfahrbedingungen von einer gestörten Abgasanlage."
+      }
+    ],
+    "boss": true
+  },
+  {
+    "id": "trgi-extra1",
+    "title": "Deinen Lernweg organisieren",
+    "subtitle": "Zusatzunterlagen · Lernen mit Quellen",
+    "icon": "compass",
+    "client": "Mila · Lernbegleitung",
+    "location": "Lernbüro",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-extra1-1",
+        "title": "Acht Module, ein Zusammenhang",
+        "prompt": "Warum behandelt der Kurs mehr als Rohrmontage?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Weil sichere Gasinstallation auch Geräte, Luftversorgung, Abgasweg und Prüfung umfasst"
+          },
+          {
+            "id": "b",
+            "text": "Weil technische Regeln für Leitungen unwichtig sind"
+          },
+          {
+            "id": "c",
+            "text": "Weil Geräte ohne Umgebung bewertet werden können"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Die ständige Begleitung erläutert den Weg von Grundlagen und Leitungsbau zu Geräten, Luftversorgung, Abgasführung und Prüfung.",
+        "hint": "Betrachte die Anlage als Ganzes.",
+        "goal": "trgi-kursorientierung-system",
+        "kind": "choice",
+        "status": "draft",
+        "source": "2-B-Text- Ständige Begleitung TRGI.pdf, PDF-Seite 9–11. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die ständige Begleitung erläutert den Weg von Grundlagen und Leitungsbau zu Geräten, Luftversorgung, Abgasführung und Prüfung.."
+      },
+      {
+        "id": "trgi-extra1-2",
+        "title": "Aktiv statt nur überfliegen",
+        "prompt": "Welche Lernmethode empfiehlt die Begleitung sinngemäß?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nur hervorgehobene Zahlen auswendig lernen"
+          },
+          {
+            "id": "b",
+            "text": "Kernaussagen selbst zusammenfassen und mit den Begleitaufgaben prüfen"
+          },
+          {
+            "id": "c",
+            "text": "Lösungen lesen, ohne die Aufgaben zu bearbeiten"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Eine eigene Zusammenfassung und die anschließende Bearbeitung der Begleitfragen machen Verständnis und Lücken sichtbar.",
+        "hint": "Wie merkst du, was du selbst erklären kannst?",
+        "goal": "trgi-lernstrategie",
+        "kind": "choice",
+        "status": "draft",
+        "source": "2-B-Text- Ständige Begleitung TRGI.pdf, PDF-Seite 13–14. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Eine eigene Zusammenfassung und die anschließende Bearbeitung der Begleitfragen machen Verständnis und Lücken sichtbar.."
+      },
+      {
+        "id": "trgi-extra1-3",
+        "title": "Lernschleife",
+        "prompt": "Ordne diese aus den Lerntipps abgeleitete Übungsroutine.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Antworten prüfen und offene Punkte nacharbeiten"
+          },
+          {
+            "id": "b",
+            "text": "Kapitel durcharbeiten und Kernaussagen notieren"
+          },
+          {
+            "id": "c",
+            "text": "Begleitaufgaben zunächst selbst lösen"
+          }
+        ],
+        "correct": ["b", "c", "a"],
+        "explanation": "Erst erarbeiten, dann selbst anwenden und anschließend aus Rückmeldungen lernen. Diese Reihenfolge vermeidet, dass Wiedererkennen mit Verständnis verwechselt wird.",
+        "hint": "Beginne mit der Erarbeitung des Stoffes.",
+        "goal": "trgi-lernstrategie",
+        "kind": "order",
+        "status": "draft",
+        "source": "2-B-Text- Ständige Begleitung TRGI.pdf, PDF-Seite 13–14. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Erst erarbeiten, dann selbst anwenden und anschließend aus Rückmeldungen lernen."
+      },
+      {
+        "id": "trgi-extra1-4",
+        "title": "Die richtige Anlaufstelle",
+        "prompt": "Welche Zuordnung beschreibt die Kursbegleitung?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Alle fachlichen Fragen gehen ausschließlich an die Versicherung."
+          },
+          {
+            "id": "b",
+            "text": "Die App ersetzt die fachliche Betreuung."
+          },
+          {
+            "id": "c",
+            "text": "Die HWK organisiert den Lehrgang; für Fachfragen gibt es die ausgewiesene fachliche Betreuung."
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Die Begleitung unterscheidet organisatorische Leitung und fachliche Betreuung. Verbindliche Kontaktangaben sollten aus den konkreten Kursunterlagen entnommen werden.",
+        "hint": "Organisation und Fachinhalt haben unterschiedliche Zuständigkeiten.",
+        "goal": "trgi-kursorientierung-betreuung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "2-B-Text- Ständige Begleitung TRGI.pdf, PDF-Seite 8. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Begleitung unterscheidet organisatorische Leitung und fachliche Betreuung."
+      },
+      {
+        "id": "trgi-extra1-5",
+        "title": "Für Fallaufgaben vorbereitet",
+        "prompt": "Welche Unterlagen nennt der Lehrgangsverlauf TRGI-1-26 zur Vorbereitung auf die Unterrichtseinheiten?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Aktuelle TRGI, Schreibutensilien und Taschenrechner"
+          },
+          {
+            "id": "b",
+            "text": "Nur die Rechnung über die Kursgebühr"
+          },
+          {
+            "id": "c",
+            "text": "Nur die Punktzahl dieser App"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Der Verlauf nennt diese Hilfsmittel für die Vertiefung und fallorientierten Aufgaben einschließlich Nennweitenermittlung. Der Plan ist ein konkreter Kursplan, kein allgemeiner Terminplan.",
+        "hint": "Welche Hilfsmittel erlauben Nachschlagen und Rechnen?",
+        "goal": "trgi-kursorientierung-hilfsmittel",
+        "kind": "choice",
+        "status": "draft",
+        "source": "8-Lehrgangsverlauf TRGI-1-26.pdf, PDF-Seite 2. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Der Verlauf nennt diese Hilfsmittel für die Vertiefung und fallorientierten Aufgaben einschließlich Nennweitenermittlung."
+      }
+    ]
+  },
+  {
+    "id": "trgi-extra2",
+    "title": "Unterlagen richtig einordnen",
+    "subtitle": "Zusatzunterlagen · Verantwortung und Quellenstand",
+    "icon": "compass",
+    "client": "Lea · Dokumentation",
+    "location": "Dokumentenraum",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-extra2-1",
+        "title": "Vertragliche Rollen im Kursmaterial",
+        "prompt": "Welche beiden Partner stehen im Mittelpunkt der Installateurrichtlinien in der beigefügten Fassung 2019?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mieter und Gebäudeversicherung"
+          },
+          {
+            "id": "b",
+            "text": "Netzbetreiber und Installationsunternehmen"
+          },
+          {
+            "id": "c",
+            "text": "Gerätehersteller und Möbelhandel"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Das beigefügte Dokument behandelt Installateurverträge zwischen Netzbetreiber und Installationsunternehmen. Hier wird die historische Kursunterlage zugeordnet, kein heutiger Vertragsfall beurteilt.",
+        "hint": "Welche Partner stehen hinter NB und IU?",
+        "goal": "trgi-installateurrichtlinien-rollen",
+        "kind": "choice",
+        "status": "draft",
+        "source": "4-a_Installateurrichtlinien.pdf, PDF-Seite 1–2. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Diese Runde ordnet ältere Kursdokumente ein. Sie erteilt keine rechtliche Auskunft oder Befugnis zur Ausführung von Arbeiten."
+      },
+      {
+        "id": "trgi-extra2-2",
+        "title": "Befähigung bleibt Lernaufgabe",
+        "prompt": "Welcher Gedanke steht in den beigefügten Richtlinien neben der fachlichen Befähigung?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine einmalige App-Punktzahl ersetzt jede Weiterbildung."
+          },
+          {
+            "id": "b",
+            "text": "Ein Zugang zu aktuellen Regeln ist unnötig."
+          },
+          {
+            "id": "c",
+            "text": "Kenntnisse weiterentwickeln und Zugang zu den maßgeblichen Bestimmungen haben."
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Die historische Fassung nennt die Kenntnis der Regeln, Zugang zu ihrem aktuellen Stand und laufende Fortbildung. Aus der App ergibt sich keine Eintragung oder Arbeitsberechtigung.",
+        "hint": "Technisches Wissen und Regelwerksstände entwickeln sich weiter.",
+        "goal": "trgi-installateurrichtlinien-fortbildung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "4-a_Installateurrichtlinien.pdf, PDF-Seite 2–3. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die historische Fassung nennt die Kenntnis der Regeln, Zugang zu ihrem aktuellen Stand und laufende Fortbildung."
+      },
+      {
+        "id": "trgi-extra2-3",
+        "title": "Was eine Unterweisung abdeckt",
+        "prompt": "Welchen Umfang erklärt das beigefügte Unterweisungsformular von 2017?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Personenschutz bei Arbeiten an Gasleitungen; die TRGI bleiben daneben zu beachten"
+          },
+          {
+            "id": "b",
+            "text": "Vollständigen Ersatz aller technischen Regeln"
+          },
+          {
+            "id": "c",
+            "text": "Automatische Eintragung in ein Installateurverzeichnis"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Das Formular grenzt den Arbeitsschutz ausdrücklich von den weiterhin zu beachtenden TRGI ab. Seine Datierung und Regelwerksverweise machen es zu einer historischen Kursvorlage.",
+        "hint": "Ein Nachweis kann einen abgegrenzten Zweck haben.",
+        "goal": "trgi-unterweisung-abgrenzung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "5-b_Unterweisung für Arbeiten an Gasanlagen .pdf, PDF-Seite 1. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Das Formular grenzt den Arbeitsschutz ausdrücklich von den weiterhin zu beachtenden TRGI ab."
+      },
+      {
+        "id": "trgi-extra2-4",
+        "title": "BGB-Auszug identifizieren",
+        "prompt": "Du suchst im Material nach dem Dokument zu Schadensersatz, Verrichtungsgehilfen und Mietmängeln. Welche Unterlage passt?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Der Geräte-Messbogen"
+          },
+          {
+            "id": "b",
+            "text": "Der BGB-Auszug mit ausgewiesenem Bearbeitungsstand 2012"
+          },
+          {
+            "id": "c",
+            "text": "Die Abgasklassifizierung"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Der beigefügte BGB-Auszug enthält diese Themen und nennt einen Gesetzesstand von 2012. Die Aufgabe prüft nur die Dokumentzuordnung, nicht die Rechtslage eines Einzelfalls.",
+        "hint": "Achte auf Titel und Datierung der Quelle.",
+        "goal": "trgi-rechtsquellen-orientierung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "6-c_Auszüge aus dem BGB.pdf, PDF-Seite 1. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Der beigefügte BGB-Auszug enthält diese Themen und nennt einen Gesetzesstand von 2012."
+      },
+      {
+        "id": "trgi-extra2-5",
+        "title": "Versicherungsunterlage mit Datum",
+        "prompt": "Wie sollte die beigefügte VGB-88-Unterlage, Fassung Januar 2001, in deiner Lernsammlung bezeichnet werden?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Als verbindliche Deckungszusage für jeden heutigen Vertrag"
+          },
+          {
+            "id": "b",
+            "text": "Als aktuelle technische Prüfanweisung für Gasgeräte"
+          },
+          {
+            "id": "c",
+            "text": "Als historisches Versicherungsbeispiel mit erkennbarer Fassung"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Die Seiten zeigen VGB 88 in der Fassung Januar 2001 und einen Abschnitt zu Sicherheitsvorschriften. Daraus lässt sich weder ein heutiger Versicherungsschutz noch eine konkrete Rechtsfolge ableiten.",
+        "hint": "Ein alter Mustertext ist kein individueller aktueller Vertrag.",
+        "goal": "trgi-versicherungsquellen-orientierung",
+        "kind": "choice",
+        "status": "draft",
+        "source": "7-d_Allgemeine Wohngebäude-Versicherungsbedingungen.pdf, PDF-Seite 1–2. Kursquelle; fachliche Freigabe ausstehend.",
+        "version": "course-1",
+        "lesson": "Die Seiten zeigen VGB 88 in der Fassung Januar 2001 und einen Abschnitt zu Sicherheitsvorschriften."
+      }
+    ]
+  }
+]

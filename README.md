@@ -86,3 +86,11 @@ Manifest, Service Worker und Asset-Pfade verwenden diesen Basis-Pfad. Diese Eins
 - [Umsetzungsplan](docs/superpowers/plans/2026-11-02-lernquest-pwa.md)
 
 Nächste fachliche Arbeit: Lehrbriefe vollständig auswerten, Lernziele mit konkreten Quellen verknüpfen, echte Rechenaufgaben entwickeln und fachlich freigeben. Danach weitere TRGI-Kapitel und TRWI ergänzen. Der erste Spieleinstieg ist bewusst ein kleiner, durchgängiger Ausschnitt.
+
+## Kursausbau (Version 0.2)
+
+Die TRGI-Kursmissionen ergänzen die fünf Einführungsquests. Mini-Erklärungen können vor einer Antwort geöffnet werden; dadurch wird die Antwort als unterstützt gewertet. Fehler und fällige Themen erscheinen als Wiederholungsauftrag, Antworten wechseln bei einer neuen Runde ihre Position.
+
+Bestehende XP, Missionen und Werkstattausbau bleiben beim Inhaltsupdate erhalten. Eine noch laufende Mission startet bei einer neuen Inhaltsversion neu. Eine Sicherung kann weiterhin unter Einstellungen exportiert werden.
+
+Siehe [Inhaltsabdeckung und Grenzen](docs/course-coverage.md). Alle neuen Aufgaben sind quellenbasierte Entwürfe, noch keine unabhängig fachlich freigegebenen Prüfungsfragen. Die Originalunterlagen sind nicht Bestandteil des öffentlichen Repositories. TRWI-Material fehlt bisher.

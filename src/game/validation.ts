@@ -46,6 +46,7 @@ const schema = z
       z
         .object({
           stage: z.enum(["practicing", "secure"]),
+          failedSession: id.optional(),
           streak: integer,
           due: z.iso.datetime(),
           successes: z
@@ -124,8 +125,7 @@ export function validate(value: unknown): GameState {
           !due ||
           !Number.isFinite(Date.parse(due)) ||
           !q!.questions.some(
-            (question) =>
-              question.status === "reviewed" && question.goal === goal,
+            (question) => question.status !== "demo" && question.goal === goal,
           ) ||
           !s.mastery[goal]
         )

@@ -2150,3 +2150,12 @@ main {
 .scene-detail figcaption b { border-radius:7px; background:#c6dae3; color:#20353c; padding:5px 12px; }
 .scene-detail svg { display:block; width:100%; max-height:210px; margin:12px auto; background:#192c32; border-radius:8px; }
 .scene-detail p { color:#e0e9e6; font-size:14px; line-height:1.6; margin:10px 0 0; }
+.mini-lesson { background:#253d44; border:1px solid #738f99; border-radius:10px; padding:14px; margin:18px 0; }
+.mini-lesson small { display:block; color:#c9d9dd; margin-top:10px; line-height:1.6; }
+.mini-lesson p { color:#edf5ef; line-height:1.7; margin:12px 0; }
+.practice-panel { margin:22px 0; padding:24px; }
+.practice-panel p { color:#cbdad4; line-height:1.6; margin:12px 0; }
+.practice-panel button { margin:8px 10px 8px 0; }
+.practice-panel details { margin-top:15px; color:#dce8dd; }
+.course-filter { display:block; margin:18px 0; color:#d8e5de; font-size:14px; }
+.course-filter select { display:block; margin-top:8px; padding:12px; width:100%; background:#243b42; color:#edf4ed; border:1px solid #77908c; border-radius:8px; }

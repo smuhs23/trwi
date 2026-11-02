@@ -98,6 +98,7 @@ test("visual layouts and keyboard ordering", async ({ page }) => {
   ).toBeVisible();
 });
 test("complete campaign and buy every upgrade", async ({ page }) => {
+  test.setTimeout(180000);
   await page.goto("/");
   for (const quest of quests) {
     await page
@@ -143,7 +144,9 @@ test("complete campaign and buy every upgrade", async ({ page }) => {
     page.getByText("3 / 3 Ausbauten", { exact: true }),
   ).toBeVisible();
   await page.reload();
-  await expect(page.getByTestId("xp-total")).toHaveText("600 XP");
+  await expect(page.getByTestId("xp-total")).toHaveText(
+    `${quests.reduce((total, q) => total + (q.boss ? 200 : 100), 0)} XP`,
+  );
 });
 test("mobile layout, settings import and offline reload", async ({
   page,

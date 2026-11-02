@@ -1,5 +1,8 @@
 import type { Question, Quest } from "./types";
-export const CONTENT_VERSION = "demo-1";
+import pack1 from "./course-1-3.json" with { type: "json" };
+import pack2 from "./course-4-6.json" with { type: "json" };
+import pack3 from "./course-7-8.json" with { type: "json" };
+export const CONTENT_VERSION = "course-1";
 const make = (
   id: string,
   kind: Question["kind"],
@@ -428,4 +431,5 @@ export const upgrades = [
     icon: "monitor",
   },
 ];
+quests.push(...([...pack1, ...pack2, ...pack3] as Quest[]));
 export const findQuest = (id: string) => quests.find((q) => q.id === id);

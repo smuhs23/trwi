@@ -1,0 +1,1621 @@
+[
+  {
+    "id": "trgi-4a",
+    "title": "Druck auf dem Rechenblatt",
+    "subtitle": "Lehrbrief 4 · Erdgas bemessen",
+    "client": "Lea · Planung",
+    "location": "Planungsbüro",
+    "icon": "search",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-4a-1",
+        "goal": "trgi-4-druckbudget",
+        "kind": "choice",
+        "title": "Vom Regler zum Gerät",
+        "prompt": "Im Bemessungsmodell des Lehrbriefs stehen am Regler 2300 Pa und am Gerät 2000 Pa an. Wie groß ist das gesamte Druckverlustbudget?",
+        "options": [
+          {
+            "id": "a",
+            "text": "300 Pa"
+          },
+          {
+            "id": "b",
+            "text": "2000 Pa"
+          },
+          {
+            "id": "c",
+            "text": "4300 Pa"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "2300 − 2000 = 300 Pa. Dieses Budget betrifft den gesamten betrachteten Gasweg, nicht jeden Abschnitt einzeln.",
+        "hint": "Bilde die Differenz.",
+        "status": "draft",
+        "source": "Lehrbrief 4, PDF-S. 5–6",
+        "version": "course-1",
+        "lesson": "Das Kursmodell reserviert die Differenz zwischen Reglerausgangs- und Geräteanschlussdruck für Druckverluste."
+      },
+      {
+        "id": "trgi-4a-2",
+        "goal": "trgi-4-dimensionierung",
+        "kind": "choice",
+        "title": "Die richtige Ausgangsgröße",
+        "prompt": "Welche Geräteangabe startet die Rohrbemessung im Kurs?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Elektrische Anschlussleistung"
+          },
+          {
+            "id": "b",
+            "text": "Nennbelastung des Gasgerätes"
+          },
+          {
+            "id": "c",
+            "text": "Nennweite des Abgasrohres"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Die Nennbelastung beschreibt die zuzuführende Brennstoffenergie. Die abgegebene Nennleistung ist damit nicht gleichzusetzen.",
+        "hint": "Gesucht ist die gasbezogene Eingangsgröße.",
+        "status": "draft",
+        "source": "Lehrbrief 4, PDF-S. 6",
+        "version": "course-1",
+        "lesson": "Für die Leitung zählt der Gasbedarf; die Typenschildangabe Nennbelastung ist dafür die Ausgangsgröße."
+      },
+      {
+        "id": "trgi-4a-3",
+        "goal": "trgi-4-dimensionierung",
+        "kind": "choice",
+        "title": "Ein oder mehrere Geräte",
+        "prompt": "Eine verzweigte Erdgasinstallation versorgt drei Geräte und kombiniert Rohrwerkstoffe. Welches Verfahren beschreibt der Lehrbrief dafür?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Das Diagramm für eine Einzelzuleitung unverändert übernehmen"
+          },
+          {
+            "id": "b",
+            "text": "Die größte vorhandene Nennweite kopieren"
+          },
+          {
+            "id": "c",
+            "text": "Das Tabellenverfahren verwenden"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Das Diagrammverfahren ist an eine Einzelzuleitung und feste Vorgaben gebunden. Das Tabellenverfahren erlaubt mehrere Geräte und unterschiedliche Bauteilkombinationen.",
+        "hint": "Prüfe den Anwendungsbereich des Diagramms.",
+        "status": "draft",
+        "source": "Lehrbrief 4, PDF-S. 7",
+        "version": "course-1",
+        "lesson": "Diagramme vereinfachen definierte Fälle; das Tabellenverfahren bildet verzweigte Installationen ab."
+      },
+      {
+        "id": "trgi-4a-4",
+        "goal": "trgi-4-spitzenbelastung",
+        "kind": "choice",
+        "title": "Gleichzeitigkeit rechnen",
+        "prompt": "Zwei unabhängig genutzte Geräte haben im Kursbeispiel 24 und 18 kW Nennbelastung. Welche Spitzenbelastung ergibt 0,5 × (Summe + größte Belastung)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "21 kW"
+          },
+          {
+            "id": "b",
+            "text": "33 kW"
+          },
+          {
+            "id": "c",
+            "text": "42 kW"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Die Summe beträgt 42 kW; 0,5 × (42 + 24) = 33 kW. Die Formel ersetzt nicht die Prüfung, ob Gleichzeitigkeit reduziert werden darf.",
+        "hint": "Die größte Einzelbelastung wird zusätzlich zur Summe angesetzt.",
+        "status": "draft",
+        "source": "Lehrbrief 4, PDF-S. 6",
+        "version": "course-1",
+        "lesson": "Der Kurs berücksichtigt bei unabhängig genutzten Geräten eine reduzierte gleichzeitige Belastung."
+      },
+      {
+        "id": "trgi-4a-5",
+        "goal": "trgi-4-spitzenbelastung",
+        "kind": "choice",
+        "title": "Gemeinsam gegen die Lastspitze",
+        "prompt": "Mehrere Geräte wurden ausdrücklich zur gemeinsamen Abdeckung des Spitzenbedarfs vorgesehen. Was ändert sich im Kursmodell?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Gleichzeitigkeitsfaktor 1: volle Summe ansetzen"
+          },
+          {
+            "id": "b",
+            "text": "Nur das größte Gerät berücksichtigen"
+          },
+          {
+            "id": "c",
+            "text": "Die Summe grundsätzlich halbieren"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Für gemeinsam benötigte Geräte setzt der Lehrbrief den Gleichzeitigkeitsfaktor 1 an. Die übliche Reduktion wäre hier sachlich falsch.",
+        "hint": "Die Geräte sollen gerade gleichzeitig laufen.",
+        "status": "draft",
+        "source": "Lehrbrief 4, PDF-S. 6",
+        "version": "course-1",
+        "lesson": "Die vorgesehene Nutzung entscheidet, ob eine Reduktion für Gleichzeitigkeit überhaupt passt."
+      },
+      {
+        "id": "trgi-4a-6",
+        "goal": "trgi-4-dimensionierung",
+        "kind": "choice",
+        "title": "Pauschalen richtig zuordnen",
+        "prompt": "Welche Zuordnung nennt der Kurs für einen Herd mit unbekannter Nennbelastung und eine vielseitig nutzbare Gassteckdose?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Herd 13 kW; vielseitige Steckdose 9 kW"
+          },
+          {
+            "id": "b",
+            "text": "Beide grundsätzlich 20 kW"
+          },
+          {
+            "id": "c",
+            "text": "Herd 9 kW; vielseitige Steckdose 13 kW"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Diese Kursansätze schließen eine Informationslücke: 9 kW für Herd/Kochmulde ohne bekannte Nennbelastung, 13 kW für Anschlüsse weiterer Gerätearten.",
+        "hint": "Die vielseitig nutzbare Steckdose erhält den größeren Ansatz.",
+        "status": "draft",
+        "source": "Lehrbrief 4, PDF-S. 6",
+        "version": "course-1",
+        "lesson": "Pauschale Kurswerte gelten nur für den beschriebenen Anwendungsfall, nicht pauschal für jedes Gerät."
+      }
+    ]
+  },
+  {
+    "id": "trgi-4b",
+    "title": "Die Leitung wird berechenbar",
+    "subtitle": "Lehrbrief 4 · Skizze und Berechnungslänge",
+    "client": "Lea · Planung",
+    "location": "Zeichentisch",
+    "icon": "book",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-4b-1",
+        "goal": "trgi-4-dimensionierung",
+        "kind": "choice",
+        "title": "Ein vollständiger Plan",
+        "prompt": "Welche Angaben braucht das Erdgas-Diagrammverfahren laut Lehrbrief? Wähle alle passenden Angaben.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Leitungslänge und Anzahl der Winkel"
+          },
+          {
+            "id": "b",
+            "text": "Gerätenennbelastung"
+          },
+          {
+            "id": "c",
+            "text": "Art und Nennweite der Geräteanschlussarmatur"
+          },
+          {
+            "id": "d",
+            "text": "Nur die Farbe des Rohrwerkstoffs"
+          }
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "Länge und Winkel bestimmen die Berechnungslänge; Belastung und Anschlussarmatur gehören zur passenden Diagrammkombination. Auch das Diagramm muss zum Rohrmaterial passen.",
+        "hint": "Geometrie, Gasbedarf und Armatur gehören zusammen.",
+        "status": "draft",
+        "source": "Lehrbrief 4, PDF-S. 8–9",
+        "version": "course-1",
+        "lesson": "Ein Diagramm liefert nur mit vollständigen Eingaben eine nachvollziehbare Auswahl."
+      },
+      {
+        "id": "trgi-4b-2",
+        "goal": "trgi-4-berechnungslaenge",
+        "kind": "choice",
+        "title": "Winkel zählen mit",
+        "prompt": "Eine Übungsleitung ist 10 m lang. Für sechs Winkel ist im gewählten Kursdiagramm je 0,3 m Zuschlag vorgegeben. Welche Berechnungslänge gilt?",
+        "options": [
+          {
+            "id": "a",
+            "text": "10,3 m"
+          },
+          {
+            "id": "b",
+            "text": "11,8 m"
+          },
+          {
+            "id": "c",
+            "text": "16 m"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "10 + 6 × 0,3 = 11,8 m. Der Zuschlag bildet den Widerstand der Winkel rechnerisch als zusätzliche Rohrlänge ab.",
+        "hint": "Jeder Winkel bekommt seinen Zuschlag.",
+        "status": "draft",
+        "source": "Lehrbrief 4, PDF-S. 7, 9",
+        "version": "course-1",
+        "lesson": "Berechnungslänge ist die reale Länge plus passende Längenzuschläge für Einzelwiderstände."
+      },
+      {
+        "id": "trgi-4b-3",
+        "goal": "trgi-4-dimensionierung",
+        "kind": "order",
+        "title": "Diagrammweg ordnen",
+        "prompt": "Ordne die im Lehrbrief beschriebene Auswertung eines passenden Einzelzuleitungsdiagramms.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Berechnungslänge aus Länge und Winkelzuschlägen bilden"
+          },
+          {
+            "id": "b",
+            "text": "Gerätenennbelastung im Diagramm markieren"
+          },
+          {
+            "id": "c",
+            "text": "GS und Zähler zum Belastungswert zuordnen"
+          },
+          {
+            "id": "d",
+            "text": "Aus Belastung und Berechnungslänge eine zulässige Rohr-/Armaturkombination wählen"
+          }
+        ],
+        "correct": ["b", "c", "a", "d"],
+        "explanation": "Der Lehrbrief geht vom Belastungswert über die zugehörigen GS-/Zählerfelder zur Berechnungslänge und zum Auslegungspunkt.",
+        "hint": "Die Leistungseingabe steht am Anfang.",
+        "status": "draft",
+        "source": "Lehrbrief 4, PDF-S. 9",
+        "version": "course-1",
+        "lesson": "Rohr, Gaszähler und Gas-Strömungswächter werden im Diagramm zusammen auf den Fall abgestimmt."
+      },
+      {
+        "id": "trgi-4b-4",
+        "goal": "trgi-4-druckbudget",
+        "kind": "choice",
+        "title": "Nicht jede Reserve hilft",
+        "prompt": "Warum ist eine pauschal übergroße Leitung im beschriebenen Erdgas-System keine verlässliche Ersatzplanung?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Weil die Bemessung auch die zuverlässige Funktion des GS sichern muss"
+          },
+          {
+            "id": "b",
+            "text": "Weil alle Anlagen dieselbe Nennweite haben müssen"
+          },
+          {
+            "id": "c",
+            "text": "Weil ein größerer Querschnitt immer mehr Rohrreibung verursacht"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Der Lehrbrief verbindet genaue Rohrbemessung mit GS- und Zählerauswahl. Erfahrungszuschläge ersetzen diesen abgestimmten Nachweis nicht.",
+        "hint": "Denke an das Zusammenwirken mit der Sicherheitseinrichtung.",
+        "status": "draft",
+        "source": "Lehrbrief 4, PDF-S. 5, 9",
+        "version": "course-1",
+        "lesson": "Die Rohrweite ist Teil eines abgestimmten Systems und nicht nur eine Druckverlustreserve."
+      },
+      {
+        "id": "trgi-4b-5",
+        "goal": "trgi-4-lpg-bemessung",
+        "kind": "choice",
+        "title": "Kleine Flüssiggasanlage",
+        "prompt": "In welchem der beschriebenen Fälle erlaubt der Kurs die Anpassung der Rohrweite an den Geräteanschluss ohne eigene Rohrweitenermittlung?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Flasche, 8-mm-Geräteanschlüsse, Leitungsweg höchstens 2 m"
+          },
+          {
+            "id": "b",
+            "text": "Beliebiger Tank, Leitungsweg höchstens 10 m"
+          },
+          {
+            "id": "c",
+            "text": "Flasche mit beliebiger Anschlussgröße und Leitungslänge"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Der Lehrbrief nennt diese Kombination aus Flaschenversorgung, 8-mm-Anschlussmaßen und höchstens 2 m Leitungsweg. Fehlt eine Bedingung, greift diese Vereinfachung nicht.",
+        "hint": "Alle drei Voraussetzungen müssen zusammen vorliegen.",
+        "status": "draft",
+        "source": "Lehrbrief 4, PDF-S. 10",
+        "version": "course-1",
+        "lesson": "Die Flüssiggas-Vereinfachung im Kurs ist eng auf eine beschriebene Kleinanlage begrenzt."
+      },
+      {
+        "id": "trgi-4b-6",
+        "goal": "trgi-4-lpg-druckbudget",
+        "kind": "choice",
+        "title": "Fünf Prozent",
+        "prompt": "Eine Flüssiggasleitung wird im Kursmodell mit 50 mbar Betriebsüberdruck bemessen. Welches Gesamtbudget folgt aus der 5-%-Regel?",
+        "options": [
+          {
+            "id": "a",
+            "text": "0,5 mbar"
+          },
+          {
+            "id": "b",
+            "text": "5 mbar"
+          },
+          {
+            "id": "c",
+            "text": "2,5 mbar"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "50 × 0,05 = 2,5 mbar. Erdgas- und Flüssiggasverfahren dürfen nicht durch Übernahme ihrer Zahlenwerte vermischt werden.",
+        "hint": "Fünf Prozent sind ein Zwanzigstel.",
+        "status": "draft",
+        "source": "Lehrbrief 4, PDF-S. 10",
+        "version": "course-1",
+        "lesson": "Das Flüssiggasverfahren setzt das Druckverlustbudget ins Verhältnis zum Betriebsüberdruck."
+      }
+    ]
+  },
+  {
+    "id": "trgi-4c",
+    "title": "Verzweigt bis zum Ziel",
+    "subtitle": "Lehrbrief 4 · Flüssiggas-Fließwege",
+    "client": "Lea · Planung",
+    "location": "Anlagenskizze",
+    "icon": "search",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-4c-1",
+        "goal": "trgi-4-lpg-bemessung",
+        "kind": "choice",
+        "title": "Eine neue Teilstrecke",
+        "prompt": "Warum beginnt an einer Stromaufteilung im Kurs eine neue Teilstrecke?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Weil jede Zeichnungsfarbe eine Teilstrecke verlangt"
+          },
+          {
+            "id": "b",
+            "text": "Weil sich der durchfließende Gasstrom ändert"
+          },
+          {
+            "id": "c",
+            "text": "Weil nur gerade Rohrstücke gerechnet werden dürfen"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Nach einem Abzweig versorgt der verbleibende Strom andere Verbraucher. Deshalb sind die Abschnitte getrennt zu bemessen.",
+        "hint": "Welche Größe ändert sich durch den Abzweig?",
+        "status": "draft",
+        "source": "Lehrbrief 4, PDF-S. 10, 13–15",
+        "version": "course-1",
+        "lesson": "Eine Teilstrecke umfasst einen Abschnitt mit gleichbleibendem zugeordnetem Gasstrom."
+      },
+      {
+        "id": "trgi-4c-2",
+        "goal": "trgi-4-berechnungslaenge",
+        "kind": "choice",
+        "title": "Zuschläge bei Flüssiggas",
+        "prompt": "Im Kurs hat eine 4-m-Teilstrecke ein Absperrventil (2 m Zuschlag), zwei Bögen (je 0,5 m) und ein T-Stück Stromtrennung (0,5 m). Welche Berechnungslänge folgt?",
+        "options": [
+          {
+            "id": "a",
+            "text": "5,5 m"
+          },
+          {
+            "id": "b",
+            "text": "6 m"
+          },
+          {
+            "id": "c",
+            "text": "7,5 m"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "4 + 2 + 2 × 0,5 + 0,5 = 7,5 m. Die vorgegebenen Zuschläge sind diejenigen des Flüssiggasverfahrens.",
+        "hint": "Addiere die reale Länge und alle genannten Zuschläge.",
+        "status": "draft",
+        "source": "Lehrbrief 4, PDF-S. 11",
+        "version": "course-1",
+        "lesson": "Die Zuschläge unterscheiden sich nach Armatur und Bemessungsverfahren."
+      },
+      {
+        "id": "trgi-4c-3",
+        "goal": "trgi-4-lpg-druckbudget",
+        "kind": "choice",
+        "title": "Das Budget verteilen",
+        "prompt": "Ein Flüssiggas-Fließweg hat im Übungsfall 25 m Berechnungslänge. Es stehen 2,5 mbar zur Verfügung. Wie hoch ist der zulässige Verlust pro Meter?",
+        "options": [
+          {
+            "id": "a",
+            "text": "0,1 mbar/m"
+          },
+          {
+            "id": "b",
+            "text": "10 mbar/m"
+          },
+          {
+            "id": "c",
+            "text": "2,5 mbar/m"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "2,5 mbar ÷ 25 m = 0,1 mbar/m. Mit diesem Wert wird zunächst der längste berechnete Fließweg aufgeteilt.",
+        "hint": "Teile das Druckbudget durch die Berechnungslänge.",
+        "status": "draft",
+        "source": "Lehrbrief 4, PDF-S. 11, 14",
+        "version": "course-1",
+        "lesson": "Für den längsten Fließweg wird das gesamte verfügbare Druckbudget auf seine Berechnungslänge bezogen."
+      },
+      {
+        "id": "trgi-4c-4",
+        "goal": "trgi-4-lpg-druckbudget",
+        "kind": "choice",
+        "title": "Ein zweiter Fließweg",
+        "prompt": "Im Übungsfall stehen insgesamt 2,5 mbar bereit. Bereits bemessene gemeinsame Teilstrecken beanspruchen 0,8 mbar. Was bleibt für den noch offenen Abzweig?",
+        "options": [
+          {
+            "id": "a",
+            "text": "3,3 mbar"
+          },
+          {
+            "id": "b",
+            "text": "1,7 mbar"
+          },
+          {
+            "id": "c",
+            "text": "2,5 mbar erneut"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "2,5 − 0,8 = 1,7 mbar. Gemeinsame vorgeschaltete Abschnitte haben bereits einen Teil des Budgets verbraucht.",
+        "hint": "Der zweite Fließweg erhält kein neues Gesamtbudget.",
+        "status": "draft",
+        "source": "Lehrbrief 4, PDF-S. 11, 15",
+        "version": "course-1",
+        "lesson": "Weitere Fließwege werden mit dem nach den gemeinsamen Teilstrecken verbleibenden Druck bemessen."
+      },
+      {
+        "id": "trgi-4c-5",
+        "goal": "trgi-4-lpg-bemessung",
+        "kind": "choice",
+        "title": "Höhe berücksichtigen",
+        "prompt": "Welche Aussage gibt die Höhenregel des vorliegenden Lehrbriefs richtig wieder?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Höhe spielt bei Flüssiggas nie eine Rolle"
+          },
+          {
+            "id": "b",
+            "text": "Schon jeder Zentimeter wird pauschal wie Erdgas berechnet"
+          },
+          {
+            "id": "c",
+            "text": "Bis einschließlich 10 m Steighöhe entfällt dieser Ansatz; darüber ist der gasabhängige Höhenverlust zu berücksichtigen"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Der Kurs nennt oberhalb seiner 10-m-Grenze 0,07 mbar/m für Propan und 0,14 mbar/m für Butan. Diese historischen Kurswerte sind keine aktuelle Ausführungsfreigabe.",
+        "hint": "Achte auf Grenze und Gasart.",
+        "status": "draft",
+        "source": "Lehrbrief 4, PDF-S. 12",
+        "version": "course-1",
+        "lesson": "Flüssiggas ist schwerer als Luft; der Lehrbrief unterscheidet deshalb Höhenverluste nach Gasart."
+      },
+      {
+        "id": "trgi-4c-6",
+        "goal": "trgi-4-lpg-bemessung",
+        "kind": "order",
+        "title": "Von der Last zur Rohrweite",
+        "prompt": "Ordne den abschließenden Bemessungsweg für eine bereits druckseitig vorbereitete Flüssiggas-Teilstrecke.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Lichte Rohrweite mit Tabelle aus Durchsatz und zulässigem Druckverlust je Meter wählen"
+          },
+          {
+            "id": "b",
+            "text": "Ergebnis passend zum Rohrmaterial in die Zeichnung eintragen"
+          },
+          {
+            "id": "c",
+            "text": "Anschlusswerte aller über diese Teilstrecke versorgten Geräte addieren"
+          }
+        ],
+        "correct": ["c", "a", "b"],
+        "explanation": "Die Summe der Hersteller-Anschlusswerte liefert den Flüssiggasdurchsatz. Daraus und dem zulässigen Verlust folgt die lichte Rohrweite; die dokumentierte Nennweite berücksichtigt das gewählte Material.",
+        "hint": "Zuerst wird der zu transportierende Gasstrom bestimmt.",
+        "status": "draft",
+        "source": "Lehrbrief 4, PDF-S. 13–15",
+        "version": "course-1",
+        "lesson": "Anschlusswert, lichte Rohrweite und materialabhängige Nennweite sind verschiedene Größen."
+      }
+    ]
+  },
+  {
+    "id": "trgi-5a",
+    "title": "Vom Netz ins Haus",
+    "subtitle": "Lehrbrief 5 · Schutz und Außenleitung",
+    "client": "Mila · Einsatzleitung",
+    "location": "Hausanschluss",
+    "icon": "search",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-5a-1",
+        "goal": "trgi-5-manipulationsschutz",
+        "kind": "choice",
+        "title": "Zwei Schutzprinzipien",
+        "prompt": "Welche Aussagen beschreiben das Schutzkonzept des Lehrbriefs? Wähle beide.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sicherheitsverschlüsse erschweren einen Eingriff, garantieren aber keinen vollständigen Schutz"
+          },
+          {
+            "id": "b",
+            "text": "Ein wirksamer GS reagiert auf erhöhten Gasstrom und sperrt die betroffene Versorgung"
+          },
+          {
+            "id": "c",
+            "text": "Ein vorhandener GS macht jede passive Sicherung an jeder Stelle überflüssig"
+          }
+        ],
+        "correct": ["a", "b"],
+        "explanation": "Aktive und passive Maßnahmen ergänzen sich. Vor einem wirksamen GS können an zugänglichen lösbaren Stellen zusätzliche passive Sicherungen nötig sein.",
+        "hint": "Erschweren und selbsttätig reagieren sind unterschiedliche Funktionen.",
+        "status": "draft",
+        "source": "Lehrbrief 5, PDF-S. 5–7, 11–13",
+        "version": "course-1",
+        "lesson": "Das Kurskonzept verbindet aktive Absperrung mit passivem Schutz dort, wo aktive Maßnahmen nicht wirken."
+      },
+      {
+        "id": "trgi-5a-2",
+        "goal": "trgi-5-manipulationsschutz",
+        "kind": "choice",
+        "title": "Der Schutz hat einen Ort",
+        "prompt": "Welche übliche Anordnung zeigt der Kurs für ein Haus mit mehreren Zählern und geeigneten Druck-/Belastungsbedingungen?",
+        "options": [
+          {
+            "id": "a",
+            "text": "GS nur direkt vor dem letzten Gerät"
+          },
+          {
+            "id": "b",
+            "text": "GS am HAL-Abzweig, im Bereich der Hauseinführung/Druckregelung und an den einzelnen Zählern"
+          },
+          {
+            "id": "c",
+            "text": "GS ausschließlich am Gaszähler des Erdgeschosses"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Der Kurs unterscheidet drei Einsatzbereiche. Druck und Eingangsbelastung können Ausnahmen verursachen; insbesondere ist der HAL-GS bei mehr als 100 hPa kein verlässlicher Manipulationsschutz im Haus.",
+        "hint": "Verfolge den Gasweg vom Netz bis zu den getrennten Nutzern.",
+        "status": "draft",
+        "source": "Lehrbrief 5, PDF-S. 8–13",
+        "version": "course-1",
+        "lesson": "GS-Positionen werden nach Netz, Gebäudeeintritt und einzelnen Zählersträngen unterschieden; die Wirksamkeit muss zum Fall passen."
+      },
+      {
+        "id": "trgi-5a-3",
+        "goal": "trgi-5-manipulationsschutz",
+        "kind": "choice",
+        "title": "Bestand und Umbau",
+        "prompt": "Welche Folgerung entspricht der beschriebenen Nachrüstregel bei Arbeiten an einer bestehenden Zähleranlage?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Jeder Gerätewechsel erzwingt immer eine neue Kellerinstallation"
+          },
+          {
+            "id": "b",
+            "text": "Im Bestand sind Schutzmaßnahmen bei jeder Änderung ausgeschlossen"
+          },
+          {
+            "id": "c",
+            "text": "Die direkt betroffenen Anlagenteile und den Aufwand der Nachrüstung prüfen"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Der Lehrbrief formuliert keine pauschale Nachrüstpflicht für jede Bestandsanlage. Bei Erneuerung oder wesentlicher Änderung direkt betroffener Teile ist eine Nachrüstung ohne nennenswerten Mehraufwand vorgesehen.",
+        "hint": "Betroffenheit und Aufwand gehören zusammen.",
+        "status": "draft",
+        "source": "Lehrbrief 5, PDF-S. 13–15",
+        "version": "course-1",
+        "lesson": "Eine Änderung wird im Kurs nach ihrem konkreten Umfang bewertet, nicht pauschal auf das gesamte Gebäude übertragen."
+      },
+      {
+        "id": "trgi-5a-4",
+        "goal": "trgi-5-aussenleitung",
+        "kind": "choice",
+        "title": "Die Hauseinführung verstehen",
+        "prompt": "Welche Zuordnung der Bauteilfunktionen stimmt?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Festpunkt: Gasverbrauch zählen; Isolierstück: Gasdruck erhöhen"
+          },
+          {
+            "id": "b",
+            "text": "Festpunkt: Zug und Bewegung begrenzen; Isolierstück: elektrische Trennung; Regler: Druck mindern und konstant halten"
+          },
+          {
+            "id": "c",
+            "text": "Festpunkt: Luftzufuhr; Isolierstück: thermisch schließen; Regler: Abgas ableiten"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Die Einführung muss außerdem gas- und wasserdicht sein. Ohne Festpunkt braucht es abgestimmte Ausziehsicherung und Bewegungsausgleich. Eine HAE im Außenschrank kann den Beginn der kundenseitigen Außenleitung festlegen.",
+        "hint": "Ordne mechanische, elektrische und drucktechnische Aufgaben getrennt zu.",
+        "status": "draft",
+        "source": "Lehrbrief 5, PDF-S. 16–26",
+        "version": "course-1",
+        "lesson": "Hauseinführung, HAE, Bewegungsausgleich, elektrische Trennung und Druckregelung erfüllen verschiedene Aufgaben."
+      },
+      {
+        "id": "trgi-5a-5",
+        "goal": "trgi-5-aussenleitung",
+        "kind": "choice",
+        "title": "Eine Trasse mit Zukunft",
+        "prompt": "Welche Planung entspricht den Grundsätzen des Lehrbriefs?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Leitung kurz und freilegbar führen, vollflächig im Sand betten und in einem Bestandsplan dokumentieren"
+          },
+          {
+            "id": "b",
+            "text": "Die Leitung unter einem neuen Gebäude ohne Schutzmaßnahmen verstecken"
+          },
+          {
+            "id": "c",
+            "text": "Baumwurzeln als dauerhafte Lagefixierung nutzen"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Freilegbarkeit, Schutz der Umhüllung und spannungsarme Auflage sind entscheidend. Der Kurs nennt 20 cm Parallelabstand und 10 cm Kreuzungsabstand; Sonderfälle verlangen abgestimmte Schutzmaßnahmen.",
+        "hint": "Denke an spätere Arbeiten und den Schutz des Rohres.",
+        "status": "draft",
+        "source": "Lehrbrief 5, PDF-S. 27–32",
+        "version": "course-1",
+        "lesson": "Zur erdverlegten Leitung gehören sichere Trasse, geeignete Bettung, Warnhinweise und nachvollziehbare Lageangaben."
+      },
+      {
+        "id": "trgi-5a-6",
+        "goal": "trgi-5-aussenleitung",
+        "kind": "choice",
+        "title": "Außen heißt nicht ungeschützt",
+        "prompt": "Eine Leitung soll frei an einer Hoffassade verlaufen. Welche Risiken sind nach dem Lehrbrief gemeinsam zu berücksichtigen?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nur Regen auf der Oberfläche"
+          },
+          {
+            "id": "b",
+            "text": "Nur die Farbe der Fassade"
+          },
+          {
+            "id": "c",
+            "text": "Mechanische Beschädigung, Sonnenerwärmung und Witterungseinfluss auf den Korrosionsschutz"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Anfahr- und Nutzungsrisiken werden örtlich beurteilt. Sonnenerwärmung kann den Gasdruck erhöhen und UV-Strahlung den Schutz beanspruchen. Bei mehreren versorgten Gebäuden helfen eindeutige Schilder an Ein-/Ausführungen.",
+        "hint": "Wärme und Zugriff von außen wirken auf die Leitung.",
+        "status": "draft",
+        "source": "Lehrbrief 5, PDF-S. 27–28, 32–33",
+        "version": "course-1",
+        "lesson": "Freiverlegte Leitungen brauchen einen auf die örtlichen Beanspruchungen abgestimmten Schutz."
+      }
+    ]
+  },
+  {
+    "id": "trgi-5b",
+    "title": "Leitungen im Gebäude",
+    "subtitle": "Lehrbrief 5 · Zähler, Hohlraum und Befestigung",
+    "client": "Mila · Einsatzleitung",
+    "location": "Mehrfamilienhaus",
+    "icon": "book",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-5b-1",
+        "goal": "trgi-5-innenleitung",
+        "kind": "choice",
+        "title": "Zählerplatz prüfen",
+        "prompt": "Welche Zähleranordnung passt zum Kurs?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Trocken, gegen Beschädigung geschützt, zugänglich und mit Absperrung davor"
+          },
+          {
+            "id": "b",
+            "text": "In einer feuchten Waschküche hinter dauerhaft gestapelten Möbeln"
+          },
+          {
+            "id": "c",
+            "text": "Ungeschützt im notwendigen Treppenraum"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Der Zählerplatz soll trocken, nicht zu warm, geschützt und zugänglich sein. Vor jedem Gaszähler ist eine Absperrarmatur vorgesehen; ein Zählerschrank benötigt im Kurs Zu- und Abluft mit je 5 cm² freiem Querschnitt.",
+        "hint": "Zugänglich bedeutet nicht ungeschützt für jedermann erreichbar.",
+        "status": "draft",
+        "source": "Lehrbrief 5, PDF-S. 34–38",
+        "version": "course-1",
+        "lesson": "Ein geeigneter Zählerplatz schützt das Bauteil und ermöglicht Ablesen, Absperren und Arbeiten."
+      },
+      {
+        "id": "trgi-5b-2",
+        "goal": "trgi-5-innenleitung",
+        "kind": "choice",
+        "title": "Absperren und zuordnen",
+        "prompt": "Ein Nebengebäude wird über das Haupthaus versorgt. Welche Planung ist nach dem Kurs sinnvoll und erforderlich?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nur am letzten Gasgerät absperren und alle Schilder weglassen"
+          },
+          {
+            "id": "b",
+            "text": "Absperrmöglichkeiten an Gebäudeaus- und -einführung vorsehen und die versorgten Bereiche eindeutig kennzeichnen"
+          },
+          {
+            "id": "c",
+            "text": "Eine Absperrung durch einen Gaszähler ersetzen"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Der Lehrbrief fordert Absperrungen unter anderem an HAE, Zählern, Gebäudeaus-/-einführungen und Geräten. Schilder verhindern, dass bei Arbeiten ein mitversorgtes Gebäude übersehen wird.",
+        "hint": "Auch eine fremde Fachkraft muss den Versorgungsweg verstehen.",
+        "status": "draft",
+        "source": "Lehrbrief 5, PDF-S. 27–28, 39–40",
+        "version": "course-1",
+        "lesson": "Absperrungen begrenzen den betroffenen Bereich; Kennzeichnungen machen ihre Wirkung nachvollziehbar."
+      },
+      {
+        "id": "trgi-5b-3",
+        "goal": "trgi-5-innenleitung",
+        "kind": "choice",
+        "title": "Schutz an der Durchführung",
+        "prompt": "Welche Aussage zu metallenen Gasleitungen gibt der Kurs richtig wieder?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ein Mantelrohr ist immer beidseitig gasdicht zuzuschmieren"
+          },
+          {
+            "id": "b",
+            "text": "Bei Deckendurchführungen ist Beweglichkeit unwichtig"
+          },
+          {
+            "id": "c",
+            "text": "An Kellerwänden schützt geeigneter Korrosionsschutz oder ein Mantelrohr; Deckendurchführungen benötigen Bewegungsspielraum"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Ein Schutzrohr an der Kellerwand bleibt mindestens einseitig offen. Bei sichtbarer Deckendurchführung beschreibt der Kurs einen Bodenüberstand gegen Wischwasser; Brandschutzanforderungen sind zusätzlich zu beachten.",
+        "hint": "Feuchtigkeitsschutz und Beweglichkeit sind die beiden Schutzziele.",
+        "status": "draft",
+        "source": "Lehrbrief 5, PDF-S. 40–42",
+        "version": "course-1",
+        "lesson": "Wand- und Deckendurchführungen werden nach Feuchtigkeit, Bewegung und gegebenenfalls Brandschutz beurteilt."
+      },
+      {
+        "id": "trgi-5b-4",
+        "goal": "trgi-5-innenleitung",
+        "kind": "choice",
+        "title": "Verkleidung mit Luftweg",
+        "prompt": "Eine Leitung mit Verbindungen liegt in einem Hohlraum. Welche zwei Lösungen nennt der Kurs grundsätzlich?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Geeignete Be- und Entlüftung, etwa diagonal oder über eine Schattenfuge"
+          },
+          {
+            "id": "b",
+            "text": "Den unbelüfteten Bereich mit einem durchgehenden, mindestens einseitig offenen Mantelrohr überbrücken"
+          },
+          {
+            "id": "c",
+            "text": "Den Hohlraum locker mit Glaswolle füllen und damit als hohlraumfrei erklären"
+          }
+        ],
+        "correct": ["a", "b"],
+        "explanation": "Der Kurs nennt für die üblichen Hohlraumöffnungen je mindestens 10 cm² freien Querschnitt. Eine Leitung aus einem Stück kann unter den beschriebenen Bedingungen eine Ausnahme bilden; Glaswolle beseitigt den Hohlraum nicht.",
+        "hint": "Leckgas darf sich nicht in einem abgeschlossenen Zwischenraum sammeln.",
+        "status": "draft",
+        "source": "Lehrbrief 5, PDF-S. 42–45, 57",
+        "version": "course-1",
+        "lesson": "Hohlraumbelüftung soll austretendes Gas abführen; Verbindungen und der durchgehende Luftweg sind entscheidend."
+      },
+      {
+        "id": "trgi-5b-5",
+        "goal": "trgi-5-innenleitung",
+        "kind": "choice",
+        "title": "Der richtige Leitungsweg",
+        "prompt": "Welcher Vorschlag entspricht den Kursgrundsätzen?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die Gasleitung teilweise in die schwimmende Estrichplatte einbetten"
+          },
+          {
+            "id": "b",
+            "text": "Die Leitung im Aufzugschacht verlegen, weil dort Platz frei ist"
+          },
+          {
+            "id": "c",
+            "text": "Bei Bodenführung die geeignete Ausgleichsschicht oder Aussparung nutzen und notwendige Treppenräume gesondert brandschutztechnisch planen"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Gasleitungen gehören nicht in die Estrichplatte. Betriebene Schornsteine und Aufzugschächte sind ungeeignet; notwendige Treppenräume erfordern besondere Schutzlösungen. Kunststoffleitungen sind dort laut Kurs unzulässig.",
+        "hint": "Bewegungen des Estrichs und die Funktion des Rettungswegs sind maßgeblich.",
+        "status": "draft",
+        "source": "Lehrbrief 5, PDF-S. 45–47, 56",
+        "version": "course-1",
+        "lesson": "Der Leitungsweg muss sowohl mechanische Beanspruchungen als auch Rettungs- und Brandschutzanforderungen berücksichtigen."
+      },
+      {
+        "id": "trgi-5b-6",
+        "goal": "trgi-5-befestigung",
+        "kind": "choice",
+        "title": "Werkstoff und Systemschutz",
+        "prompt": "Welche Aussage unterscheidet die Kurskonzepte richtig?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Jede Kunststoffleitung wird allein durch Metalldübel brandsicher"
+          },
+          {
+            "id": "b",
+            "text": "Metallleitungen brauchen abgestimmte Halterung und Dehnungsraum; Kunststoff-Innenleitungen werden als System mit GS-K und TAE geschützt"
+          },
+          {
+            "id": "c",
+            "text": "Bei Metallleitungen kann die Brandsituation immer ignoriert werden"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Bei im Brandfall nicht zugfesten Metallverbindungen sind nichtbrennbare Befestigungen besonders wichtig. Kunststoff selbst ist nicht brandsicher; der Kurs setzt GS-K und TAE ein und begrenzt diese Inneninstallation auf Niederdruck bis 100 hPa.",
+        "hint": "Die Materialeigenschaft bestimmt, wie das Schutzziel erreicht wird.",
+        "status": "draft",
+        "source": "Lehrbrief 5, PDF-S. 47–58",
+        "version": "course-1",
+        "lesson": "Befestigung und Sicherheitsarmaturen müssen zur Rohrart und zum Verhalten im Brandfall passen."
+      }
+    ]
+  },
+  {
+    "id": "trgi-5c",
+    "title": "Flüssiggas sicher einordnen",
+    "subtitle": "Lehrbrief 5 · Behälter und Leitungsregeln",
+    "client": "Jonas · Anlagenplanung",
+    "location": "Versorgungsanlage",
+    "icon": "flame",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-5c-1",
+        "goal": "trgi-5-lpg-behaelter",
+        "kind": "choice",
+        "title": "Tankaufstellung vergleichen",
+        "prompt": "Welche Zuordnung gibt die Kursfassung für einen erdgedeckten Tank richtig wieder?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mindestens 50 cm Erddeckung; bei Erdeinlagerung geeignete Sandbettung; Zugang am Domschacht erhalten"
+          },
+          {
+            "id": "b",
+            "text": "Nur die obere Hälfte muss sichtbar bleiben"
+          },
+          {
+            "id": "c",
+            "text": "Erddeckung macht jede Zugänglichkeit überflüssig"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Der Kurs unterscheidet oberirdisch, halboberirdisch und erdgedeckt. Bei Erdeinlagerung nennt er 20 cm Sandbettung; Zugänglichkeit bleibt in jeder Variante wichtig.",
+        "hint": "Die Erddeckung ist keine Ersatzlösung für spätere Prüf- und Bedienwege.",
+        "status": "draft",
+        "source": "Lehrbrief 5, PDF-S. 59–60",
+        "version": "course-1",
+        "lesson": "Aufstellungsart, Schutz der Behälteroberfläche und Zugänglichkeit werden gemeinsam geplant."
+      },
+      {
+        "id": "trgi-5c-2",
+        "goal": "trgi-5-lpg-behaelter",
+        "kind": "choice",
+        "title": "Schutzzonen verstehen",
+        "prompt": "Was beschreibt der Kurs für den Tankbetrieb und das Befüllen?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Beide Situationen brauchen ausschließlich Abstand zu Regenrinnen"
+          },
+          {
+            "id": "b",
+            "text": "Ein ständiger Schutzbereich wird beim Befüllen durch einen größeren temporären Bereich ergänzt"
+          },
+          {
+            "id": "c",
+            "text": "Mit geschlossenem Füllventil sind alle Zündquellen jederzeit zulässig"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Der Kurs nennt grundsätzlich 1 m um den Domschacht als ständigen und 3 m Radius als temporären Schutzbereich; bei erdgedeckten Tanks mit geschlossenem Domdeckel gelten Besonderheiten. Zündquellen und gefährliche Bodenöffnungen sind zu berücksichtigen.",
+        "hint": "Beim Befüllen kommen zusätzliche mögliche Austrittsstellen hinzu.",
+        "status": "draft",
+        "source": "Lehrbrief 5, PDF-S. 60–61",
+        "version": "course-1",
+        "lesson": "Schutzbereiche berücksichtigen vorhersehbaren Gasaustritt; Flüssiggas kann in tieferliegende Bereiche fließen."
+      },
+      {
+        "id": "trgi-5c-3",
+        "goal": "trgi-5-lpg-behaelter",
+        "kind": "choice",
+        "title": "Brand und tiefe Öffnungen",
+        "prompt": "Welche beiden Gefährdungen gehören nach dem Kurs zur Standortprüfung eines Flüssiggastanks?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Leckgas kann zu Schächten oder Bodenöffnungen fließen"
+          },
+          {
+            "id": "b",
+            "text": "Ein Gebäudebrand kann den Tank über Fenster oder abstürzende Bauteile beanspruchen"
+          },
+          {
+            "id": "c",
+            "text": "Ausschließlich der Abstand zum nächsten Gaszähler"
+          }
+        ],
+        "correct": ["a", "b"],
+        "explanation": "Der Kurs behandelt Gefälle und Fließweg zu Bodenöffnungen sowie Abstand zu Brandlasten und Öffnungen in Gebäudewänden. Diese Zusammenhänge verlangen eine Standortbewertung; eine einzige pauschale Abstandszahl reicht nicht.",
+        "hint": "Denke an den Weg des Gases und den Weg der Wärme.",
+        "status": "draft",
+        "source": "Lehrbrief 5, PDF-S. 61–63",
+        "version": "course-1",
+        "lesson": "Lagerung im Freien und in besonderen Räumen verlangt jeweils Schutz vor Gasausbreitung und Brandbeanspruchung."
+      },
+      {
+        "id": "trgi-5c-4",
+        "goal": "trgi-5-lpg-flaschen",
+        "kind": "choice",
+        "title": "Ein geeigneter Flaschenplatz",
+        "prompt": "Welche Aussage entspricht den Kursgrundsätzen, unabhängig vom strittigen Flaschen-Grenzgewicht der Unterlagen?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Leere Flaschen zählen grundsätzlich nie mit"
+          },
+          {
+            "id": "b",
+            "text": "Schlafräume und Rettungswege sind die bevorzugten Plätze"
+          },
+          {
+            "id": "c",
+            "text": "Flaschen vor Erwärmung schützen; Aufstellungsverbote sowie belüftete Schränke oder besondere Räume beachten"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Der Lehrbrief schließt unter anderem Schlafräume, Rettungswege und Räume unter Erdgleiche als Aufstellungsorte aus. Für geeignete Schränke sind obere und untere Lüftung nötig. Die Gewichtsangaben der Unterlagen widersprechen sich und werden hier nicht als Prüfzahl verwendet.",
+        "hint": "Auch eine scheinbar leere Flasche gehört zur sicheren Lagerungsbetrachtung.",
+        "status": "draft",
+        "source": "Lehrbrief 5, PDF-S. 64–66; Lösung Begleitbogen 5, PDF-S. 12",
+        "version": "course-1",
+        "lesson": "Flaschenaufstellung hängt von Raumart, Füllmasse, Anzahl, Wärme und Lüftung ab; widersprüchliche Angaben benötigen Klärung."
+      },
+      {
+        "id": "trgi-5c-5",
+        "goal": "trgi-5-lpg-regelung",
+        "kind": "choice",
+        "title": "Druckstufen und Sicherheit",
+        "prompt": "Worin unterscheiden sich SAV und SBV im beschriebenen Flüssiggas-Regelkonzept?",
+        "options": [
+          {
+            "id": "a",
+            "text": "SAV sperrt die Gaszufuhr; SBV kann Überdruck über eine geeignete Abblaseleitung abbauen"
+          },
+          {
+            "id": "b",
+            "text": "Beide dienen ausschließlich dem Ablesen des Tankinhalts"
+          },
+          {
+            "id": "c",
+            "text": "SAV erhöht den Druck; SBV speichert zusätzliche Flüssigkeit"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Die benötigte Absicherung hängt vom Regelkonzept und der Druckfestigkeit nachgeschalteter Leitungen ab. Der Kurs zeigt unter anderem zweistufige Tankregelung und einstufige Flaschenregelung.",
+        "hint": "Absperren und Abblasen sind verschiedene Reaktionen.",
+        "status": "draft",
+        "source": "Lehrbrief 5, PDF-S. 66–67",
+        "version": "course-1",
+        "lesson": "Regelstufen reduzieren den Druck; Sicherheitseinrichtungen schützen die nachgeschaltete Installation bei Fehlern."
+      },
+      {
+        "id": "trgi-5c-6",
+        "goal": "trgi-5-befestigung",
+        "kind": "choice",
+        "title": "Flüssiggas ist ein eigener Fall",
+        "prompt": "Welche Aussage beschreibt die Abweichungen des vorliegenden Lehrbriefs gegenüber metallenen Erdgasleitungen?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Befestigungsmittel dürfen immer brennbar sein"
+          },
+          {
+            "id": "b",
+            "text": "Flüssiggasleitungen werden mit metallenen Schellen und nichtbrennbaren Befestigungsmitteln gehalten; unter Erdgleiche gelten besondere Verbindungsregeln"
+          },
+          {
+            "id": "c",
+            "text": "Unter Erdgleiche ist jede beliebige lösbare Verbindung zulässig"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Der Kurs verlangt grundsätzlich metallene Befestigung. Für die beschriebenen Räume unter Erdgleiche nennt er Schweißen, Hartlöten und Schneidringverschraubungen als Verbindungsarten.",
+        "hint": "Die Erdgas-Ausnahmen für Befestigungen sind nicht automatisch übertragbar.",
+        "status": "draft",
+        "source": "Lehrbrief 5, PDF-S. 68",
+        "version": "course-1",
+        "lesson": "Ähnliche Verlegeregeln bedeuten nicht, dass Erdgas- und Flüssiggasanlagen in allen Punkten gleich behandelt werden."
+      }
+    ]
+  },
+  {
+    "id": "trgi-6a",
+    "title": "Das Typenschild entschlüsseln",
+    "subtitle": "Lehrbrief 6 · Gerätearten und Kennzeichnung",
+    "client": "Lea · Geräteplanung",
+    "location": "Geräteauswahl",
+    "icon": "search",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-6a-1",
+        "goal": "trgi-6-geraetearten",
+        "kind": "choice",
+        "title": "Drei Wege für Luft und Abgas",
+        "prompt": "Welche Zuordnung ist richtig?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A: Luft und Abgas im Raum; B: Raumluft und Abgasanlage; C: Verbrennungsluft aus dem Freien und Abgasanlage"
+          },
+          {
+            "id": "b",
+            "text": "A: raumluftunabhängig; B: ohne Abgasanlage; C: nur Elektroantrieb"
+          },
+          {
+            "id": "c",
+            "text": "A, B und C unterscheiden nur die Gasfamilie"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "A, B und C kennzeichnen die Luft-/Abgasführung. Gasfeuerstätten besitzen eine Abgasanlage; Geräte der Art B und C unterscheiden sich bei der Herkunft ihrer Verbrennungsluft.",
+        "hint": "Trenne die Herkunft der Luft vom Ziel der Abgase.",
+        "status": "draft",
+        "source": "Lehrbrief 6, PDF-S. 5–7",
+        "version": "course-1",
+        "lesson": "Gasgerät ist der Oberbegriff. Geräteart und Gasgerätekategorie beschreiben unterschiedliche Eigenschaften."
+      },
+      {
+        "id": "trgi-6a-2",
+        "goal": "trgi-6-geraetearten",
+        "kind": "choice",
+        "title": "B11BS lesen",
+        "prompt": "Was bedeutet B11BS nach dem Lehrbrief?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Raumluftunabhängiges Gerät mit zwei Gebläsen"
+          },
+          {
+            "id": "b",
+            "text": "Raumluftabhängige Feuerstätte mit Strömungssicherung, ohne Gebläse und mit Abgasüberwachung"
+          },
+          {
+            "id": "c",
+            "text": "Gerät ohne Abgasanlage und ohne jede Überwachung"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "B steht für raumluftabhängige Feuerstätte, die erste 1 für Strömungssicherung, die zweite 1 für Betrieb ohne Gebläse. BS weist auf Abgasüberwachung hin.",
+        "hint": "Lies Buchstabe, beide Ziffern und Zusatz einzeln.",
+        "status": "draft",
+        "source": "Lehrbrief 6, PDF-S. 7–11",
+        "version": "course-1",
+        "lesson": "Die Indizes beschreiben Abgasführung und Gebläse; Zusätze geben weitere Sicherheitsmerkmale an."
+      },
+      {
+        "id": "trgi-6a-3",
+        "goal": "trgi-6-geraetearten",
+        "kind": "choice",
+        "title": "Wofür steht X?",
+        "prompt": "Welche Schlussfolgerung zum Zusatz X bei einer C-Feuerstätte beschreibt der Kurs?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Das Gerät darf nur mit Flüssiggas arbeiten"
+          },
+          {
+            "id": "b",
+            "text": "Das Gerät hat keine Abgasanlage"
+          },
+          {
+            "id": "c",
+            "text": "Überdruckführende Abgasteile sind luftumspült oder mit erhöhter Dichtheit nachgewiesen"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "X kennzeichnet Schutz gegen Abgasaustritt in den Aufstellraum. Ohne X fordert die Kursfassung zusätzliche direkte Außenöffnungen von 150 cm² oder zweimal 75 cm².",
+        "hint": "Das X betrifft die Sicherheit der Abgasführung.",
+        "status": "draft",
+        "source": "Lehrbrief 6, PDF-S. 10",
+        "version": "course-1",
+        "lesson": "Auch raumluftunabhängige Geräte können unterschiedliche Anforderungen an den Aufstellraum auslösen."
+      },
+      {
+        "id": "trgi-6a-4",
+        "goal": "trgi-6-kennzeichnung",
+        "kind": "choice",
+        "title": "CE allein genügt nicht",
+        "prompt": "Ein angebotenes Gerät trägt CE. Was ist für seine Auswahl zusätzlich zu prüfen?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eignung für Gasart und Anschlussdruck sowie die nationalen Aufstellbedingungen"
+          },
+          {
+            "id": "b",
+            "text": "Nur, ob das Gehäuse in den Raum passt"
+          },
+          {
+            "id": "c",
+            "text": "Nichts: CE erlaubt jede Installation in jedem Land"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Typenschild und Herstellerangaben müssen zum Einsatz passen. DE bezeichnet die vorgesehene Länderausrüstung; ein freiwilliges DVGW-Qualitätszeichen betrifft zusätzliche Kriterien, ersetzt aber die Installationsprüfung nicht.",
+        "hint": "Produkteigenschaften und Aufstellbedingungen sind zwei Prüfungen.",
+        "status": "draft",
+        "source": "Lehrbrief 6, PDF-S. 11–17",
+        "version": "course-1",
+        "lesson": "Konformitätskennzeichnung ist kein Freibrief für jede Gasart, jeden Druck oder jeden Aufstellort."
+      },
+      {
+        "id": "trgi-6a-5",
+        "goal": "trgi-6-kennzeichnung",
+        "kind": "choice",
+        "title": "Kategorie ist nicht Geräteart",
+        "prompt": "Was sagt die Kategorie II₂₃ im vereinfachten Kursbeispiel aus?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Das Gerät hat zwei Gebläse und drei Brenner"
+          },
+          {
+            "id": "b",
+            "text": "Es ist für Gase der zweiten und dritten Gasfamilie vorgesehen, gegebenenfalls nach erforderlicher Umrüstung"
+          },
+          {
+            "id": "c",
+            "text": "Es ist automatisch ein Gerät der Art C"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Die römische II bezeichnet zwei Gasfamilien; die Indizes nennen diese Familien. Ob und wie umgerüstet wird, ergibt sich aus der konkreten Geräteausrüstung und den Herstellerangaben.",
+        "hint": "Die römische Zahl zählt Gasfamilien, nicht Gebläse.",
+        "status": "draft",
+        "source": "Lehrbrief 6, PDF-S. 13–14",
+        "version": "course-1",
+        "lesson": "Kategorie, Gasgruppe, Prüfgas und Anschlussdruck helfen, die gasbezogene Eignung zu bestimmen."
+      },
+      {
+        "id": "trgi-6a-6",
+        "goal": "trgi-6-kennzeichnung",
+        "kind": "choice",
+        "title": "AS ist kein CO-Nachweis",
+        "prompt": "Ein Wasserheizer ohne Abgasanlage trägt AS und überwacht laut Unterlage CO₂. Was folgt daraus?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Damit ist jede CO-Überwachung automatisch erfüllt"
+          },
+          {
+            "id": "b",
+            "text": "CO und CO₂ bezeichnen denselben Stoff"
+          },
+          {
+            "id": "c",
+            "text": "Die CO₂-Überwachung belegt nicht die im Kurs verlangte Begrenzung von Kohlenmonoxid"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Kohlendioxid und Kohlenmonoxid sind unterschiedliche Stoffe. Der Lehrbrief warnt davor, die AS-Kennzeichnung bei einem A-Wasserheizer als Nachweis aller deutschen Aufstellanforderungen zu behandeln.",
+        "hint": "Vergleiche die tatsächlich gemessene Größe.",
+        "status": "draft",
+        "source": "Lehrbrief 6, PDF-S. 11, 54–55",
+        "version": "course-1",
+        "lesson": "Eine Sicherheitseinrichtung kann nur die Größe überwachen, für die sie ausgelegt ist."
+      }
+    ]
+  },
+  {
+    "id": "trgi-6b",
+    "title": "Der passende Geräteanschluss",
+    "subtitle": "Lehrbrief 6 · Haushalt, Gasstraße und Sondernutzung",
+    "client": "Mila · Einsatzleitung",
+    "location": "Geräteanschluss",
+    "icon": "flame",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-6b-1",
+        "goal": "trgi-6-anschluss",
+        "kind": "choice",
+        "title": "TAE und GS unterscheiden",
+        "prompt": "Warum bleibt nach dem Kurs die TAE am Geräteanschluss auch bei einer Kunststoff-Zuleitung wichtig?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die TAE erfasst Wärme am Anschluss; ein GS reagiert erst auf einen entsprechenden Gasstrom"
+          },
+          {
+            "id": "b",
+            "text": "Weil die TAE den Gasverbrauch abrechnet"
+          },
+          {
+            "id": "c",
+            "text": "Weil ein GS jede Wärmeeinwirkung schon vor einem Schaden erkennt"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Der Geräte-Regelblock kann im Brandfall versagen, bevor eine verdeckte Leitung beschädigt wird. Die TAE soll thermisch schließen; der GS hat ein anderes Auslöseprinzip.",
+        "hint": "Denke an die Größe, die die Einrichtung auslöst.",
+        "status": "draft",
+        "source": "Lehrbrief 6, PDF-S. 18–20, 26",
+        "version": "course-1",
+        "lesson": "Geräteanschlussarmatur und thermische Absicherung schützen den konkreten Geräteanschluss."
+      },
+      {
+        "id": "trgi-6b-2",
+        "goal": "trgi-6-anschluss",
+        "kind": "choice",
+        "title": "Fest, starr oder lösbar?",
+        "prompt": "Eine Flüssiggas-Heizfeuerstätte soll mit einem Schlauch angeschlossen werden. Welche Aussage entspricht dem Kurs?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Jeder Schlauchanschluss ist automatisch ohne Werkzeug lösbar"
+          },
+          {
+            "id": "b",
+            "text": "Auch ein biegsamer Anschluss kann fest sein; Flüssiggas-Feuerstätten sind fest anzuschließen"
+          },
+          {
+            "id": "c",
+            "text": "Alle Flüssiggasgeräte dürfen ohne Einschränkung steckbar angeschlossen werden"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Fest bedeutet nur mit Werkzeug lösbar; biegsam beschreibt die Anschlussleitung. Der Kurs erlaubt den werkzeuglos lösbaren Flüssiggasanschluss nur für Art A unter den genannten Bedingungen.",
+        "hint": "Verwechsle Beweglichkeit nicht mit der Art der Trennstelle.",
+        "status": "draft",
+        "source": "Lehrbrief 6, PDF-S. 20–23",
+        "version": "course-1",
+        "lesson": "Bei einer biegsam angeschlossenen Feuerstätte muss ihre Lage so gesichert sein, dass die Abgasverbindung nicht gelockert wird."
+      },
+      {
+        "id": "trgi-6b-3",
+        "goal": "trgi-6-anschluss",
+        "kind": "choice",
+        "title": "Der Herd aus dem Möbelhaus",
+        "prompt": "Welche Voraussetzungen nennt der Kurs für den Anschluss durch einen eingewiesenen Nichtfachmann?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eine beliebige Schlauchverschraubung und eine Rohrzange"
+          },
+          {
+            "id": "b",
+            "text": "Nur eine sichtbare CE-Markierung am Herd"
+          },
+          {
+            "id": "c",
+            "text": "Ein dafür vorgesehener zündgesicherter Herd, passende spezielle Steckverbindung und eine vom VIU installierte Gassteckdose"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Die Ausnahme gilt für das dafür vorgesehene Anschlusssystem. Im Haushalt beschreibt der Kurs üblicherweise Schlauch-Ausführung M mit metallischem Innenschlauch; Erwärmung und das Verbinden mehrerer Schläuche sind zu vermeiden. Die Aufstellbedingungen bleiben zu prüfen.",
+        "hint": "Die Ausnahme setzt ein bestimmtes System und eine vorbereitete Installation voraus.",
+        "status": "draft",
+        "source": "Lehrbrief 6, PDF-S. 22–26",
+        "version": "course-1",
+        "lesson": "Ein vereinfachter Steckanschluss ist keine allgemeine Erlaubnis für beliebige Arbeiten an Gasleitungen."
+      },
+      {
+        "id": "trgi-6b-4",
+        "goal": "trgi-6-gasstrasse",
+        "kind": "choice",
+        "title": "Sicherheit in der Gasstraße",
+        "prompt": "Welche Funktionszuordnung ist richtig?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Filter hält Partikel zurück; Regler stellt Druck ein; Ventilüberwachung prüft die automatischen Absperrventile auf Dichtheit"
+          },
+          {
+            "id": "b",
+            "text": "Filter misst den Raumluft-CO-Wert; Regler ersetzt jede Absperrung"
+          },
+          {
+            "id": "c",
+            "text": "Ventilüberwachung dient nur der Raumheizung"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Die Gasstraße des Kurses enthält Absperrung mit TAE, Filter, Regler, Druckwächter und zwei automatische Ventile. Ein SAV schützt bei unzulässigem Druck durch Absperren; eine Ausschwenksicherung verhindert Brennerbetrieb in Wartungsstellung.",
+        "hint": "Ordne jeder Einrichtung ihre eigene Mess- oder Schutzaufgabe zu.",
+        "status": "draft",
+        "source": "Lehrbrief 6, PDF-S. 26–30",
+        "version": "course-1",
+        "lesson": "Gebläsebrenner und größere atmosphärische Brenner benötigen passend ausgelegte externe Sicherheits- und Regelarmaturen."
+      },
+      {
+        "id": "trgi-6b-5",
+        "goal": "trgi-6-sondernutzung",
+        "kind": "choice",
+        "title": "Chemieraum und Labor",
+        "prompt": "Welche Aussage über die Geschlossenstellungskontrolle entspricht dem Lehrbrief?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sie ersetzt während des Experiments jede Aufsicht"
+          },
+          {
+            "id": "b",
+            "text": "Sie prüft die geschlossenen Entnahmestellen vor Gasfreigabe und ist kein verlässlicher Schutz gegen jeden einzeln abgezogenen Schlauch"
+          },
+          {
+            "id": "c",
+            "text": "Sie ist nur eine andere Bezeichnung für die thermische Absperrung"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "Der Kurs verlangt eine gegen unbefugtes Öffnen geschützte zentrale Absperrung. Im Unterrichtsraum können ausschließlich verwendete Labor-Gassteckdosen die Geschlossenstellungskontrolle entbehrlich machen; für professionelle Labore gelten andere Voraussetzungen. Werkseitige Labormöbel sind auf Eignung zu prüfen.",
+        "hint": "Vor Freigabe prüfen ist etwas anderes als jeden Vorgang während des Betriebs erkennen.",
+        "status": "draft",
+        "source": "Lehrbrief 6, PDF-S. 30–34",
+        "version": "course-1",
+        "lesson": "Sondernutzungen erfordern abgestimmte Absperrung, Freigabeprüfung, Anschlussarmaturen und Aufsicht."
+      },
+      {
+        "id": "trgi-6b-6",
+        "goal": "trgi-6-sondernutzung",
+        "kind": "choice",
+        "title": "Küche mit Lüftungsanlage",
+        "prompt": "Eine gewerbliche Küche überschreitet im Kurs die anrechenbare Gesamtnennbelastung von 50 kW. Welche Freigabebedingung beschreibt der Lehrbrief?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Der Lüfter muss irgendwann am selben Tag gelaufen sein"
+          },
+          {
+            "id": "b",
+            "text": "Ein eingeschalteter Lichtschalter genügt als Nachweis"
+          },
+          {
+            "id": "c",
+            "text": "Die Gasfreigabe wird mit dem nachgewiesenen ausreichenden Luftvolumenstrom der RLT-Anlage verknüpft"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "Die anrechenbare Belastung berücksichtigt vorgeschriebene Gleichzeitigkeit. Wird Abgas über die Lüftung abgeführt, ist deren Funktion auch unterhalb der Schwelle relevant. Die im Kurs beschriebene Notkochlösung ist ein eng begrenzter Sonderfall.",
+        "hint": "Eingeschaltet ist nicht gleich ausreichende Luftförderung.",
+        "status": "draft",
+        "source": "Lehrbrief 6, PDF-S. 34–37, 55–56",
+        "version": "course-1",
+        "lesson": "Gasgeräte in gewerblichen Küchen sind mit ihrer Luft- und gegebenenfalls Abgasführung als Gesamtsystem zu betrachten."
+      }
+    ]
+  },
+  {
+    "id": "trgi-6c",
+    "title": "Luft für einen sicheren Betrieb",
+    "subtitle": "Lehrbrief 6 · Schutzziele und Luftwege",
+    "client": "Lea · Geräteplanung",
+    "location": "Aufstellraum",
+    "icon": "wind",
+    "minutes": 4,
+    "questions": [
+      {
+        "id": "trgi-6c-1",
+        "goal": "trgi-6-luft-schutzziele",
+        "kind": "choice",
+        "title": "Schutzziel 1: der Start",
+        "prompt": "Ein B1-Gerät ist im Kurs auf 20 kW Nennleistung eingestellt, sein Raum hat 12 m³. Welche Aussage beschreibt Schutzziel 1 richtig?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Es fehlen 8 m³ zum Kursansatz; ein direkt angrenzender Raum kann über zwei passend angeordnete Öffnungen mit je 150 cm² ergänzen"
+          },
+          {
+            "id": "b",
+            "text": "Eine Abgasüberwachung ersetzt die fehlende Raumgröße immer"
+          },
+          {
+            "id": "c",
+            "text": "Ein beliebiger ferner Raum ohne Luftverbindung kann mitgezählt werden"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Der Kurs setzt für den Anfahrzustand 1 m³/kW an: 20 − 12 = 8 m³ fehlen. Die beiden Öffnungen ermöglichen Zirkulation; eine AÜE ersetzt Luftbevorratung und Abgasverdünnung nicht.",
+        "hint": "Am Anfang fehlt noch der Förderunterdruck.",
+        "status": "draft",
+        "source": "Lehrbrief 6, PDF-S. 40–43",
+        "version": "course-1",
+        "lesson": "Schutzziel 1 betrifft Verbrennungsluftvorrat und Abgasverdünnung während des Anfahrens."
+      },
+      {
+        "id": "trgi-6c-2",
+        "goal": "trgi-6-luft-schutzziele",
+        "kind": "choice",
+        "title": "Schutzziel 2: der Dauerbetrieb",
+        "prompt": "Die korrigierte Kursfassung nennt 1,6 m³/(h·kW) Luftbedarf. Wie viel benötigt ein Gerät mit 25 kW nach diesem Ansatz?",
+        "options": [
+          {
+            "id": "a",
+            "text": "15,625 m³/h"
+          },
+          {
+            "id": "b",
+            "text": "40 m³/h"
+          },
+          {
+            "id": "c",
+            "text": "100 m³ Raumvolumen, unabhängig vom Luftstrom"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "1,6 × 25 = 40 m³/h. Der verfügbare nachströmende Luftvolumenstrom ist mit dem Bedarf zu vergleichen. Außenfugenräume derselben Nutzungseinheit können beitragen; ein innenliegender Flur ist gegebenenfalls nur Transportweg.",
+        "hint": "Multipliziere Bedarf je kW mit der Leistung; achte auf m³/h.",
+        "status": "draft",
+        "source": "Lehrbrief 6, PDF-S. 43–46; Lösung Begleitbogen 6, PDF-S. 11",
+        "version": "course-1",
+        "lesson": "Schutzziel 2 verlangt einen kontinuierlichen Luftnachschub, nicht nur einen einmal vorhandenen Raumluftvorrat."
+      },
+      {
+        "id": "trgi-6c-3",
+        "goal": "trgi-6-luftwege",
+        "kind": "choice",
+        "title": "Öffnung ins Freie rechnen",
+        "prompt": "Für 60 kW nennt die korrigierte Kursfassung 150 cm² bis 50 kW plus 2 cm² je weiterem kW. Wie groß ist die direkte Öffnung, wenn Schutzziel 1 anderweitig erfüllt ist?",
+        "options": [
+          {
+            "id": "a",
+            "text": "150 cm²"
+          },
+          {
+            "id": "b",
+            "text": "270 cm²"
+          },
+          {
+            "id": "c",
+            "text": "170 cm²"
+          }
+        ],
+        "correct": ["c"],
+        "explanation": "150 + (60 − 50) × 2 = 170 cm². Eine nachgeschaltete Luftleitung braucht eine eigene Widerstandsbetrachtung; sie darf nicht ungeprüft den Querschnitt der direkten Öffnung übernehmen.",
+        "hint": "Nur die 10 kW oberhalb des Basiswerts erhalten einen Zuschlag.",
+        "status": "draft",
+        "source": "Lehrbrief 6, PDF-S. 46–50; Lösung Begleitbogen 6, PDF-S. 12–13",
+        "version": "course-1",
+        "lesson": "Direkte Außenöffnung und Luftleitung sind strömungstechnisch verschiedene Fälle; größere Leistungen haben zusätzliche Raumanforderungen."
+      },
+      {
+        "id": "trgi-6c-4",
+        "goal": "trgi-6-luftwege",
+        "kind": "choice",
+        "title": "Luftleitung und Trockner",
+        "prompt": "Welche Aussagen treffen nach dem Kurs zu? Wähle beide.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Richtungsänderungen erhöhen die Berechnungslänge einer Luftleitung"
+          },
+          {
+            "id": "b",
+            "text": "Ein raumluftabhängiger Gastrockner kann die Luft-/Abgassituation weiterer Feuerstätten beeinflussen"
+          },
+          {
+            "id": "c",
+            "text": "Ein B22-Trockner benötigt wegen seines Lüfters grundsätzlich keine zugeführte Luft"
+          }
+        ],
+        "correct": ["a", "b"],
+        "explanation": "Der Kurs rechnet für einen 90°-Bogen 3 m und für 45° 1,5 m Zusatzlänge. Beim B22-Trockner ersetzt das Gebläse die räumliche Schutzziel-1-Anforderung, nicht den Luftbedarf. Dessen Trockenluftmenge richtet sich nach dem Hersteller.",
+        "hint": "Ein Lüfter fördert Luft, erzeugt aber keine neue Luft im Raum.",
+        "status": "draft",
+        "source": "Lehrbrief 6, PDF-S. 48–52",
+        "version": "course-1",
+        "lesson": "Widerstände und gleichzeitig betriebene luftfördernde Geräte beeinflussen den tatsächlich verfügbaren Luftstrom."
+      },
+      {
+        "id": "trgi-6c-5",
+        "goal": "trgi-6-luft-art-a",
+        "kind": "choice",
+        "title": "Herd im kleinen Innenraum",
+        "prompt": "Ein Haushaltsherd der Art A soll in einem kleinen fensterlosen Raum betrieben werden. Was folgt aus dem Kurs?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Die übliche vereinfachte Raumregel ist nicht erfüllt; sichere Luftzufuhr und Abgasabführung sind gesondert zu lösen"
+          },
+          {
+            "id": "b",
+            "text": "Ein Umluftfilter ersetzt automatisch Außenluft"
+          },
+          {
+            "id": "c",
+            "text": "Weil Art A keine Abgasanlage hat, braucht es keine Luftbetrachtung"
+          }
+        ],
+        "correct": ["a"],
+        "explanation": "Die Kurs-Grundregel für Herde bis 11 kW nennt mehr als 15 m³ Raumvolumen sowie ein öffenbares Fenster oder eine Außentür. Abweichende Fälle können eine verriegelte Ablufthaube mit Gas-Magnetventil erfordern. Nicht zündgesicherte Kochstellen werden besonders behandelt.",
+        "hint": "Die Abgase bleiben bei Art A zunächst im Aufstellraum.",
+        "status": "draft",
+        "source": "Lehrbrief 6, PDF-S. 52–55",
+        "version": "course-1",
+        "lesson": "Bei Art A muss neben Verbrennungsluft auch die Abgabe der Verbrennungsprodukte an den Raum berücksichtigt werden."
+      },
+      {
+        "id": "trgi-6c-6",
+        "goal": "trgi-6-luft-schutzziele",
+        "kind": "choice",
+        "title": "Eine Küche nachweisen",
+        "prompt": "Eine gewerbliche Küche hat im Kurs 30 kW anrechenbare Belastung und soll über Außenfugen versorgt werden. Welches Mindestvolumen ergibt der dortige Ansatz von 4 m³/kW?",
+        "options": [
+          {
+            "id": "a",
+            "text": "60 m³"
+          },
+          {
+            "id": "b",
+            "text": "120 m³"
+          },
+          {
+            "id": "c",
+            "text": "30 m³"
+          }
+        ],
+        "correct": ["b"],
+        "explanation": "30 × 4 = 120 m³. Diese Kursregel gehört zur gewerblichen Küche, nicht als pauschaler Ersatz zum Luftstromnachweis häuslicher B-Geräte. Bei Außenöffnungen oder RLT gelten andere, jeweils vollständige Bedingungen.",
+        "hint": "Die Raumnutzung gehört zur Formel.",
+        "status": "draft",
+        "source": "Lehrbrief 6, PDF-S. 55–56",
+        "version": "course-1",
+        "lesson": "Gleiche Einheiten oder ähnliche Zahlen dürfen nicht zwischen verschiedenen Nachweisverfahren ausgetauscht werden."
+      }
+    ]
+  }
+]

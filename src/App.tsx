@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { registerSW } from "virtual:pwa-register";
 import { quests, upgrades, findQuest } from "./game/content";
-import { initialState, isUnlocked } from "./game/engine";
+import { initialState, isUnlocked, getDue } from "./game/engine";
 import { loadGameWithRecovery, mutateGame, saveGame } from "./game/storage";
 import { parseImport } from "./game/validation";
 import type { Action, GameState } from "./game/types";
@@ -24,6 +24,7 @@ export default function App() {
     [importRecovery, setImportRecovery] = useState(false),
     [error, setError] = useState(""),
     [view, setView] = useState<View>("map"),
+    [routeFilter, setRouteFilter] = useState("next"),
     [playing, setPlaying] = useState(false),
     [busy, setBusy] = useState(false),
     [offlineReady, setOfflineReady] = useState(false),
@@ -36,7 +37,10 @@ export default function App() {
     channel = useRef<BroadcastChannel | null>(null),
     audio = useRef<AudioContext | null>(null);
   const level = 1 + Math.floor(state.xp / 200),
-    next = quests.find((q) => !state.completed.includes(q.id)) ?? quests[0];
+    next =
+      quests.find((q) => !state.completed.includes(q.id)) ??
+      quests.find((q) => q.id.startsWith("trgi-")) ??
+      quests[0];
   async function restore() {
     try {
       const result = await loadGameWithRecovery();
@@ -416,9 +420,9 @@ export default function App() {
                 selbstständig richtig gelöst.
               </p>
               <div className="note">
-                Du hast dir deinen Fortschritt verdient. Die Demo zählt zum
-                Spiellevel; geprüfter Fachfortschritt folgt mit freigegebenen
-                Inhalten.
+                XP belohnen dein Dranbleiben. Unsichere Kursthemen kommen zur
+                Wiederholung zurück. Das Spiellevel ist kein Nachweis der
+                Prüfungsreife.
               </div>
               <button
                 className="primary"
@@ -457,19 +461,19 @@ export default function App() {
                 </div>
                 <span className="demo-pill">
                   <span />
-                  SPIELBARE DEMO
+                  TRGI · DEIN LERNPFAD
                 </span>
               </section>
               <section className="hero">
                 <div className="hero-copy">
                   <span className="hero-tag">
                     <Icon name="flame" size={16} />
-                    KAPITEL 01 · GAS
+                    TRGI · GAS
                   </span>
                   <h2>
                     {state.session
                       ? "Dein Auftrag\nwartet auf dich."
-                      : state.completed.length === 5
+                      : state.completed.length === quests.length
                         ? "Gut gemacht.\nWerkstatt ausbauen!"
                         : "Aus Neugier\nwird Können."}
                   </h2>
@@ -488,7 +492,7 @@ export default function App() {
                     <Icon name="play" size={17} />
                     {state.session
                       ? "Weiterspielen"
-                      : state.completed.length === 5
+                      : state.completed.length === quests.length
                         ? "Erneut spielen"
                         : "Quest starten"}
                     <Icon name="arrow" size={18} />
@@ -513,15 +517,76 @@ export default function App() {
                 </div>
                 <span className="hero-number">01</span>
               </section>
+              <section className="panel practice-panel">
+                <h2>Dein Wiederholungsauftrag</h2>
+                <p>
+                  Erst erinnern, dann nachsehen. Kurze Wiederholungen festigen
+                  die Themen aus deinen Kursübungen.
+                </p>
+                {quests.filter(
+                  (q) =>
+                    isUnlocked(state, q.id) &&
+                    q.questions.some((t) =>
+                      getDue(state, new Date().toISOString()).includes(t.goal),
+                    ),
+                ).length ? (
+                  quests
+                    .filter(
+                      (q) =>
+                        isUnlocked(state, q.id) &&
+                        q.questions.some((t) =>
+                          getDue(state, new Date().toISOString()).includes(
+                            t.goal,
+                          ),
+                        ),
+                    )
+                    .slice(0, 3)
+                    .map((q) => (
+                      <button
+                        key={q.id}
+                        className="secondary"
+                        disabled={busy || !!state.session}
+                        onClick={() => void enter(q.id)}
+                      >
+                        Wiederholen: {q.title}
+                      </button>
+                    ))
+                ) : (
+                  <p>
+                    Aktuell nichts fällig. Dein nächster Auftrag wartet unten.
+                  </p>
+                )}
+                <details>
+                  <summary>Inhalte & Grenzen</summary>
+                  <p>
+                    Alle acht TRGI-Lehrbriefe, Begleitbögen mit Lösungen,
+                    Zusatzunterlagen und die Abschlussübung wurden für diesen
+                    Lernpfad ausgewertet. Nicht jede Originalaufgabe ist bereits
+                    interaktiv umgesetzt. Komplexe Tabellen-, Diagramm- und
+                    Anlagenberechnungen übst du zusätzlich mit den
+                    Originalunterlagen. Widersprüchliche Angaben sind nicht als
+                    eindeutige Quizfragen übernommen. TRWI-Unterlagen fehlen
+                    noch.
+                  </p>
+                  <p>
+                    {quests
+                      .filter((q) => q.id.startsWith("trgi-"))
+                      .reduce((n, q) => n + q.questions.length, 0)}{" "}
+                    Kursaufgaben plus 22 Einführungsaufgaben. Kursstand laut
+                    bereitgestellten Unterlagen, keine offizielle
+                    Prüfungssimulation.
+                  </p>
+                </details>
+              </section>
               <div className="dashboard-grid">
                 <section className="journey panel">
                   <div className="panel-heading">
                     <div>
-                      <span className="eyebrow">DIE ERSTEN SCHRITTE</span>
+                      <span className="eyebrow">DEIN KURS</span>
                       <h2>Deine Quest-Route</h2>
                     </div>
                     <span className="count-pill">
-                      {state.completed.length} / 5
+                      {state.completed.length} / {quests.length}
                     </span>
                   </div>
                   <div className="track-tabs">
@@ -531,7 +596,7 @@ export default function App() {
                     </span>
                     <span>
                       <Icon name="droplets" size={16} />
-                      Wasser · TRWI<small>Kommt später</small>
+                      Wasser · TRWI<small>Unterlagen fehlen</small>
                     </span>
                   </div>
                   {state.session && (
@@ -540,9 +605,38 @@ export default function App() {
                       Auftrag startest.
                     </p>
                   )}
+                  <label className="course-filter">
+                    Kapitel anzeigen
+                    <select
+                      value={routeFilter}
+                      onChange={(e) => setRouteFilter(e.target.value)}
+                    >
+                      <option value="next">Mein nächstes Kapitel</option>
+                      <option value="all">Alle Missionen</option>
+                      <option value="intro">Einführung</option>
+                      {[1, 2, 3, 4, 5, 6, 7, 8].map((n) => (
+                        <option key={n} value={String(n)}>
+                          Lehrbrief {n}
+                        </option>
+                      ))}
+                      <option value="extra">Zusatzwissen & Finale</option>
+                    </select>
+                  </label>
                   <div className="quest-route">
                     <div className="route-line" />
                     {quests.map((q, i) => {
+                      const group = q.id.startsWith("trgi-")
+                        ? (q.id.match(/^trgi-(\d+)/)?.[1] ?? "extra")
+                        : "intro";
+                      const nextGroup = next.id.startsWith("trgi-")
+                        ? (next.id.match(/^trgi-(\d+)/)?.[1] ?? "extra")
+                        : "intro";
+                      if (
+                        routeFilter !== "all" &&
+                        group !==
+                          (routeFilter === "next" ? nextGroup : routeFilter)
+                      )
+                        return null;
                       const done = state.completed.includes(q.id),
                         open = isUnlocked(state, q.id);
                       return (
@@ -588,7 +682,8 @@ export default function App() {
                   <div className="chapter-note">
                     <Icon name="shield" size={17} />
                     <span>
-                      Weitere Kapitel folgen. Du kannst jede Mission
+                      Acht Lehrbriefe, Zusatzwissen und gemischte
+                      Herausforderungen. Du kannst jede freigeschaltete Mission
                       wiederholen.
                     </span>
                   </div>
@@ -652,8 +747,9 @@ export default function App() {
                   </section>
                   <p className="demo-note">
                     <Icon name="info" size={16} />
-                    Originale Demo-Aufgaben. Fachliche Freigabe und vollständige
-                    Prüfungsvorbereitung folgen.
+                    Kursübungen aus deinen Unterlagen. Quellen stehen an jeder
+                    Aufgabe. Fachliche Freigabe und vollständiger Abgleich mit
+                    der Prüfung stehen aus.
                   </p>
                 </aside>
               </div>
@@ -774,7 +870,9 @@ export default function App() {
               <div className="stat-grid">
                 <article className="panel">
                   <Icon name="done" />
-                  <b>{state.completed.length} / 5</b>
+                  <b>
+                    {state.completed.length} / {quests.length}
+                  </b>
                   <span>Missionen geschafft</span>
                 </article>
                 <article className="panel">
@@ -793,17 +891,20 @@ export default function App() {
                 <div>
                   <h2>Spiellevel & Fachwissen</h2>
                   <p>
-                    Die aktuellen Aufgaben sind eine Demo. Sie erhöhen dein
-                    Spiellevel, zählen aber noch nicht als fachlich gefestigte
-                    Lernziele.
+                    Kursübungen planen Wiederholungen nach deinen Antworten.
+                    Fehler werden heute erneut angeboten, richtige Antworten
+                    nach 1, 3 und 7 Tagen. Erklärungen und Hinweise zählen als
+                    Unterstützung.
                   </p>
                   <p>
-                    Mit geprüften Inhalten werden unsichere Themen als
-                    Wiederholungsquests vorgeschlagen. Eine Aussage zur
-                    Prüfungsreife ist hier noch nicht möglich.
+                    Die Kursinhalte sind noch nicht unabhängig fachlich
+                    freigegeben. Deshalb bedeutet auch eine erfolgreiche
+                    Wiederholung keine bestätigte Prüfungsreife.
                   </p>
                 </div>
-                <span className="tag">In Vorbereitung</span>
+                <span className="tag">
+                  {Object.keys(state.mastery).length} Themen geübt
+                </span>
               </section>
             </>
           ) : (
@@ -932,8 +1033,7 @@ export default function App() {
                       : "Offline-Dateien werden beim ersten Besuch gespeichert."}
                 </div>
                 <p className="muted">
-                  Version 0.1 · Kapitel-Demo · TRWI und weitere TRGI-Kapitel
-                  folgen.
+                  Version 0.2 · TRGI-Kurs · TRWI-Unterlagen folgen.
                 </p>
               </section>
             </>

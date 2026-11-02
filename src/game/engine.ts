@@ -46,20 +46,26 @@ export function recordLearning(
     status: string;
   },
 ): Learning | undefined {
-  if (a.status !== "reviewed") return previous;
+  if (a.status !== "reviewed" && a.status !== "draft") return previous;
   const m = previous ?? {
     stage: "practicing",
     streak: 0,
     due: a.now,
     successes: [],
   };
+  if (a.correct && m.failedSession === a.sessionId) return m;
   if (!a.correct || a.hinted)
     return {
       stage: "practicing",
+      failedSession: a.sessionId,
       streak: 0,
-      due: plusDays(a.now, 1),
+      due:
+        a.status === "draft" && !a.correct
+          ? `${a.now.slice(0, 10)}T00:00:00.000Z`
+          : plusDays(a.now, 1),
       successes: [],
     };
+  if (m.failedSession === a.sessionId) return m;
   const day = dayKey(a.now);
   if (m.successes.some((s) => s.sessionId === a.sessionId || s.day === day))
     return m;
@@ -70,6 +76,7 @@ export function recordLearning(
   const streak = m.streak + 1;
   return {
     stage:
+      a.status === "reviewed" &&
       new Set(successes.map((s) => s.questionId)).size >= 2
         ? "secure"
         : "practicing",
@@ -105,7 +112,7 @@ export function reduceGame(s: GameState, a: Action): GameState {
       return s;
     const q = findQuest(a.questId)!;
     const due = getDue(s, a.now).filter((goal) =>
-      q.questions.some((t) => t.goal === goal && t.status === "reviewed"),
+      q.questions.some((t) => t.goal === goal && t.status !== "demo"),
     );
     const reviewToken = due.length
       ? `review:${q.id}:${due

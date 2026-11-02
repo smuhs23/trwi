@@ -8,6 +8,7 @@ export type Question = {
   options: Option[];
   correct: string[];
   explanation: string;
+  lesson?: string;
   hint: string;
   status: "demo" | "draft" | "reviewed";
   source: string;
@@ -25,6 +26,7 @@ export type Quest = {
   boss?: boolean;
 };
 export type Learning = {
+  failedSession?: string;
   stage: "practicing" | "secure";
   streak: number;
   due: string;
