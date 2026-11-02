@@ -1,107 +1,88 @@
-# TRWI · LernQuest
+# LernQuest · Deine Werkstatt. Deine Missionen.
 
-Geplante Progressive Web App zur spielerischen Vorbereitung auf TRWI und TRGI im Umfeld der Handwerkskammer Düsseldorf.
+Eine installierbare PWA, die Quest-Abenteuer und Werkstattaufbau verbindet. Langfristiges Ziel: spielerische Vorbereitung auf TRGI und TRWI im Umfeld der HWK Düsseldorf.
 
-**Status:** Projektvorbereitung. Dieses Repository enthält derzeit die Projektbeschreibung, noch keine lauffähige App. Funktionen und Technik unten sind Vorschläge für die Umsetzung, keine bereits implementierten Eigenschaften.
+**Version 0.1 ist eine spielbare Kapitel-Demo.** Sie enthält 22 eigenständig formulierte Demo-Aufgaben in vier TRGI-Einstiegsquests und einer Boss-Mission. Fachliche Freigabe, weitere Kapitel, Rechenaufgaben, TRWI-Inhalte und ein authentischer Prüfungsmodus stehen noch aus. Die App ist kein offizielles Angebot der HWK oder des Landesinstallateurausschusses und zeigt keine Prüfungsreife an.
 
-## Ziel
+![LernQuest auf dem Desktop](docs/screenshots/desktop.png)
 
-Fachwissen zu Trinkwasser- und Gasinstallationen in kurzen, abwechslungsreichen Missionen verstehen, anwenden und langfristig behalten. Der Einstieg soll leicht sein, Fortschritt sichtbar werden und Wiederholen sich wie Spielen anfühlen.
+## Spielen
 
-Die App soll auf dem Smartphone und am Computer funktionieren und sich auf dem Startbildschirm installieren lassen. Sie ist ein unabhängiges Lernprojekt, kein offizielles Angebot der HWK oder des Landesinstallateurausschusses.
+1. Einen Auftrag auf der Karte starten.
+2. Fragen beantworten, Befunde in einer symbolischen Szene auswählen oder Schritte ordnen.
+3. Erklärungen lesen und bei Bedarf Hinweise nutzen.
+4. XP und Werkstattmarken verdienen.
+5. Werkzeugwand, Profi-Werkbank und Diagnoseplatz freischalten.
 
-## Verbindliche Produktrichtung
+Normale erste Questabschlüsse bringen 100 XP und 20 Marken, die Boss-Mission 200 XP und 40 Marken. Die drei Ausbauten kosten 20, 40 und 60 Marken. Freies Wiederholen bleibt jederzeit möglich, ohne erneut die Erstabschluss-Belohnung zu vergeben. Spielerlevel: 1 + abgerundete Gesamt-XP / 200.
 
-Die App soll sich wie eine Spiele-App anfühlen. Quests, Level, Herausforderungen und Belohnungen bilden den Kern des Produkts. Fachwissen wird durch Handlungen und Entscheidungen im Spiel erworben und angewendet.
+Pausen kosten nichts. Es gibt keinen Countdown, keine Leben, Lootboxen oder Käufe. Ton ist standardmäßig aus; Animationen lassen sich reduzieren. Jede Auswahl wird gespeichert. Auch die Reihenfolge-Aufgaben funktionieren per Tastatur oder Tippen.
 
-**Gewählte Spielrichtung:** Quest-Abenteuer und Werkstatt-Simulator werden kombiniert. Kundenaufträge auf einer Spielkarte liefern XP und Belohnungen, mit denen eine eigene virtuelle Werkstatt sichtbar ausgebaut wird.
+## Lokal starten
 
-Der [konkrete Spielentwurf](docs/superpowers/specs/2026-11-02-lernquest-design.md) beschreibt die vorgeschlagene erste Version mit vier Quests, einer Boss-Mission und drei Werkstattausbauten. Der Entwurf ist noch zur Freigabe; es gibt weiterhin keine implementierte App.
+Node.js **22.12 oder neuer** (getestet mit Node 24):
 
-## Vorgeschlagene Spielschleife
+```bash
+npm ci
+npm run dev
+```
 
-**Quest wählen → kurze Herausforderung lösen → Rückmeldung erhalten → XP und Belohnung bekommen → Fortschritt in der Spielwelt sehen.**
+Die angezeigte lokale Adresse im Browser öffnen. Für eine Produktionsvorschau einschließlich Service Worker:
 
-Konkrete Mechaniken als Vorschlag:
+```bash
+npm run build
+npm run preview
+```
 
-- **Kampagne:** Gas und Wasser als eigene Bereiche mit Kapiteln und mehreren kurzen Quests.
-- **Spielerlevel:** Erfahrungspunkte erhöhen das Level; fachliche Beherrschung wird separat erfasst.
-- **Herausforderungen:** Fehler finden, Bauteile zuordnen, Abläufe ordnen und Rechenwege Schritt für Schritt lösen. Bedienung auch per Tippen und Tastatur, nicht ausschließlich per Drag-and-drop.
-- **Kapitelabschluss:** Ein zusammenhängender Praxisfall kombiniert zuvor geübte Fähigkeiten als „Boss-Mission“.
-- **Belohnungen:** Sichtbare Aufwertung einer eigenen virtuellen Werkstatt, Abzeichen und kosmetische Avatar-Elemente.
-- **Wiederholungsquests:** Unsichere Lernziele erscheinen später in neuen Fällen. Wiederholtes Anklicken derselben Antwort gilt nicht als fachlicher Fortschritt.
-- **Freiwillige Tagesquests:** Kleine zusätzliche Ziele ohne Verlust bei verpassten Tagen.
-- **Sofortiger Wiedereinstieg:** Angefangene Quests bleiben gespeichert; ein klarer „Weiterspielen“-Einstieg führt zurück.
-- **Faire Motivation:** Keine Lootboxen, kaufbaren Lernvorteile, Energiebegrenzung oder verlorenen Leben. Hinweise und Wiederholungen bleiben verfügbar.
+Offline-Nutzung funktioniert nach dem ersten erfolgreichen Laden der Produktionsversion. Installation benötigt HTTPS oder localhost. Auf dem iPhone: Safari → Teilen → Zum Home-Bildschirm. Ein echter iPhone-/Safari-Gerätetest steht noch aus.
 
-Beispiel für den Ablauf, noch keine ausgearbeitete Fachaufgabe: Ein Auftrag führt in einen virtuellen Technikraum. Dort werden Auffälligkeiten gesucht, passende Bauteile ausgewählt und ein Vorgehen zusammengestellt. Nach der verständlichen Auswertung gibt es XP und einen sichtbaren Werkstattfortschritt.
+## Spielstand
 
-## Vorgeschlagenes Spielerlebnis
+Der Spielstand liegt ausschließlich in IndexedDB auf dem aktuellen Gerät. Ein Konto, Backend, Tracking oder KI-Dienst wird nicht benötigt. Es gibt noch keine automatische Gerätesynchronisation.
 
-- **Kurze Missionen:** Eine Runde dauert ungefähr 3 bis 5 Minuten; jederzeit pausierbar.
-- **Eine Aufgabe pro Bildschirm:** Klare Sprache, wenig Ablenkung und ein eindeutiger nächster Schritt.
-- **Praxisfälle:** An einer Beispielanlage Fehler erkennen und Entscheidungen begründen.
-- **Abwechslung:** Begriffe zuordnen, Abläufe sortieren, Rechenwege bearbeiten und Fragen beantworten.
-- **Direkte Rückmeldung:** Eine kurze Erklärung zeigt, warum eine Antwort richtig ist und wo der Denkfehler liegt.
-- **Fortschritt:** Erfahrungspunkte, freigeschaltete Missionen und sichtbare Themenfortschritte.
-- **Wiederholungen:** Unsichere Inhalte kommen gezielt wieder; sichere Inhalte in größeren Abständen.
-- **Pausen ohne Strafe:** Keine verlorenen Serien, Leben oder Punkte durch Auszeiten.
-- **Reizarme Bedienung:** Animationen und Sound abschaltbar; Lernrunden standardmäßig ohne Zeitlimit.
-- **Prüfungstraining:** Ein eigener Modus nach bestätigten Prüfungsbedingungen.
+Unter Einstellungen lässt sich der Stand als JSON exportieren. Beim Import wird die Datei geprüft, eine Vorschau angezeigt und erst nach Bestätigung der vorhandene Stand ersetzt. Browserdaten können vom Browser oder Nutzer gelöscht werden: regelmäßig exportieren.
 
-Punkte sind Spielbelohnungen. Sie sind kein Nachweis der Prüfungsreife. Der fachliche Fortschritt soll sich aus wiederholt selbstständig gelösten Aufgaben ergeben.
+Belohnungen und Käufe werden in einer atomaren Transaktion gespeichert. Browser-Neuladen oder doppelte Abschlussereignisse dürfen Belohnungen nicht vervielfachen. Updates werden angeboten und während einer laufenden Mission nicht aktiviert.
 
-## Fachlicher Rahmen
+## Fachlicher Fortschritt
 
-Die öffentlich beschriebenen Fernlehrgänge der HWK Düsseldorf dienen als erste Themenorientierung. Die öffentlich zugänglichen Beschreibungen ersetzen keinen vollständigen Prüfungsplan.
+Spiellevel und Fachwissen bleiben getrennt. **Alle aktuellen Aufgaben haben Status `demo` und erzeugen keinen fachlichen Beherrschungsnachweis.** Der Lernalgorithmus ist für später freigegebene Inhalte vorbereitet: verschiedene Aufgabenvarianten in getrennten Sessions an unterschiedlichen Tagen, Hinweise zählen nicht als selbstständiger Erfolg, Wiederholungsintervalle 1/3/7 Tage. Er wird in Unit-Tests geprüft.
 
-### TRGI: Gas
+Inhaltsschema: `src/game/types.ts`; Demo-Inhalte: `src/game/content.ts`. Aufgaben enthalten Lernziel, Bewertungsregel, Erklärung, Quellenhinweis, Status und Inhaltsversion. Vor fachlicher Freigabe müssen konkrete Fundstellen, Regelwerksstand und fachliche Prüfung dokumentiert werden. Es sind keine Originalfragen oder PDFs aus den hochgeladenen Kursunterlagen enthalten.
 
-Die acht Lehrbriefe behandeln Grundlagen, Sicherheit und Begriffe, Werkstoffe, Leitungsdimensionierung, Leitungsanlagen, Geräteanschluss und Verbrennungsluft, Gerätetechnik und Abgasführung sowie sicherheitstechnische Bewertung und Inbetriebnahme.
-
-### TRWI: Trinkwasser
-
-Die zehn Lehrbriefe behandeln Versorgung und Begriffe, Werkstoffe, Dimensionierung, Leitungsanlagen, Trinkwasserschutz, Warmwasseranlagen, Prüfung und Inbetriebnahme, besondere Versorgungsanlagen, Bewässerung und den Schutz der Entwässerungsanlagen.
-
-### Lehrgang und Prüfung unterscheiden
-
-Die HWK beschreibt für TRGI einen schriftlichen Leistungsnachweis im Fernlehrgang. Die gesonderte Prüfung des Landesinstallateurausschusses NRW gehört ausdrücklich nicht zum Fernlehrgang. Für die App müssen deshalb der konkrete Abschluss, die aktuellen Prüfungsbedingungen und die verwendeten Regelwerksausgaben bestätigt werden.
-
-**Noch offen:** konkreter Kurs, Prüfungstermin, Umfang und Form der Prüfung, zulässige Hilfsmittel, Bewertung, aktuelle Lehrbriefe und freigegebene Übungsaufgaben.
-
-### Quellen
-
-Recherchiert am 02.11.2026:
+Themenorientierung:
 
 - [HWK Düsseldorf: TRGI – Gastechnik](https://www.hwk-duesseldorf.de/artikel/trgi-gastechnik-31%2C0%2C539.html)
 - [HWK Düsseldorf: TRWI – Wassertechnik](https://www.hwk-duesseldorf.de/artikel/trwi-wassertechnik-31%2C0%2C538.html)
-- [HWK Düsseldorf: Fernlehrgänge](https://www.hwk-duesseldorf.de/artikel/fernlehrgaenge-flexibel-zu-hause-lernen-31%2C0%2C778.html)
 
-## Qualität der Lerninhalte
+Lehrgangsabschluss und LIA-Prüfung sind zu unterscheiden. Prüfungsformat, Bewertung und zulässige Hilfsmittel müssen für den späteren Prüfungsmodus bestätigt werden.
 
-Jede spätere Fachaufgabe soll Thema, Lernziel, Erklärung, Quelle mit Fundstelle, Regelwerksstand und Prüfstatus enthalten.
+## Prüfen
 
-- Selbst erstellte Übungsaufgaben dürfen nicht als offizielle Prüfungsfragen bezeichnet werden.
-- Fachliche Werte und sicherheitsrelevante Aussagen benötigen eine belastbare Quelle und fachliche Prüfung.
-- Ungeprüfte Beispielaufgaben werden als solche gekennzeichnet und zählen nicht zur Prüfungsabdeckung.
-- Originale Lehrbriefe, Normtexte und Prüfungsunterlagen werden nur mit entsprechenden Nutzungsrechten übernommen. Ein öffentliches Repository ist kein Ablageort für geschützte Kursunterlagen.
-- Prüfungsbereitschaft oder vollständige Stoffabdeckung werden erst ausgewiesen, wenn ein bestätigter Prüfungsrahmen mit dem geprüften Aufgabenbestand abgeglichen wurde.
+```bash
+npm test
+npm run build
+npx playwright install chromium
+npm run test:e2e
+```
 
-## Vorschlag für die erste Version
+Die Browser-Tests verwenden den zuvor erstellten Build. Sie prüfen Kampagne und Ausbauten, Fortsetzen nach Neuladen, Hinweise, Tastaturbedienung, mobile Darstellung, Importfehler und Offline-Neuladen. Der Workflow `.github/workflows/ci.yml` führt die Prüfungen auf GitHub aus; er veröffentlicht keine Website.
 
-1. **Grundlagen klären:** Kursunterlagen und Prüfungsziel zu einer Themen- und Lernzielübersicht zuordnen.
-2. **Spielbare Lernrunde:** Themenauswahl Gas/Wasser, kurze Mission, Antwortauswertung, Erklärung und Rundenabschluss.
-3. **Fortschritt sichern:** Lokale Speicherung, gezielte Wiederholungen sowie Export und Import des Lernstands.
-4. **PWA ergänzen:** Installation, Offline-Nutzung bereits gespeicherter Inhalte und nachvollziehbare Updates.
-5. **Inhalte ausbauen:** Fachlich geprüfte Praxisfälle, Rechenaufgaben und unterschiedliche Aufgabenformen.
-6. **Prüfungstraining ergänzen:** Format, Dauer, Bewertung und Hilfsmittel nach dem bestätigten Prüfungsrahmen.
+Optional kann in eingeschränkten Testumgebungen ein vorhandenes Chromium-Binary über `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` gesetzt werden. Die zusätzlichen Startflags gelten ausschließlich für diesen Testbrowser.
 
-### Technischer Vorschlag
+## Bereitstellung
 
-React, TypeScript und Vite für die Oberfläche; ein Service Worker für Offline-Nutzung; IndexedDB für Lernstand und Inhalte. Zum Start ohne Konto und ohne Backend. Geräteübergreifende Synchronisation wäre ein späterer, gesonderter Ausbau.
+`dist/` ist auf einem statischen HTTPS-Host auslieferbar. Die App ist noch nicht öffentlich bereitgestellt. Für einen Unterpfad wird vor dem Build `APP_BASE` gesetzt, beispielsweise:
 
-Die technische Entscheidung und das konkrete Spielkonzept sind noch abzustimmen.
+```bash
+APP_BASE=/trwi/ npm run build
+```
 
-## Nächster Schritt
+Manifest, Service Worker und Asset-Pfade verwenden diesen Basis-Pfad. Diese Einstellung muss zur tatsächlichen Hosting-Adresse passen. React, TypeScript, Vite und `vite-plugin-pwa` bilden die technische Grundlage. Die Schrift DM Sans wird lokal gebündelt und offline gespeichert.
 
-Das Missionskonzept und den verfügbaren Lernstoff konkretisieren. Danach folgen ein überprüfbarer Entwurf und die Umsetzung der ersten spielbaren Runde.
+## Entwurf und weiterer Ausbau
+
+- [Freigegebener Spielentwurf](docs/superpowers/specs/2026-11-02-lernquest-design.md)
+- [Umsetzungsplan](docs/superpowers/plans/2026-11-02-lernquest-pwa.md)
+
+Nächste fachliche Arbeit: Lehrbriefe vollständig auswerten, Lernziele mit konkreten Quellen verknüpfen, echte Rechenaufgaben entwickeln und fachlich freigeben. Danach weitere TRGI-Kapitel und TRWI ergänzen. Der erste Spieleinstieg ist bewusst ein kleiner, durchgängiger Ausschnitt.

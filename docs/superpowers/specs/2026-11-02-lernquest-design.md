@@ -1,6 +1,6 @@
 # LernQuest: Quest-Abenteuer mit eigener Werkstatt
 
-Stand: 02.11.2026. Status: Entwurf zur Freigabe, noch keine implementierte App.
+Stand: 02.11.2026. Status: Am 02.11.2026 im Gespräch freigegeben. Grundlage der ersten spielbaren Version.
 
 ## Ziel und bestätigte Richtung
 
