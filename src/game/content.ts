@@ -2,7 +2,7 @@ import type { Question, Quest } from "./types";
 import pack1 from "./course-1-3.json" with { type: "json" };
 import pack2 from "./course-4-6.json" with { type: "json" };
 import pack3 from "./course-7-8.json" with { type: "json" };
-export const CONTENT_VERSION = "course-1";
+export const CONTENT_VERSION = "business-1";
 const make = (
   id: string,
   kind: Question["kind"],
@@ -430,6 +430,177 @@ export const upgrades = [
     description: "Das Herzstück deiner neuen Werkstatt.",
     icon: "monitor",
   },
+  {
+    id: "service-car",
+    name: "Service-Kombi",
+    cost: 80,
+    description:
+      "Dein erstes Einsatzfahrzeug. Öffnet Kundenaufträge im Wohnviertel.",
+    icon: "car",
+  },
+  {
+    id: "test-kit",
+    name: "Mobiler Messkoffer",
+    cost: 100,
+    description: "Schaltet Diagnoseaufträge zusammen mit deinem Fahrzeug frei.",
+    icon: "briefcase",
+  },
+  {
+    id: "van",
+    name: "Montage-Transporter",
+    cost: 180,
+    description: "Platz für größere Projekte im Neubaugebiet.",
+    icon: "truck",
+  },
+  {
+    id: "planning",
+    name: "Planungsbüro",
+    cost: 120,
+    description: "Öffnet anspruchsvolle Berechnungsaufträge.",
+    icon: "monitor",
+  },
+  {
+    id: "fleet",
+    name: "Großer Werkstattwagen",
+    cost: 240,
+    description: "Deine mobile Zentrale für große Systemaufträge.",
+    icon: "truck",
+  },
+  {
+    id: "warehouse",
+    name: "Materiallager",
+    cost: 180,
+    description: "Schaltet die letzten Großaufträge frei.",
+    icon: "house",
+  },
 ];
 quests.push(...([...pack1, ...pack2, ...pack3] as Quest[]));
-export const findQuest = (id: string) => quests.find((q) => q.id === id);
+const jobs: [string, string, string, string[], string[], string][] = [
+  [
+    "Anfrage am Reihenhaus",
+    "Wohnviertel",
+    "Frau Weber",
+    [],
+    ["trgi-1a-1", "trgi-1b-6", "trgi-2a-1", "trgi-1c-5", "trgi-2c-6"],
+    "Prüfe den Auftrag und kläre, welche Voraussetzungen vor dem Einsatz erfüllt sein müssen.",
+  ],
+  [
+    "Der erste Hausbesuch",
+    "Wohnviertel",
+    "Hausverwaltung West",
+    ["service-car"],
+    ["trgi-2a-5", "trgi-2a-6", "trgi-2b-3", "trgi-3b-3", "trgi-8c-2"],
+    "Beim Rundgang geht es um sichere Einordnung, sichtbare Befunde und nachvollziehbare Übergabe.",
+  ],
+  [
+    "Material für den Altbau",
+    "Altstadt",
+    "Herr Yilmaz",
+    ["service-car"],
+    ["trgi-3a-1", "trgi-3a-4", "trgi-3b-1", "trgi-3b-5", "trgi-3c-4"],
+    "Wähle passende Werkstoffe und bewerte Verbindungen für den Bestand.",
+  ],
+  [
+    "Messwerte auf dem Prüfstand",
+    "Altstadt",
+    "Technikteam Süd",
+    ["service-car", "test-kit"],
+    ["trgi-7b-3", "trgi-7b-4", "trgi-7b-5", "trgi-7b-6", "trgi-8a-6"],
+    "Ordne Messwerte ein und erkenne, welche Aussage sie tatsächlich erlauben.",
+  ],
+  [
+    "Sicherheit am Gerät",
+    "Altstadt",
+    "Frau Sommer",
+    ["service-car", "test-kit"],
+    ["trgi-7a-1", "trgi-7a-2", "trgi-7a-4", "trgi-7a-5", "trgi-7a-6"],
+    "Verstehe die Schutzfunktionen des Geräts, bevor du den Fall beurteilst.",
+  ],
+  [
+    "Ein neues Wohnhaus",
+    "Neubaugebiet",
+    "Bauleitung Nord",
+    ["van"],
+    ["trgi-1c-3", "trgi-1c-6", "trgi-3a-6", "trgi-3c-5", "trgi-2c-3"],
+    "Verbinde Anschlussplanung, Materialwahl und Anlagenverständnis.",
+  ],
+  [
+    "Leitungen richtig planen",
+    "Neubaugebiet",
+    "Planungsbüro Rhein",
+    ["van", "planning"],
+    ["trgi-4a-1", "trgi-4a-4", "trgi-4a-6", "trgi-4b-6", "trgi-4c-5"],
+    "Rechne mit den in den Aufgaben angegebenen Kurswerten und prüfe die Planungsannahmen.",
+  ],
+  [
+    "Umbau mit neuer Luftführung",
+    "Neubaugebiet",
+    "Familie Neumann",
+    ["van", "planning"],
+    ["trgi-6c-2", "trgi-6c-3", "trgi-7c-2", "trgi-7c-4", "trgi-7c-5"],
+    "Beurteile Luftversorgung und Abgasführung als zusammenhängendes System.",
+  ],
+  [
+    "Die Anlage vor der Übergabe",
+    "Gewerbepark",
+    "Objektbetreuung",
+    ["fleet", "test-kit"],
+    ["trgi-8a-1", "trgi-8a-2", "trgi-8a-3", "trgi-8a-4", "trgi-8c-3"],
+    "Ordne Prüfzwecke und Nachweise zu. Jede Antwort muss zum Anlagenzustand passen.",
+  ],
+  [
+    "Prüfprotokoll im Detail",
+    "Gewerbepark",
+    "Qualitätsteam",
+    ["fleet", "test-kit"],
+    ["trgi-8d-1", "trgi-8d-2", "trgi-8d-3", "trgi-8d-4", "trgi-8d-5"],
+    "Kontrolliere Einheiten, Randbedingungen und Tabellenwerte aus dem Kurs.",
+  ],
+  [
+    "Das große Modernisierungsprojekt",
+    "Gewerbepark",
+    "Immobilienservice",
+    ["fleet", "warehouse"],
+    [
+      "trgi-final1-1",
+      "trgi-final1-2",
+      "trgi-final1-3",
+      "trgi-final1-4",
+      "trgi-final1-5",
+    ],
+    "Dein Betrieb übernimmt einen gemischten Fachauftrag mit Themen aus mehreren Lehrbriefen.",
+  ],
+  [
+    "Abnahme im Quartier",
+    "Gewerbepark",
+    "Quartiersmanagement",
+    ["fleet", "warehouse"],
+    [
+      "trgi-final2-1",
+      "trgi-final2-3",
+      "trgi-final2-4",
+      "trgi-final2-5",
+      "trgi-final2-6",
+    ],
+    "Zum Abschluss zählt der Blick auf das gesamte System. Löse vier von fünf Aufgaben selbstständig.",
+  ],
+];
+export const contracts: Quest[] = jobs.map(
+  ([title, district, client, requires, ids, brief], i) => ({
+    id: `job-${i + 1}`,
+    title,
+    subtitle: district,
+    client,
+    location: district,
+    icon: "briefcase",
+    minutes: 5,
+    contract: { requires, district, brief },
+    questions: ids.map((id) => {
+      const q = quests.flatMap((q) => q.questions).find((q) => q.id === id);
+      if (!q) throw new Error(`Missing contract question ${id}`);
+      return q;
+    }),
+  }),
+);
+export const findQuest = (id: string) =>
+  [...quests, ...contracts].find((q) => q.id === id);

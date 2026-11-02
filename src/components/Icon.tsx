@@ -1,4 +1,7 @@
 import {
+  Car,
+  Truck,
+  BriefcaseBusiness,
   Compass,
   Map,
   Flame,
@@ -35,6 +38,9 @@ import {
   ShieldCheck,
 } from "lucide-react";
 const icons = {
+  car: Car,
+  truck: Truck,
+  briefcase: BriefcaseBusiness,
   compass: Compass,
   map: Map,
   flame: Flame,

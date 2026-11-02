@@ -24,6 +24,7 @@ export type Quest = {
   minutes: number;
   questions: Question[];
   boss?: boolean;
+  contract?: { requires: string[]; district: string; brief: string };
 };
 export type Learning = {
   failedSession?: string;

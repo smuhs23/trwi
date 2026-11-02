@@ -94,3 +94,7 @@ Die TRGI-Kursmissionen ergänzen die fünf Einführungsquests. Mini-Erklärungen
 Bestehende XP, Missionen und Werkstattausbau bleiben beim Inhaltsupdate erhalten. Eine noch laufende Mission startet bei einer neuen Inhaltsversion neu. Eine Sicherung kann weiterhin unter Einstellungen exportiert werden.
 
 Siehe [Inhaltsabdeckung und Grenzen](docs/course-coverage.md). Alle neuen Aufgaben sind quellenbasierte Entwürfe, noch keine unabhängig fachlich freigegebenen Prüfungsfragen. Die Originalunterlagen sind nicht Bestandteil des öffentlichen Repositories. TRWI-Material fehlt bisher.
+
+## Betrieb, Stadtkarte und Fuhrpark
+
+Vier Stadtviertel mit zwölf Kundenaufträgen verbinden Fachübungen und Betriebsaufbau. Fahrzeuge und Ausstattung schalten Aufträge frei. Vier von fünf Antworten ohne Hilfe bringen beim ersten Erfolg 40 Marken und 120 XP. Der freie Kurs bleibt unabhängig davon zugänglich. Details und Testumfang: [Betriebsmodus](docs/business-mode.md).

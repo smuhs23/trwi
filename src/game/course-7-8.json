@@ -24,9 +24,15 @@
           {
             "id": "c",
             "text": "Gaszähler"
+          },
+          {
+            "id": "d",
+            "text": "Gasströmungswächter"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Die Wassermangelsicherung verhindert eine Feuerung bei fehlendem oder zu geringem Wasserdurchfluss. Ein Gaszähler übernimmt diese Funktion nicht.",
         "hint": "Denke an das zu schützende Bauteil.",
         "goal": "trgi-wassermangelsicherung",
@@ -52,9 +58,15 @@
           {
             "id": "c",
             "text": "Abgasventilator – Raumthermostat – Schornstein"
+          },
+          {
+            "id": "d",
+            "text": "Ionisationselektrode – Flammengleichrichter – elektronischer Feuerungsautomat"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Die Zündflamme erwärmt das Thermoelement. Der entstehende Thermostrom hält über den Magneten das Sicherheitsventil offen.",
         "hint": "Welche Komponenten wandeln Flammenwärme in eine Haltefunktion um?",
         "goal": "trgi-thermoelektrische-zuendsicherung",
@@ -82,7 +94,11 @@
             "text": "Der Thermostrom und die magnetische Haltekraft nehmen ab."
           }
         ],
-        "correct": ["b", "c", "a"],
+        "correct": [
+          "b",
+          "c",
+          "a"
+        ],
         "explanation": "Ohne Flammenwärme nimmt der Thermostrom ab. Reicht die Haltekraft nicht mehr, schließt das Ventil. Das ist ein Funktionsmodell, keine Prüfanweisung.",
         "hint": "Beginne mit dem Verlust der Wärmequelle.",
         "goal": "trgi-thermoelektrische-zuendsicherung",
@@ -108,9 +124,15 @@
           {
             "id": "c",
             "text": "Der Kontakt bildet nicht den Gleichrichtereffekt der Flamme nach."
+          },
+          {
+            "id": "d",
+            "text": "Der Kontakt erzeugt zwar dasselbe Signal, wird aber allein wegen fehlender Flammenwärme verworfen."
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Die Überwachung nutzt die gleichrichtende Wirkung der Flamme. Ein metallischer Kontakt liefert nicht dasselbe charakteristische Signal.",
         "hint": "Welche elektrische Eigenschaft wird ausgewertet?",
         "goal": "trgi-ionisationsueberwachung",
@@ -136,9 +158,15 @@
           {
             "id": "c",
             "text": "Die Wasserversorgung ist sicher ausreichend."
+          },
+          {
+            "id": "d",
+            "text": "Der äußere Sensor übernimmt jetzt die Rolle des Abgassensors; die kleinere Differenz bestätigt sicheren Abzug."
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Im beschriebenen System vergleicht die Elektronik einen Sensor im Abgasstrom mit einem äußeren Sensor. Erwärmt austretendes Abgas den äußeren, sinkt die Differenz.",
         "hint": "Wo sitzt der zweite Sensor?",
         "goal": "trgi-abgasueberwachung",
@@ -164,9 +192,15 @@
           {
             "id": "c",
             "text": "Die Abgasanlage ist dadurch freigegeben."
+          },
+          {
+            "id": "d",
+            "text": "Die normale Solltemperatur wurde erreicht; der STB übernimmt die regelmäßige Temperaturregelung."
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Der STB dient der Temperaturbegrenzung. Seine Auslösung bestätigt weder eine korrekte Gaseinstellung noch eine sichere Abgasanlage.",
         "hint": "Löse die Abkürzung gedanklich auf.",
         "goal": "trgi-sicherheitstemperaturbegrenzer",
@@ -203,9 +237,15 @@
           {
             "id": "c",
             "text": "Die Verbrennungsluft vollständig ersetzen"
+          },
+          {
+            "id": "d",
+            "text": "Abgase bei einer Verstopfung dauerhaft gefahrlos in den Aufstellraum ableiten"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Die Strömungssicherung soll negative Einflüsse von zu starkem Zug, Stau oder Rückstrom auf die Feuerung begrenzen. Sie ersetzt keine einwandfreie Abgasführung.",
         "hint": "Es geht um den Weg hinter der Flamme.",
         "goal": "trgi-stroemungssicherung",
@@ -231,9 +271,15 @@
           {
             "id": "c",
             "text": "Feuchtes Abgas, das an der Strömungssicherung austritt"
+          },
+          {
+            "id": "d",
+            "text": "Den Kohlenmonoxidgehalt anhand der Stärke des Spiegelbeschlags bestimmen"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Feuchte Abgase können am kühleren Spiegel kondensieren. Der Befund gehört zur Kontrolle des Abgasabzugs, nicht zur Gasleitungsprüfung.",
         "hint": "Woher kommt die Feuchtigkeit?",
         "goal": "trgi-taupunktspiegel",
@@ -259,9 +305,15 @@
           {
             "id": "c",
             "text": "Gasleitung ist drucklos: Umgebungsdruck"
+          },
+          {
+            "id": "d",
+            "text": "Gerät läuft mit kleinster Leistung: Dieser Fließdruck genügt auch zur Beurteilung der Volllastversorgung."
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Der Lehrbrief nennt den Gas-Fließdruck bei Volllast. Der zulässige Bereich ist anhand der gerätespezifischen Unterlagen zu beurteilen.",
         "hint": "Der Messzustand soll den Betrieb abbilden.",
         "goal": "trgi-gasanschlussdruck",
@@ -287,9 +339,15 @@
           {
             "id": "c",
             "text": "Zählerfarbe und Rohrlänge"
+          },
+          {
+            "id": "d",
+            "text": "Nutzbare Nennwärmeleistung und Betriebsheizwert, ohne Berücksichtigung des Wirkungsgrads"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Aus Wärmebelastung und Betriebsheizwert ergibt sich der benötigte Gasvolumenstrom. Das verwechselt die zugeführte Leistung nicht mit der nutzbaren Wärmeleistung.",
         "hint": "Welche Größen verbinden Energie und Gasvolumen?",
         "goal": "trgi-volumetrische-einstellung",
@@ -315,9 +373,15 @@
           {
             "id": "c",
             "text": "Der Abgasverlust zeigt immer auch die Gasleitungsdichtheit."
+          },
+          {
+            "id": "d",
+            "text": "Die CO-Bewertung wird erst bei Überschreiten des zulässigen Abgasverlusts erforderlich."
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Die Abgasverlustmessung beurteilt die energetische Qualität. Die CO-Messung bewertet einen anderen, sicherheitsrelevanten Verbrennungsbefund.",
         "hint": "Wirtschaftlichkeit und Verbrennungsbefund sind getrennte Fragen.",
         "goal": "trgi-abgasmessung-zwecke",
@@ -343,9 +407,15 @@
           {
             "id": "c",
             "text": "CO kann ungleichmäßig im Abgasstrom verteilt sein."
+          },
+          {
+            "id": "d",
+            "text": "Die mehreren Öffnungen sollen ausschließlich Kondensat abscheiden; die Entnahmestelle beeinflusst den CO-Wert nicht."
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "CO kann in Schlieren auftreten. Mehrere Entnahmestellen erfassen den Querschnitt besser als eine einzelne Stelle; die Auswertung berücksichtigt zudem die Verdünnung.",
         "hint": "Ein einzelner Messpunkt kann einen Teilstrom verfehlen.",
         "goal": "trgi-co-probenahme",
@@ -382,9 +452,15 @@
           {
             "id": "c",
             "text": "Damit jede beliebige Abgasleitung verwendbar wird"
+          },
+          {
+            "id": "d",
+            "text": "Damit eine spätere Funktionskontrolle der ausgeführten Abgasführung entfallen kann"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Der Kurs beschreibt Beratung und Kontrolle sowie eine frühe Abstimmung. Daraus folgt keine Übertragung der Ausführungsverantwortung.",
         "hint": "Eine frühe Rückmeldung kann Planungsänderungen vermeiden.",
         "goal": "trgi-abgasplanung-abstimmung",
@@ -410,9 +486,15 @@
           {
             "id": "c",
             "text": "Nur die Farbe des Prüfzeichens"
+          },
+          {
+            "id": "d",
+            "text": "Die freie Austauschbarkeit mit anderen Systemen, sobald Nennweite und Rohrwerkstoff übereinstimmen"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Bei der beschriebenen gemeinsamen Prüfung ist die Ausführung an die Systemvorgaben des Herstellers gebunden. Ähnliche Abmessungen belegen keine Austauschbarkeit.",
         "hint": "Die Einheit wurde als Kombination betrachtet.",
         "goal": "trgi-luft-abgas-system",
@@ -438,9 +520,15 @@
           {
             "id": "c",
             "text": "Als Ausnahme gegenüber der Abgasabführung über Dach"
+          },
+          {
+            "id": "d",
+            "text": "Als generell zulässige Alternative zur Dachausmündung, sobald das Gerät raumluftunabhängig arbeitet"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Der Lehrbrief behandelt C1 als Ausnahme und beschreibt Einschränkungen für Außenwandausmündungen. Eine konkrete Zulässigkeit braucht die einschlägigen aktuellen Unterlagen.",
         "hint": "Welche Abgasführung ist im Lehrbrief der Grundsatz?",
         "goal": "trgi-aussenwandausmuendung",
@@ -466,9 +554,15 @@
           {
             "id": "c",
             "text": "Jede Abgasanlage mit D ist automatisch für Brennwertbetrieb geeignet."
+          },
+          {
+            "id": "d",
+            "text": "Ein nachträglich ergänzter Kondensatablauf macht den Nachweis der Feuchtebeständigkeit überflüssig."
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Die Kondensatbeständigkeitsklasse ist ein eigenes Eignungsmerkmal. Eine hohe zulässige Temperatur belegt keine Eignung für feuchte Betriebsweise.",
         "hint": "Prüfe die Betriebsbedingung, nicht nur die Temperatur.",
         "goal": "trgi-abgasklassifizierung",
@@ -494,9 +588,15 @@
           {
             "id": "c",
             "text": "Ausschließlich ein möglichst großer Querschnitt"
+          },
+          {
+            "id": "d",
+            "text": "Eine Auslegung allein auf die Summe der Nennleistungen genügt, ohne weitere Betriebszustände zu betrachten."
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Mehrfachbelegung braucht eine passende Auslegung. Ein großer Querschnitt allein beweist weder sicheren Abzug noch Schutz gegen Übertragung.",
         "hint": "Mehrere Geräte beeinflussen ein gemeinsames System.",
         "goal": "trgi-mehrfachbelegung",
@@ -522,9 +622,15 @@
           {
             "id": "c",
             "text": "Sie ermöglichen Reinigung und Kontrolle des freien Querschnitts."
+          },
+          {
+            "id": "d",
+            "text": "Sie bleiben im Betrieb geöffnet, um Druckschwankungen im Abgasweg auszugleichen."
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Der Lehrbrief verlangt eine sichere Reinigungs- und Kontrollmöglichkeit. Lage und Anzahl hängen von der konkreten Abgasführung ab.",
         "hint": "Eine geschlossene Anlage muss trotzdem kontrollierbar sein.",
         "goal": "trgi-abgas-kontrolloeffnungen",
@@ -561,9 +667,15 @@
           {
             "id": "c",
             "text": "Abgasverlust des Geräts errechnen"
+          },
+          {
+            "id": "d",
+            "text": "Die laufende Gebrauchsfähigkeit ausschließlich durch eine Leckmengenbestimmung bei Betriebsdruck bewerten"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Der Kurs beschreibt eine Belastungsprobe des Materials. Ihre Aufgabe ist nicht die Ermittlung der Verbrennungsqualität.",
         "hint": "Die Bezeichnung verrät den Schwerpunkt.",
         "goal": "trgi-belastungspruefung-zweck",
@@ -589,9 +701,15 @@
           {
             "id": "c",
             "text": "Weil ein Gaszähler alle Geräte automatisch prüft"
+          },
+          {
+            "id": "d",
+            "text": "Weil ihre CE-Kennzeichnung die Dichtheit sämtlicher Geräteanschlüsse vor Ort bereits bestätigt"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Der Lehrbrief trennt die Leitungsprüfung von der Geräteprüfung und verweist auf die zulässige Belastung der Regelbauteile.",
         "hint": "Der zulässige Druck ist nicht bei jedem Bauteil gleich.",
         "goal": "trgi-dichtheitspruefung-abgrenzung",
@@ -617,9 +735,15 @@
           {
             "id": "c",
             "text": "Es kann eine längere Prüfdauer nötig sein."
+          },
+          {
+            "id": "d",
+            "text": "Die Prüfdauer verkürzt sich, weil derselbe Leckstrom in einem größeren Volumen einen stärkeren Druckabfall bewirkt."
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Bei größeren Volumina muss die Dauer passend gewählt werden, damit Druckänderungen zuverlässig erkennbar sind. Ein einzelner Zeitwert ersetzt diese Beurteilung nicht.",
         "hint": "Das Messsystem reagiert abhängig vom Volumen.",
         "goal": "trgi-pruefdauer-volumen",
@@ -645,9 +769,15 @@
           {
             "id": "c",
             "text": "Die Raumgröße neu berechnen"
+          },
+          {
+            "id": "d",
+            "text": "Die spätere Gerätefunktion genügt als Dichtheitsnachweis für die neu hergestellten Verschraubungen."
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Die Schlussprüfung ergänzt die vorangegangenen Prüfungen an Verbindungen, die dabei nicht erfasst waren, etwa Zählerverschraubungen.",
         "hint": "Was wurde durch die frühere Prüfung noch nicht abgedeckt?",
         "goal": "trgi-schlusspruefung",
@@ -673,9 +803,15 @@
           {
             "id": "c",
             "text": "Jede Luftfüllung verschließt Lecks von selbst."
+          },
+          {
+            "id": "d",
+            "text": "Der Luftsauerstoff neutralisiert austretende Kohlenwasserstoffe bereits direkt an jeder Leckstelle."
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Ein auf Kohlenwasserstoffe reagierendes Gerät kann austretende Luft nicht als Brenngasleck nachweisen. Messmittel und Prüfmedium müssen zusammenpassen.",
         "hint": "Was genau kann der Sensor erkennen?",
         "goal": "trgi-pruefmittel-pruefmedium",
@@ -701,9 +837,15 @@
           {
             "id": "c",
             "text": "Leckwert und baulicher Zustand müssen gemeinsam betrachtet werden."
+          },
+          {
+            "id": "d",
+            "text": "Starke Korrosion ist erst zu berücksichtigen, wenn auch der Leckwert eine höhere Zahlenklasse erreicht."
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Die Leckmenge ist nur ein Indiz. Korrosion, Gasgeruch und ungünstige Leitungsführung können eine andere sicherheitstechnische Bewertung verlangen.",
         "hint": "Welche Mängel erkennt die Leckmessung nicht?",
         "goal": "trgi-gebrauchsfaehigkeit-gesamtbefund",
@@ -740,9 +882,15 @@
           {
             "id": "c",
             "text": "Eine geringe Leckmenge beweist die richtige Befestigung."
+          },
+          {
+            "id": "d",
+            "text": "Bei neuen Leitungen genügt statt des Dichtheitsnachweises die Grenzwerteinstufung für bestehende Leitungen."
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Der Lehrbrief fordert für neue Leitungen Dichtheit. Die Gebrauchsfähigkeitsbewertung einer Bestandsleitung ersetzt diesen Nachweis nicht.",
         "hint": "Neuinstallation und Bestandsbewertung haben verschiedene Voraussetzungen.",
         "goal": "trgi-neuleitung-dichtheit",
@@ -768,9 +916,15 @@
           {
             "id": "c",
             "text": "Nur eine Abgasverlustmessung"
+          },
+          {
+            "id": "d",
+            "text": "Eine Gebrauchsfähigkeitsprüfung anhand der Leckmenge anstelle der Prüfung der neuen Leitung"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Der Lehrbrief beschreibt für Mitteldruck eine kombinierte Prüfung. Das Niederdruckschema lässt sich nicht ungeprüft übertragen.",
         "hint": "Der Druckbereich beeinflusst das Prüfkonzept.",
         "goal": "trgi-mitteldruck-pruefkonzept",
@@ -796,9 +950,15 @@
           {
             "id": "c",
             "text": "Eine geringe Leckrate ersetzt bei der Wiederinbetriebnahme nach Stilllegung den Dichtheitsnachweis."
+          },
+          {
+            "id": "d",
+            "text": "Nach der Stilllegung ist für die erneute Nutzung ein Dichtheitsnachweis erforderlich."
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Der Kurs verlangt nach einer Stilllegung Dichtheit. Die Geschichte der Anlage und die erforderlichen Prüfungen müssen geklärt werden.",
         "hint": "Stilllegung ist kein kurzzeitiges Unterbrechen.",
         "goal": "trgi-stilllegung-wiederinbetriebnahme",
@@ -824,9 +984,15 @@
           {
             "id": "c",
             "text": "Das Aussehen ersetzt jede Druckmessung."
+          },
+          {
+            "id": "d",
+            "text": "Die Inaugenscheinnahme ersetzt bei allen unbekannten Anschlüssen den Nachweis der Dichtheit."
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Ein angezeigter Druck allein erklärt nicht die Ausführung der Leitungsverschlüsse. Der Zustand unbekannter Anschlüsse ist zu klären.",
         "hint": "Messwert und Ausführungszustand sind zwei Informationen.",
         "goal": "trgi-unterbrechung-anschluesse",
@@ -852,9 +1018,15 @@
           {
             "id": "c",
             "text": "Nur die Farbe der Leitung entscheidet"
+          },
+          {
+            "id": "d",
+            "text": "Gasgeruch ist erst oberhalb der Leckmengengrenze zur verminderten Gebrauchsfähigkeit relevant."
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Der Lehrbrief behandelt Gasgeruch als zusätzlichen entscheidenden Befund. Eine Leckmengenzahl darf nicht isoliert zur Entwarnung verwendet werden.",
         "hint": "Die Gesamtbewertung enthält mehr als die Messzahl.",
         "goal": "trgi-gebrauchsfaehigkeit-gasgeruch",
@@ -880,9 +1052,15 @@
           {
             "id": "c",
             "text": "Abnahmeprüfung und Dichtheitsprüfung"
+          },
+          {
+            "id": "d",
+            "text": "Belastungsprüfung und Gebrauchsfähigkeitsprüfung nach dem Schema bestehender Erdgasleitungen"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Für Flüssiggas beschreibt der Kurs ein eigenes Prüfkapitel mit Abnahme- und Dichtheitsprüfung. Druckstufe und Versorgungssituation sind gesondert zu berücksichtigen.",
         "hint": "Verwende die Begriffe aus dem Flüssiggas-Kapitel.",
         "goal": "trgi-fluessiggas-pruefkonzept",
@@ -919,9 +1097,15 @@
           {
             "id": "c",
             "text": "Nur das Ablesen des Gaszählers"
+          },
+          {
+            "id": "d",
+            "text": "Mit bestandener Leitungsprüfung ist die Inbetriebnahme abgeschlossen; Gerätefunktion und Übergabe zählen nicht dazu."
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Inbetriebnahme betrifft die gesamte Installation einschließlich Gerätefunktion, Luft- und Abgasweg sowie Übergabe. Eine Leitungsprüfung allein bildet das nicht vollständig ab.",
         "hint": "Wem wird die Anlage am Ende übergeben?",
         "goal": "trgi-inbetriebnahme-umfang",
@@ -947,9 +1131,15 @@
           {
             "id": "c",
             "text": "Eine Zusage, dass Kontrollen nie wieder nötig sind"
+          },
+          {
+            "id": "d",
+            "text": "Die Freigabe, benötigte Verbrennungsluftöffnungen nach erfolgreichem Probebetrieb zu verschließen"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Der Betreiber wird eingewiesen und erhält Betriebs- und Wartungsanleitungen. Der Kurs nennt unter anderem das Freihalten der Verbrennungsluftöffnungen.",
         "hint": "Eine Übergabe soll den späteren sicheren Umgang unterstützen.",
         "goal": "trgi-betreibereinweisung",
@@ -975,9 +1165,15 @@
           {
             "id": "c",
             "text": "Prüfdatum, Zählernummer und Zählerstand"
+          },
+          {
+            "id": "d",
+            "text": "Hersteller und Typ des Messgeräts allein, ohne Anlagenkennung und Datum der Prüfung"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Der Lehrbrief empfiehlt diese konkreten Identifikationsangaben. Sie erhöhen die Nachvollziehbarkeit; eine rechtliche Beweiskraft wird hier nicht zugesichert.",
         "hint": "Was unterscheidet diesen Einsatz von einem anderen?",
         "goal": "trgi-pruefprotokoll-identifikation",
@@ -1003,9 +1199,15 @@
           {
             "id": "c",
             "text": "Mechanisch gebrochene Rohrwände"
+          },
+          {
+            "id": "d",
+            "text": "Durch Korrosion geschwächte Rohrwände, deren Tragfähigkeit die Dichtdispersion wiederherstellt"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Die Dispersion kann in feine undichte Gewindespalten eindringen. Das Verfahren ersetzt kein fehlendes oder geschädigtes Rohrmaterial.",
         "hint": "Abdichten ist nicht gleich Erneuern der Rohrwand.",
         "goal": "trgi-innenabdichtung-grenzen",
@@ -1031,9 +1233,15 @@
           {
             "id": "c",
             "text": "Nur eine Abgasverlustmessung am Heizgerät"
+          },
+          {
+            "id": "d",
+            "text": "Der dokumentierte Dichtmittelverbrauch als Ersatz für eine erneute Leitungsprüfung"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Das Ergebnis muss als dichte Leitung nachgewiesen werden. Die Durchführung des Verfahrens selbst ist noch kein Prüfergebnis.",
         "hint": "Das Verfahren und sein Erfolg sind getrennte Dinge.",
         "goal": "trgi-innenabdichtung-nachweis",
@@ -1059,9 +1267,15 @@
           {
             "id": "c",
             "text": "Verantwortliche, Prüfergebnisse sowie Dichtmittel und Charge"
+          },
+          {
+            "id": "d",
+            "text": "Nur Produktname und Rechnungsbetrag; Charge und Prüfergebnisse sind für die Nachverfolgung entbehrlich."
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Die Dokumentation enthält unter anderem Unternehmen, Fachkraft, Prüfprotokolle sowie Mittel- und Chargenangaben. Das unterstützt spätere Nachverfolgung.",
         "hint": "Welche Angaben ermöglichen die Rückverfolgung von Arbeit und Material?",
         "goal": "trgi-innenabdichtung-dokumentation",
@@ -1098,9 +1312,15 @@
           {
             "id": "c",
             "text": "0,1 MPa = 10 bar"
+          },
+          {
+            "id": "d",
+            "text": "0,1 MPa = 0,01 bar"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Die Quelle nennt 0,1 MPa. Weil 1 MPa gleich 10 bar ist, entspricht das 1 bar beziehungsweise 1000 hPa. Dieser Wert gehört zur Belastungsprüfung, nicht zur Dichtheitsprüfung.",
         "hint": "Zehn bar ergeben ein MPa.",
         "goal": "trgi-belastungspruefung-druck",
@@ -1126,9 +1346,15 @@
           {
             "id": "c",
             "text": "3 bar"
+          },
+          {
+            "id": "d",
+            "text": "100 hPa"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Die Quelle nennt für diese Dichtheitsprüfung 150 hPa, also 150 mbar. Die Gasgeräte sind davon ausdrücklich ausgenommen. Belastungs- und Dichtheitsprüfung haben unterschiedliche Druckwerte.",
         "hint": "Verwechsle nicht den Wert der Belastungsprüfung mit dem der Dichtheitsprüfung.",
         "goal": "trgi-dichtheitspruefung-druck",
@@ -1154,9 +1380,15 @@
           {
             "id": "c",
             "text": "0,1 hPa"
+          },
+          {
+            "id": "d",
+            "text": "150 hPa"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Die Quelle nennt eine erkennbare Druckänderung von 0,1 hPa. Das ist die Anforderung an die Erkennbarkeit einer Änderung, nicht der aufzubringende Prüfdruck.",
         "hint": "Gesucht ist eine kleine erkennbare Änderung, nicht der gesamte Druck.",
         "goal": "trgi-dichtheitspruefung-messaufloesung",
@@ -1182,9 +1414,15 @@
           {
             "id": "c",
             "text": "60 Minuten + 30 Minuten"
+          },
+          {
+            "id": "d",
+            "text": "20 Minuten + 30 Minuten"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "150 Liter gehören in die Tabellenklasse ab 100 bis unter 200 Liter. Diese Zeile nennt 30 Minuten Anpassung und danach mindestens 20 Minuten Prüfung. Beide Zeiten erfüllen verschiedene Zwecke.",
         "hint": "Ordne zuerst 150 Liter der mittleren Volumenklasse zu.",
         "goal": "trgi-dichtheitspruefung-zeit-volumen",
@@ -1210,9 +1448,15 @@
           {
             "id": "c",
             "text": "5 Stunden 30 Minuten"
+          },
+          {
+            "id": "d",
+            "text": "2 Stunden 45 Minuten"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "2200 minus 2000 ergibt 200 Liter Mehrvolumen. Zwei zusätzliche 100-Liter-Schritte ergeben 30 Minuten zusätzlich zu den 2 Stunden. Die separat genannte Anpassungszeit ist hier ausdrücklich nicht gefragt.",
         "hint": "200 Liter sind zwei Zuschläge.",
         "goal": "trgi-mitteldruck-pruefzeit-rechnung",
@@ -1238,9 +1482,15 @@
           {
             "id": "c",
             "text": "Vermindert gebrauchsfähig"
+          },
+          {
+            "id": "d",
+            "text": "Nicht gebrauchsfähig"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Die Quelle ordnet Werte ab 1,0 und unter 5,0 l/h der verminderten Gebrauchsfähigkeit zu. Unter 1,0 ist eine andere Klasse. Der Zahlenwert allein ist keine Betriebsfreigabe: Gasgeruch, baulicher Zustand und Verlegesituation sind zusätzlich entscheidend.",
         "hint": "Achte darauf, ob der Grenzwert ein- oder ausgeschlossen ist.",
         "goal": "trgi-gebrauchsfaehigkeit-grenzwert",
@@ -1277,9 +1527,15 @@
           {
             "id": "c",
             "text": "Damit die Gewinde sich automatisch lösen"
+          },
+          {
+            "id": "d",
+            "text": "Zur Ableitung des Gasdrucks, damit an der Trennstelle kein Gas austreten kann"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Auch an einer Gasleitung können durch Fehler elektrische Gefahren bestehen. Die Frage prüft den Schutzgedanken, nicht die praktische Ausführung.",
         "hint": "Die Gefahr kann aus einem anderen Versorgungssystem stammen.",
         "goal": "trgi-elektrische-ueberbrueckung",
@@ -1305,9 +1561,15 @@
           {
             "id": "c",
             "text": "Anschlussdruck"
+          },
+          {
+            "id": "d",
+            "text": "Relative Dichte"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Beim Brennwert wird das entstandene Wasser im flüssigen Endzustand betrachtet. Der Heizwert berücksichtigt diesen Kondensationsanteil nicht.",
         "hint": "Achte auf den Zustand des Wassers nach der Verbrennung.",
         "goal": "trgi-brennwert-heizwert",
@@ -1333,9 +1595,15 @@
           {
             "id": "c",
             "text": "Vollständig gleiche Brenneigenschaften in jeder Hinsicht"
+          },
+          {
+            "id": "d",
+            "text": "Eine gleiche Wärmebelastung innerhalb derselben Gasfamilie bei gleichen Zustandsgrößen und gleicher Düse"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Der Wobbe-Index ist ein Kennwert für die Austauschbarkeit unter bestimmten Bedingungen. Er beschreibt nicht sämtliche Brenneigenschaften.",
         "hint": "Ein Kennwert bildet nicht jede Eigenschaft ab.",
         "goal": "trgi-wobbe-index",
@@ -1361,9 +1629,15 @@
           {
             "id": "c",
             "text": "Abgastemperatur in °C"
+          },
+          {
+            "id": "d",
+            "text": "Die nutzbare Nennwärmeleistung des Geräts in kW"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Der Anschlusswert verbindet die Nennwärmebelastung mit dem dafür benötigten Gasvolumenstrom. Er ist keine Energiemenge.",
         "hint": "Prüfe Größe und Einheit zusammen.",
         "goal": "trgi-anschlusswert",
@@ -1389,9 +1663,15 @@
           {
             "id": "c",
             "text": "Der Brenner ersetzt die Beurteilung des Abgaswegs."
+          },
+          {
+            "id": "d",
+            "text": "Der Abgasstutzen bildet die Grenze; die anschließende Abgasführung gehört nicht mehr zur Anlagenbetrachtung."
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Die Kursfrage führt den betrachteten Bereich bis zur Ausmündung der Abgasanlage. Das unterstützt eine Betrachtung des gesamten Systems.",
         "hint": "Was geschieht mit den Verbrennungsprodukten?",
         "goal": "trgi-systemgrenze-abgas",
@@ -1417,9 +1697,15 @@
           {
             "id": "c",
             "text": "Geringfügige Bewegungen aufnehmen, ohne die Inneninstallation zu schädigen"
+          },
+          {
+            "id": "d",
+            "text": "Bewegungen des Hausanschlusses möglichst vollständig und starr auf die Innenleitung übertragen"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Die Aufgabe fragt nach dem Schutz der Inneninstallation vor übertragenen Bewegungen. Eine starre Fixierung ist nicht automatisch eine geeignete Lösung.",
         "hint": "Wo würden Bewegungen sonst Kräfte einleiten?",
         "goal": "trgi-leitungsbewegung",
@@ -1457,9 +1743,15 @@
           {
             "id": "c",
             "text": "Es ist grundsätzlich raumluftunabhängig."
+          },
+          {
+            "id": "d",
+            "text": "Die Verbrennungsluft wird aufgrund der Bauart ausschließlich durch einen dichten Außenluftkanal zugeführt."
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Die Abschlussübung ordnet Art B der raumluftabhängigen Feuerstätte mit Abgasanlage zu. Die Verbrennungsluftversorgung ist damit Teil der Betrachtung.",
         "hint": "Der Buchstabe beschreibt die Luft- und Abgasführung.",
         "goal": "trgi-geraeteart-b",
@@ -1485,9 +1777,15 @@
           {
             "id": "c",
             "text": "Als Nachweis einer abgeschlossenen Leitungsprüfung vor Ort"
+          },
+          {
+            "id": "d",
+            "text": "Als verpflichtende Voraussetzung für die Gültigkeit jeder CE-Kennzeichnung"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Die Kursfrage unterscheidet die zusätzliche Qualitätskennzeichnung von der CE-Kennzeichnung. Ein Produktzeichen ersetzt keine Prüfung der Installation.",
         "hint": "Produktqualität und Installationsprüfung sind verschiedene Ebenen.",
         "goal": "trgi-kennzeichnung-dvgw",
@@ -1513,9 +1811,15 @@
           {
             "id": "c",
             "text": "Gasgeräte und ihre Regel- und Sicherheitseinrichtungen werden nicht einbezogen."
+          },
+          {
+            "id": "d",
+            "text": "Gasgeräte werden einbezogen, sobald ihre Geräteabsperrung für die Prüfung geöffnet ist."
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Die Abschlussübung grenzt die Leitungsprüfung gegenüber dem Gasgerät und dessen Einrichtungen ab. Bauteilgrenzen sind für das Prüfkonzept wesentlich.",
         "hint": "Die Prüfung der Leitung ist nicht automatisch eine Geräteprüfung.",
         "goal": "trgi-dichtheitspruefung-abgrenzung",
@@ -1541,9 +1845,15 @@
           {
             "id": "c",
             "text": "Automatische Beseitigung von Korrosion"
+          },
+          {
+            "id": "d",
+            "text": "Eine unzulässige Erhöhung des Gasbetriebsdrucks allein durch das Eigengewicht des Estrichs"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Die Aufgabe begründet die getrennte Leitungsführung unter anderem mit Estrichdicke und mechanischen Belastungen. Eine Rohrleitung ist kein neutraler Bestandteil der Estrichschicht.",
         "hint": "Denke an Bewegungen und verbleibende Schichtdicken.",
         "goal": "trgi-fussboden-leitungsfuehrung",
@@ -1569,9 +1879,15 @@
           {
             "id": "c",
             "text": "Nur möglichst kurz sein"
+          },
+          {
+            "id": "d",
+            "text": "Für den gleichzeitigen Volllastbetrieb aller Geräte ausgelegt sein; Teillastzustände sind dadurch automatisch abgedeckt."
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Die Abschlussübung fordert eine Auslegung, die die Betriebszustände der angeschlossenen Geräte berücksichtigt. Nur einen Einzelbetrieb anzusehen reicht nicht.",
         "hint": "Die Geräte laufen nicht zwingend immer gleichzeitig.",
         "goal": "trgi-mehrfachbelegung",
@@ -1597,9 +1913,15 @@
           {
             "id": "c",
             "text": "Die Betrachtung vorübergehender Anfahrbedingungen ersetzt keine funktionierende Abgasführung."
+          },
+          {
+            "id": "d",
+            "text": "Der Verdünnungsraum erlaubt dauernden Abgasaustritt, sofern die dort angesetzte Mindestgröße eingehalten wird."
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Die Abschlussübung unterscheidet kurze Anfahrbedingungen von einer gestörten Abgasanlage. Aus einer Raumanforderung folgt keine Freigabe für dauernden Abgasaustritt.",
         "hint": "Trenne Anfahrzustand und anhaltende Störung.",
         "goal": "trgi-abgas-verduennungsraum",
@@ -1637,9 +1959,15 @@
           {
             "id": "c",
             "text": "Weil Geräte ohne Umgebung bewertet werden können"
+          },
+          {
+            "id": "d",
+            "text": "Weil die bestandene Leitungsprüfung bereits die Sicherheit von Luftversorgung und Abgasweg mit bestätigt"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Die ständige Begleitung erläutert den Weg von Grundlagen und Leitungsbau zu Geräten, Luftversorgung, Abgasführung und Prüfung.",
         "hint": "Betrachte die Anlage als Ganzes.",
         "goal": "trgi-kursorientierung-system",
@@ -1665,9 +1993,15 @@
           {
             "id": "c",
             "text": "Lösungen lesen, ohne die Aufgaben zu bearbeiten"
+          },
+          {
+            "id": "d",
+            "text": "Die Lösungstexte auswendig lernen und auf den eigenen Lösungsversuch verzichten"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Eine eigene Zusammenfassung und die anschließende Bearbeitung der Begleitfragen machen Verständnis und Lücken sichtbar.",
         "hint": "Wie merkst du, was du selbst erklären kannst?",
         "goal": "trgi-lernstrategie",
@@ -1695,7 +2029,11 @@
             "text": "Begleitaufgaben zunächst selbst lösen"
           }
         ],
-        "correct": ["b", "c", "a"],
+        "correct": [
+          "b",
+          "c",
+          "a"
+        ],
         "explanation": "Erst erarbeiten, dann selbst anwenden und anschließend aus Rückmeldungen lernen. Diese Reihenfolge vermeidet, dass Wiedererkennen mit Verständnis verwechselt wird.",
         "hint": "Beginne mit der Erarbeitung des Stoffes.",
         "goal": "trgi-lernstrategie",
@@ -1721,9 +2059,15 @@
           {
             "id": "c",
             "text": "Die HWK organisiert den Lehrgang; für Fachfragen gibt es die ausgewiesene fachliche Betreuung."
+          },
+          {
+            "id": "d",
+            "text": "Die organisatorische Lehrgangsleitung ist zugleich ausschließlich für alle fachlichen Rückfragen zuständig."
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Die Begleitung unterscheidet organisatorische Leitung und fachliche Betreuung. Verbindliche Kontaktangaben sollten aus den konkreten Kursunterlagen entnommen werden.",
         "hint": "Organisation und Fachinhalt haben unterschiedliche Zuständigkeiten.",
         "goal": "trgi-kursorientierung-betreuung",
@@ -1749,9 +2093,15 @@
           {
             "id": "c",
             "text": "Nur die Punktzahl dieser App"
+          },
+          {
+            "id": "d",
+            "text": "Ausschließlich Geräteherstellerunterlagen statt der aktuellen TRGI und der Rechenhilfsmittel"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Der Verlauf nennt diese Hilfsmittel für die Vertiefung und fallorientierten Aufgaben einschließlich Nennweitenermittlung. Der Plan ist ein konkreter Kursplan, kein allgemeiner Terminplan.",
         "hint": "Welche Hilfsmittel erlauben Nachschlagen und Rechnen?",
         "goal": "trgi-kursorientierung-hilfsmittel",
@@ -1788,9 +2138,15 @@
           {
             "id": "c",
             "text": "Gerätehersteller und Möbelhandel"
+          },
+          {
+            "id": "d",
+            "text": "Netzbetreiber und Anschlussnutzer als Parteien des Gasliefervertrags"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Das beigefügte Dokument behandelt Installateurverträge zwischen Netzbetreiber und Installationsunternehmen. Hier wird die historische Kursunterlage zugeordnet, kein heutiger Vertragsfall beurteilt.",
         "hint": "Welche Partner stehen hinter NB und IU?",
         "goal": "trgi-installateurrichtlinien-rollen",
@@ -1816,9 +2172,15 @@
           {
             "id": "c",
             "text": "Kenntnisse weiterentwickeln und Zugang zu den maßgeblichen Bestimmungen haben."
+          },
+          {
+            "id": "d",
+            "text": "Die bei der erstmaligen Eintragung nachgewiesenen Kenntnisse genügen ohne spätere Aktualisierung."
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Die historische Fassung nennt die Kenntnis der Regeln, Zugang zu ihrem aktuellen Stand und laufende Fortbildung. Aus der App ergibt sich keine Eintragung oder Arbeitsberechtigung.",
         "hint": "Technisches Wissen und Regelwerksstände entwickeln sich weiter.",
         "goal": "trgi-installateurrichtlinien-fortbildung",
@@ -1844,9 +2206,15 @@
           {
             "id": "c",
             "text": "Automatische Eintragung in ein Installateurverzeichnis"
+          },
+          {
+            "id": "d",
+            "text": "Die Unterweisung ersetzt bei Leitungsarbeiten die zusätzlich erforderliche Beachtung der TRGI."
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Das Formular grenzt den Arbeitsschutz ausdrücklich von den weiterhin zu beachtenden TRGI ab. Seine Datierung und Regelwerksverweise machen es zu einer historischen Kursvorlage.",
         "hint": "Ein Nachweis kann einen abgegrenzten Zweck haben.",
         "goal": "trgi-unterweisung-abgrenzung",
@@ -1872,9 +2240,15 @@
           {
             "id": "c",
             "text": "Die Abgasklassifizierung"
+          },
+          {
+            "id": "d",
+            "text": "Die Installateurrichtlinien zur Beziehung zwischen Netzbetreiber und Installationsunternehmen"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Der beigefügte BGB-Auszug enthält diese Themen und nennt einen Gesetzesstand von 2012. Die Aufgabe prüft nur die Dokumentzuordnung, nicht die Rechtslage eines Einzelfalls.",
         "hint": "Achte auf Titel und Datierung der Quelle.",
         "goal": "trgi-rechtsquellen-orientierung",
@@ -1900,9 +2274,15 @@
           {
             "id": "c",
             "text": "Als historisches Versicherungsbeispiel mit erkennbarer Fassung"
+          },
+          {
+            "id": "d",
+            "text": "Als aktuellen Nachweis, dass jede nach TRGI ausgeführte Anlage automatisch Versicherungsschutz besitzt."
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Die Seiten zeigen VGB 88 in der Fassung Januar 2001 und einen Abschnitt zu Sicherheitsvorschriften. Daraus lässt sich weder ein heutiger Versicherungsschutz noch eine konkrete Rechtsfolge ableiten.",
         "hint": "Ein alter Mustertext ist kein individueller aktueller Vertrag.",
         "goal": "trgi-versicherungsquellen-orientierung",

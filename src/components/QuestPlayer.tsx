@@ -87,6 +87,17 @@ export function QuestPlayer({
               : "Geprüft"}
         </span>
       </div>
+      {quest.contract && (
+        <aside className="contract-brief">
+          <span className="eyebrow">KUNDENAUFTRAG · {quest.location}</span>
+          <h2>{quest.title}</h2>
+          <p>{quest.contract.brief}</p>
+          <small>
+            4 von 5 ohne Hilfe · einmalig 40 Marken + 120 XP · kostenlos
+            nachbessern
+          </small>
+        </aside>
+      )}
       <div className="task-panel">
         <span className="eyebrow">
           {q.kind === "order"

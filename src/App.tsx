@@ -7,6 +7,7 @@ import { parseImport } from "./game/validation";
 import type { Action, GameState } from "./game/types";
 import { Icon } from "./components/Icon";
 import { WorkshopArt } from "./components/WorkshopArt";
+import { Business, Garage } from "./components/Business";
 import { QuestPlayer } from "./components/QuestPlayer";
 import "./style.css";
 
@@ -400,8 +401,18 @@ export default function App() {
               <div className="result-medal">
                 <Icon name="trophy" size={52} />
               </div>
-              <span className="eyebrow">MISSION COMPLETE</span>
-              <h1>Auftrag geschafft!</h1>
+              <span className="eyebrow">
+                {findQuest(state.lastResult.questId)?.contract
+                  ? "KUNDENAUFTRAG"
+                  : "MISSION COMPLETE"}
+              </span>
+              <h1>
+                {findQuest(state.lastResult.questId)?.contract &&
+                state.lastResult.correct <
+                  Math.ceil(state.lastResult.total * 0.8)
+                  ? "Nachbesserung offen"
+                  : "Auftrag geschafft!"}
+              </h1>
               <p>{findQuest(state.lastResult.questId)?.title}</p>
               <div className="reward-grid">
                 <div>
@@ -420,6 +431,13 @@ export default function App() {
                 selbstständig richtig gelöst.
               </p>
               <div className="note">
+                {findQuest(state.lastResult.questId)?.contract && (
+                  <p>
+                    Für die Abnahme brauchst du 4 von 5 Antworten ohne Hinweis.
+                    Nachbessern ist kostenlos. Bereits bezahlte Aufträge bleiben
+                    zum Üben verfügbar.
+                  </p>
+                )}
                 XP belohnen dein Dranbleiben. Unsichere Kursthemen kommen zur
                 Wiederholung zurück. Das Spiellevel ist kein Nachweis der
                 Prüfungsreife.
@@ -517,6 +535,12 @@ export default function App() {
                 </div>
                 <span className="hero-number">01</span>
               </section>
+              <Business
+                state={state}
+                busy={busy}
+                enter={(id) => void enter(id)}
+                shop={() => go("workshop")}
+              />
               <section className="panel practice-panel">
                 <h2>Dein Wiederholungsauftrag</h2>
                 <p>
@@ -702,11 +726,13 @@ export default function App() {
                       <strong>
                         {state.purchases.length === 0
                           ? "Klein anfangen. Groß werden."
-                          : state.purchases.length === 3
+                          : state.purchases.length === upgrades.length
                             ? "Bereit für große Dinge."
                             : "Deine Werkstatt wächst."}
                       </strong>
-                      <span>{state.purchases.length} / 3 Ausbauten</span>
+                      <span>
+                        {state.purchases.length} / {upgrades.length} Ausbauten
+                      </span>
                     </div>
                     <div className="upgrade-dots">
                       {upgrades.map((u) => (
@@ -765,7 +791,7 @@ export default function App() {
                   <p>Jeder Auftrag bringt dich deinem nächsten Ausbau näher.</p>
                 </div>
                 <span className="count-pill">
-                  {state.purchases.length} / 3 Ausbauten
+                  {state.purchases.length} / {upgrades.length} Ausbauten
                 </span>
               </section>
               <section className="workshop-stage panel">
@@ -773,7 +799,7 @@ export default function App() {
                 <div>
                   <span className="eyebrow">DEINE WERKSTATT</span>
                   <h2>
-                    {state.purchases.length === 3
+                    {state.purchases.length === upgrades.length
                       ? "Voll ausgestattet."
                       : "Vom Anfang zum Aufstieg."}
                   </h2>
@@ -787,6 +813,7 @@ export default function App() {
                   </span>
                 </div>
               </section>
+              <Garage purchases={state.purchases} />
               <div className="upgrade-grid">
                 {upgrades.map((u, i) => {
                   const owned = state.purchases.includes(u.id);
@@ -877,7 +904,9 @@ export default function App() {
                 </article>
                 <article className="panel">
                   <Icon name="wrench" />
-                  <b>{state.purchases.length} / 3</b>
+                  <b>
+                    {state.purchases.length} / {upgrades.length}
+                  </b>
                   <span>Werkstattausbauten</span>
                 </article>
                 <article className="panel">

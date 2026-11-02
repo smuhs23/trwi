@@ -26,9 +26,15 @@
           {
             "id": "c",
             "text": "4300 Pa"
+          },
+          {
+            "id": "d",
+            "text": "30 Pa"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "2300 − 2000 = 300 Pa. Dieses Budget betrifft den gesamten betrachteten Gasweg, nicht jeden Abschnitt einzeln.",
         "hint": "Bilde die Differenz.",
         "status": "draft",
@@ -54,9 +60,15 @@
           {
             "id": "c",
             "text": "Nennweite des Abgasrohres"
+          },
+          {
+            "id": "d",
+            "text": "Die nutzbar abgegebene Nennleistung ohne Berücksichtigung des Wirkungsgrads"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Die Nennbelastung beschreibt die zuzuführende Brennstoffenergie. Die abgegebene Nennleistung ist damit nicht gleichzusetzen.",
         "hint": "Gesucht ist die gasbezogene Eingangsgröße.",
         "status": "draft",
@@ -82,9 +94,15 @@
           {
             "id": "c",
             "text": "Das Tabellenverfahren verwenden"
+          },
+          {
+            "id": "d",
+            "text": "Jeden Geräteabzweig getrennt bemessen und den gemeinsamen Leitungsabschnitt nur für das größte Gerät auslegen"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Das Diagrammverfahren ist an eine Einzelzuleitung und feste Vorgaben gebunden. Das Tabellenverfahren erlaubt mehrere Geräte und unterschiedliche Bauteilkombinationen.",
         "hint": "Prüfe den Anwendungsbereich des Diagramms.",
         "status": "draft",
@@ -110,9 +128,15 @@
           {
             "id": "c",
             "text": "42 kW"
+          },
+          {
+            "id": "d",
+            "text": "30 kW"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Die Summe beträgt 42 kW; 0,5 × (42 + 24) = 33 kW. Die Formel ersetzt nicht die Prüfung, ob Gleichzeitigkeit reduziert werden darf.",
         "hint": "Die größte Einzelbelastung wird zusätzlich zur Summe angesetzt.",
         "status": "draft",
@@ -138,9 +162,15 @@
           {
             "id": "c",
             "text": "Die Summe grundsätzlich halbieren"
+          },
+          {
+            "id": "d",
+            "text": "Auch für den gemeinsamen Spitzenbedarf stets 0,5 × (Summe + größte Belastung) ansetzen"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Für gemeinsam benötigte Geräte setzt der Lehrbrief den Gleichzeitigkeitsfaktor 1 an. Die übliche Reduktion wäre hier sachlich falsch.",
         "hint": "Die Geräte sollen gerade gleichzeitig laufen.",
         "status": "draft",
@@ -166,9 +196,15 @@
           {
             "id": "c",
             "text": "Herd 9 kW; vielseitige Steckdose 13 kW"
+          },
+          {
+            "id": "d",
+            "text": "Herd 9 kW; vielseitige Steckdose ebenfalls 9 kW"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Diese Kursansätze schließen eine Informationslücke: 9 kW für Herd/Kochmulde ohne bekannte Nennbelastung, 13 kW für Anschlüsse weiterer Gerätearten.",
         "hint": "Die vielseitig nutzbare Steckdose erhält den größeren Ansatz.",
         "status": "draft",
@@ -211,7 +247,11 @@
             "text": "Nur die Farbe des Rohrwerkstoffs"
           }
         ],
-        "correct": ["a", "b", "c"],
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ],
         "explanation": "Länge und Winkel bestimmen die Berechnungslänge; Belastung und Anschlussarmatur gehören zur passenden Diagrammkombination. Auch das Diagramm muss zum Rohrmaterial passen.",
         "hint": "Geometrie, Gasbedarf und Armatur gehören zusammen.",
         "status": "draft",
@@ -237,9 +277,15 @@
           {
             "id": "c",
             "text": "16 m"
+          },
+          {
+            "id": "d",
+            "text": "13 m"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "10 + 6 × 0,3 = 11,8 m. Der Zuschlag bildet den Widerstand der Winkel rechnerisch als zusätzliche Rohrlänge ab.",
         "hint": "Jeder Winkel bekommt seinen Zuschlag.",
         "status": "draft",
@@ -271,7 +317,12 @@
             "text": "Aus Belastung und Berechnungslänge eine zulässige Rohr-/Armaturkombination wählen"
           }
         ],
-        "correct": ["b", "c", "a", "d"],
+        "correct": [
+          "b",
+          "c",
+          "a",
+          "d"
+        ],
         "explanation": "Der Lehrbrief geht vom Belastungswert über die zugehörigen GS-/Zählerfelder zur Berechnungslänge und zum Auslegungspunkt.",
         "hint": "Die Leistungseingabe steht am Anfang.",
         "status": "draft",
@@ -297,9 +348,15 @@
           {
             "id": "c",
             "text": "Weil ein größerer Querschnitt immer mehr Rohrreibung verursacht"
+          },
+          {
+            "id": "d",
+            "text": "Weil eine größere Nennweite die erforderliche Prüfung des GS-Schließverhaltens automatisch ersetzt"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Der Lehrbrief verbindet genaue Rohrbemessung mit GS- und Zählerauswahl. Erfahrungszuschläge ersetzen diesen abgestimmten Nachweis nicht.",
         "hint": "Denke an das Zusammenwirken mit der Sicherheitseinrichtung.",
         "status": "draft",
@@ -325,9 +382,15 @@
           {
             "id": "c",
             "text": "Flasche mit beliebiger Anschlussgröße und Leitungslänge"
+          },
+          {
+            "id": "d",
+            "text": "Flasche, 8-mm-Geräteanschlüsse und ein Leitungsweg von 5 m allein wegen der gleichen Anschlussgröße"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Der Lehrbrief nennt diese Kombination aus Flaschenversorgung, 8-mm-Anschlussmaßen und höchstens 2 m Leitungsweg. Fehlt eine Bedingung, greift diese Vereinfachung nicht.",
         "hint": "Alle drei Voraussetzungen müssen zusammen vorliegen.",
         "status": "draft",
@@ -353,9 +416,15 @@
           {
             "id": "c",
             "text": "2,5 mbar"
+          },
+          {
+            "id": "d",
+            "text": "0,25 mbar"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "50 × 0,05 = 2,5 mbar. Erdgas- und Flüssiggasverfahren dürfen nicht durch Übernahme ihrer Zahlenwerte vermischt werden.",
         "hint": "Fünf Prozent sind ein Zwanzigstel.",
         "status": "draft",
@@ -392,9 +461,15 @@
           {
             "id": "c",
             "text": "Weil nur gerade Rohrstücke gerechnet werden dürfen"
+          },
+          {
+            "id": "d",
+            "text": "Weil ab dem Abzweig jeder Zweig den unveränderten Gesamtstrom der Zuleitung führt"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Nach einem Abzweig versorgt der verbleibende Strom andere Verbraucher. Deshalb sind die Abschnitte getrennt zu bemessen.",
         "hint": "Welche Größe ändert sich durch den Abzweig?",
         "status": "draft",
@@ -420,9 +495,15 @@
           {
             "id": "c",
             "text": "7,5 m"
+          },
+          {
+            "id": "d",
+            "text": "7 m"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "4 + 2 + 2 × 0,5 + 0,5 = 7,5 m. Die vorgegebenen Zuschläge sind diejenigen des Flüssiggasverfahrens.",
         "hint": "Addiere die reale Länge und alle genannten Zuschläge.",
         "status": "draft",
@@ -448,9 +529,15 @@
           {
             "id": "c",
             "text": "2,5 mbar/m"
+          },
+          {
+            "id": "d",
+            "text": "0,01 mbar/m"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "2,5 mbar ÷ 25 m = 0,1 mbar/m. Mit diesem Wert wird zunächst der längste berechnete Fließweg aufgeteilt.",
         "hint": "Teile das Druckbudget durch die Berechnungslänge.",
         "status": "draft",
@@ -476,9 +563,15 @@
           {
             "id": "c",
             "text": "2,5 mbar erneut"
+          },
+          {
+            "id": "d",
+            "text": "0,8 mbar"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "2,5 − 0,8 = 1,7 mbar. Gemeinsame vorgeschaltete Abschnitte haben bereits einen Teil des Budgets verbraucht.",
         "hint": "Der zweite Fließweg erhält kein neues Gesamtbudget.",
         "status": "draft",
@@ -504,9 +597,15 @@
           {
             "id": "c",
             "text": "Bis einschließlich 10 m Steighöhe entfällt dieser Ansatz; darüber ist der gasabhängige Höhenverlust zu berücksichtigen"
+          },
+          {
+            "id": "d",
+            "text": "Bei mehr als 10 m Steighöhe entsteht unabhängig von der Gasdichte stets ein nutzbarer Druckgewinn"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Der Kurs nennt oberhalb seiner 10-m-Grenze 0,07 mbar/m für Propan und 0,14 mbar/m für Butan. Diese historischen Kurswerte sind keine aktuelle Ausführungsfreigabe.",
         "hint": "Achte auf Grenze und Gasart.",
         "status": "draft",
@@ -534,7 +633,11 @@
             "text": "Anschlusswerte aller über diese Teilstrecke versorgten Geräte addieren"
           }
         ],
-        "correct": ["c", "a", "b"],
+        "correct": [
+          "c",
+          "a",
+          "b"
+        ],
         "explanation": "Die Summe der Hersteller-Anschlusswerte liefert den Flüssiggasdurchsatz. Daraus und dem zulässigen Verlust folgt die lichte Rohrweite; die dokumentierte Nennweite berücksichtigt das gewählte Material.",
         "hint": "Zuerst wird der zu transportierende Gasstrom bestimmt.",
         "status": "draft",
@@ -571,9 +674,16 @@
           {
             "id": "c",
             "text": "Ein vorhandener GS macht jede passive Sicherung an jeder Stelle überflüssig"
+          },
+          {
+            "id": "d",
+            "text": "Ein Sicherheitsverschluss unterbricht bei erhöhtem Gasstrom selbsttätig die Gaszufuhr"
           }
         ],
-        "correct": ["a", "b"],
+        "correct": [
+          "a",
+          "b"
+        ],
         "explanation": "Aktive und passive Maßnahmen ergänzen sich. Vor einem wirksamen GS können an zugänglichen lösbaren Stellen zusätzliche passive Sicherungen nötig sein.",
         "hint": "Erschweren und selbsttätig reagieren sind unterschiedliche Funktionen.",
         "status": "draft",
@@ -599,9 +709,15 @@
           {
             "id": "c",
             "text": "GS ausschließlich am Gaszähler des Erdgeschosses"
+          },
+          {
+            "id": "d",
+            "text": "Ein GS hinter einem einzelnen Zähler schützt automatisch auch alle parallelen Zählerzweige"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Der Kurs unterscheidet drei Einsatzbereiche. Druck und Eingangsbelastung können Ausnahmen verursachen; insbesondere ist der HAL-GS bei mehr als 100 hPa kein verlässlicher Manipulationsschutz im Haus.",
         "hint": "Verfolge den Gasweg vom Netz bis zu den getrennten Nutzern.",
         "status": "draft",
@@ -627,9 +743,15 @@
           {
             "id": "c",
             "text": "Die direkt betroffenen Anlagenteile und den Aufwand der Nachrüstung prüfen"
+          },
+          {
+            "id": "d",
+            "text": "Sobald eine Zähleranlage bereits betrieben wurde, ist eine Prüfung der Nachrüstung bei späteren Änderungen entbehrlich"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Der Lehrbrief formuliert keine pauschale Nachrüstpflicht für jede Bestandsanlage. Bei Erneuerung oder wesentlicher Änderung direkt betroffener Teile ist eine Nachrüstung ohne nennenswerten Mehraufwand vorgesehen.",
         "hint": "Betroffenheit und Aufwand gehören zusammen.",
         "status": "draft",
@@ -655,9 +777,15 @@
           {
             "id": "c",
             "text": "Festpunkt: Luftzufuhr; Isolierstück: thermisch schließen; Regler: Abgas ableiten"
+          },
+          {
+            "id": "d",
+            "text": "Festpunkt: freie Längsbewegung erlauben; Isolierstück: elektrische Leitfähigkeit sicherstellen; Regler: Gasmenge zählen"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Die Einführung muss außerdem gas- und wasserdicht sein. Ohne Festpunkt braucht es abgestimmte Ausziehsicherung und Bewegungsausgleich. Eine HAE im Außenschrank kann den Beginn der kundenseitigen Außenleitung festlegen.",
         "hint": "Ordne mechanische, elektrische und drucktechnische Aufgaben getrennt zu.",
         "status": "draft",
@@ -683,9 +811,15 @@
           {
             "id": "c",
             "text": "Baumwurzeln als dauerhafte Lagefixierung nutzen"
+          },
+          {
+            "id": "d",
+            "text": "Die Lage muss nur bis zur Verfüllung nachvollziehbar sein; ein Bestandsplan entfällt danach"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Freilegbarkeit, Schutz der Umhüllung und spannungsarme Auflage sind entscheidend. Der Kurs nennt 20 cm Parallelabstand und 10 cm Kreuzungsabstand; Sonderfälle verlangen abgestimmte Schutzmaßnahmen.",
         "hint": "Denke an spätere Arbeiten und den Schutz des Rohres.",
         "status": "draft",
@@ -711,9 +845,15 @@
           {
             "id": "c",
             "text": "Mechanische Beschädigung, Sonnenerwärmung und Witterungseinfluss auf den Korrosionsschutz"
+          },
+          {
+            "id": "d",
+            "text": "Eine vorhandene Korrosionsschutzschicht macht die Prüfung auf mechanische Beschädigung und Sonnenerwärmung entbehrlich"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Anfahr- und Nutzungsrisiken werden örtlich beurteilt. Sonnenerwärmung kann den Gasdruck erhöhen und UV-Strahlung den Schutz beanspruchen. Bei mehreren versorgten Gebäuden helfen eindeutige Schilder an Ein-/Ausführungen.",
         "hint": "Wärme und Zugriff von außen wirken auf die Leitung.",
         "status": "draft",
@@ -750,9 +890,15 @@
           {
             "id": "c",
             "text": "Ungeschützt im notwendigen Treppenraum"
+          },
+          {
+            "id": "d",
+            "text": "Zugänglich und trocken aufstellen, dabei die Absperrung vor dem Zähler durch eine Absperrung hinter ihm ersetzen"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Der Zählerplatz soll trocken, nicht zu warm, geschützt und zugänglich sein. Vor jedem Gaszähler ist eine Absperrarmatur vorgesehen; ein Zählerschrank benötigt im Kurs Zu- und Abluft mit je 5 cm² freiem Querschnitt.",
         "hint": "Zugänglich bedeutet nicht ungeschützt für jedermann erreichbar.",
         "status": "draft",
@@ -778,9 +924,15 @@
           {
             "id": "c",
             "text": "Eine Absperrung durch einen Gaszähler ersetzen"
+          },
+          {
+            "id": "d",
+            "text": "Eine einzige Absperrung im Haupthaus ersetzt immer die Absperrmöglichkeit an der Einführung des Nebengebäudes"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Der Lehrbrief fordert Absperrungen unter anderem an HAE, Zählern, Gebäudeaus-/-einführungen und Geräten. Schilder verhindern, dass bei Arbeiten ein mitversorgtes Gebäude übersehen wird.",
         "hint": "Auch eine fremde Fachkraft muss den Versorgungsweg verstehen.",
         "status": "draft",
@@ -806,9 +958,15 @@
           {
             "id": "c",
             "text": "An Kellerwänden schützt geeigneter Korrosionsschutz oder ein Mantelrohr; Deckendurchführungen benötigen Bewegungsspielraum"
+          },
+          {
+            "id": "d",
+            "text": "Die Leitung in jeder Deckendurchführung starr einmörteln, damit thermische Bewegung sicher verhindert wird"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Ein Schutzrohr an der Kellerwand bleibt mindestens einseitig offen. Bei sichtbarer Deckendurchführung beschreibt der Kurs einen Bodenüberstand gegen Wischwasser; Brandschutzanforderungen sind zusätzlich zu beachten.",
         "hint": "Feuchtigkeitsschutz und Beweglichkeit sind die beiden Schutzziele.",
         "status": "draft",
@@ -834,9 +992,16 @@
           {
             "id": "c",
             "text": "Den Hohlraum locker mit Glaswolle füllen und damit als hohlraumfrei erklären"
+          },
+          {
+            "id": "d",
+            "text": "Eine bestandene Dichtheitsprüfung ersetzt die Be- und Entlüftung eines geschlossenen Hohlraums dauerhaft"
           }
         ],
-        "correct": ["a", "b"],
+        "correct": [
+          "a",
+          "b"
+        ],
         "explanation": "Der Kurs nennt für die üblichen Hohlraumöffnungen je mindestens 10 cm² freien Querschnitt. Eine Leitung aus einem Stück kann unter den beschriebenen Bedingungen eine Ausnahme bilden; Glaswolle beseitigt den Hohlraum nicht.",
         "hint": "Leckgas darf sich nicht in einem abgeschlossenen Zwischenraum sammeln.",
         "status": "draft",
@@ -862,9 +1027,15 @@
           {
             "id": "c",
             "text": "Bei Bodenführung die geeignete Ausgleichsschicht oder Aussparung nutzen und notwendige Treppenräume gesondert brandschutztechnisch planen"
+          },
+          {
+            "id": "d",
+            "text": "Die Gasleitung unmittelbar in den schwimmenden Estrich einbetten, sobald sie einen Korrosionsschutzmantel besitzt"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Gasleitungen gehören nicht in die Estrichplatte. Betriebene Schornsteine und Aufzugschächte sind ungeeignet; notwendige Treppenräume erfordern besondere Schutzlösungen. Kunststoffleitungen sind dort laut Kurs unzulässig.",
         "hint": "Bewegungen des Estrichs und die Funktion des Rettungswegs sind maßgeblich.",
         "status": "draft",
@@ -890,9 +1061,15 @@
           {
             "id": "c",
             "text": "Bei Metallleitungen kann die Brandsituation immer ignoriert werden"
+          },
+          {
+            "id": "d",
+            "text": "Ein GS-K macht die zum Kunststoffsystem gehörende thermische Absperrung entbehrlich"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Bei im Brandfall nicht zugfesten Metallverbindungen sind nichtbrennbare Befestigungen besonders wichtig. Kunststoff selbst ist nicht brandsicher; der Kurs setzt GS-K und TAE ein und begrenzt diese Inneninstallation auf Niederdruck bis 100 hPa.",
         "hint": "Die Materialeigenschaft bestimmt, wie das Schutzziel erreicht wird.",
         "status": "draft",
@@ -929,9 +1106,15 @@
           {
             "id": "c",
             "text": "Erddeckung macht jede Zugänglichkeit überflüssig"
+          },
+          {
+            "id": "d",
+            "text": "Die Erddeckung ersetzt die geeignete Bettung, auch wenn scharfkantige Steine direkt am Tank anliegen"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Der Kurs unterscheidet oberirdisch, halboberirdisch und erdgedeckt. Bei Erdeinlagerung nennt er 20 cm Sandbettung; Zugänglichkeit bleibt in jeder Variante wichtig.",
         "hint": "Die Erddeckung ist keine Ersatzlösung für spätere Prüf- und Bedienwege.",
         "status": "draft",
@@ -957,9 +1140,15 @@
           {
             "id": "c",
             "text": "Mit geschlossenem Füllventil sind alle Zündquellen jederzeit zulässig"
+          },
+          {
+            "id": "d",
+            "text": "Der temporäre Schutzbereich ersetzt den ständigen Bereich und gilt erst nach Abschluss des Befüllens"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Der Kurs nennt grundsätzlich 1 m um den Domschacht als ständigen und 3 m Radius als temporären Schutzbereich; bei erdgedeckten Tanks mit geschlossenem Domdeckel gelten Besonderheiten. Zündquellen und gefährliche Bodenöffnungen sind zu berücksichtigen.",
         "hint": "Beim Befüllen kommen zusätzliche mögliche Austrittsstellen hinzu.",
         "status": "draft",
@@ -985,9 +1174,16 @@
           {
             "id": "c",
             "text": "Ausschließlich der Abstand zum nächsten Gaszähler"
+          },
+          {
+            "id": "d",
+            "text": "Leckgas steigt unabhängig von Geländeform und Gasdichte stets nach oben und kann deshalb keine Bodenöffnung erreichen"
           }
         ],
-        "correct": ["a", "b"],
+        "correct": [
+          "a",
+          "b"
+        ],
         "explanation": "Der Kurs behandelt Gefälle und Fließweg zu Bodenöffnungen sowie Abstand zu Brandlasten und Öffnungen in Gebäudewänden. Diese Zusammenhänge verlangen eine Standortbewertung; eine einzige pauschale Abstandszahl reicht nicht.",
         "hint": "Denke an den Weg des Gases und den Weg der Wärme.",
         "status": "draft",
@@ -1013,9 +1209,15 @@
           {
             "id": "c",
             "text": "Flaschen vor Erwärmung schützen; Aufstellungsverbote sowie belüftete Schränke oder besondere Räume beachten"
+          },
+          {
+            "id": "d",
+            "text": "Ein belüfteter Schrank hebt die Aufstellungsverbote in Schlafräumen und Rettungswegen auf"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Der Lehrbrief schließt unter anderem Schlafräume, Rettungswege und Räume unter Erdgleiche als Aufstellungsorte aus. Für geeignete Schränke sind obere und untere Lüftung nötig. Die Gewichtsangaben der Unterlagen widersprechen sich und werden hier nicht als Prüfzahl verwendet.",
         "hint": "Auch eine scheinbar leere Flasche gehört zur sicheren Lagerungsbetrachtung.",
         "status": "draft",
@@ -1041,9 +1243,15 @@
           {
             "id": "c",
             "text": "SAV erhöht den Druck; SBV speichert zusätzliche Flüssigkeit"
+          },
+          {
+            "id": "d",
+            "text": "SAV bläst Überdruck ab; SBV sperrt die Gaszufuhr vollständig ab"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Die benötigte Absicherung hängt vom Regelkonzept und der Druckfestigkeit nachgeschalteter Leitungen ab. Der Kurs zeigt unter anderem zweistufige Tankregelung und einstufige Flaschenregelung.",
         "hint": "Absperren und Abblasen sind verschiedene Reaktionen.",
         "status": "draft",
@@ -1069,9 +1277,15 @@
           {
             "id": "c",
             "text": "Unter Erdgleiche ist jede beliebige lösbare Verbindung zulässig"
+          },
+          {
+            "id": "d",
+            "text": "Eine bestandene Dichtheitsprüfung erlaubt unter Erdgleiche jede lösbare Verbindung"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Der Kurs verlangt grundsätzlich metallene Befestigung. Für die beschriebenen Räume unter Erdgleiche nennt er Schweißen, Hartlöten und Schneidringverschraubungen als Verbindungsarten.",
         "hint": "Die Erdgas-Ausnahmen für Befestigungen sind nicht automatisch übertragbar.",
         "status": "draft",
@@ -1108,9 +1322,15 @@
           {
             "id": "c",
             "text": "A, B und C unterscheiden nur die Gasfamilie"
+          },
+          {
+            "id": "d",
+            "text": "A: Raumluft und Abgasanlage; B: Luft und Abgas im Raum; C: Außenluft und Abgasanlage"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "A, B und C kennzeichnen die Luft-/Abgasführung. Gasfeuerstätten besitzen eine Abgasanlage; Geräte der Art B und C unterscheiden sich bei der Herkunft ihrer Verbrennungsluft.",
         "hint": "Trenne die Herkunft der Luft vom Ziel der Abgase.",
         "status": "draft",
@@ -1136,9 +1356,15 @@
           {
             "id": "c",
             "text": "Gerät ohne Abgasanlage und ohne jede Überwachung"
+          },
+          {
+            "id": "d",
+            "text": "Raumluftabhängige Feuerstätte mit Strömungssicherung, Gebläse im Abgasweg und Abgasüberwachung"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "B steht für raumluftabhängige Feuerstätte, die erste 1 für Strömungssicherung, die zweite 1 für Betrieb ohne Gebläse. BS weist auf Abgasüberwachung hin.",
         "hint": "Lies Buchstabe, beide Ziffern und Zusatz einzeln.",
         "status": "draft",
@@ -1164,9 +1390,15 @@
           {
             "id": "c",
             "text": "Überdruckführende Abgasteile sind luftumspült oder mit erhöhter Dichtheit nachgewiesen"
+          },
+          {
+            "id": "d",
+            "text": "Der Zusatz bestätigt ausschließlich einen Unterdruckbetrieb sämtlicher Abgasteile"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "X kennzeichnet Schutz gegen Abgasaustritt in den Aufstellraum. Ohne X fordert die Kursfassung zusätzliche direkte Außenöffnungen von 150 cm² oder zweimal 75 cm².",
         "hint": "Das X betrifft die Sicherheit der Abgasführung.",
         "status": "draft",
@@ -1192,9 +1424,15 @@
           {
             "id": "c",
             "text": "Nichts: CE erlaubt jede Installation in jedem Land"
+          },
+          {
+            "id": "d",
+            "text": "Eine passende CE-Kennzeichnung ersetzt den Abgleich von Gasart und Anschlussdruck"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Typenschild und Herstellerangaben müssen zum Einsatz passen. DE bezeichnet die vorgesehene Länderausrüstung; ein freiwilliges DVGW-Qualitätszeichen betrifft zusätzliche Kriterien, ersetzt aber die Installationsprüfung nicht.",
         "hint": "Produkteigenschaften und Aufstellbedingungen sind zwei Prüfungen.",
         "status": "draft",
@@ -1220,9 +1458,15 @@
           {
             "id": "c",
             "text": "Es ist automatisch ein Gerät der Art C"
+          },
+          {
+            "id": "d",
+            "text": "Die Kategorie bestätigt die Eignung für jede Gasfamilie ohne Anpassung des Geräts"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Die römische II bezeichnet zwei Gasfamilien; die Indizes nennen diese Familien. Ob und wie umgerüstet wird, ergibt sich aus der konkreten Geräteausrüstung und den Herstellerangaben.",
         "hint": "Die römische Zahl zählt Gasfamilien, nicht Gebläse.",
         "status": "draft",
@@ -1248,9 +1492,15 @@
           {
             "id": "c",
             "text": "Die CO₂-Überwachung belegt nicht die im Kurs verlangte Begrenzung von Kohlenmonoxid"
+          },
+          {
+            "id": "d",
+            "text": "Die Überwachung des CO₂-Werts misst zugleich unmittelbar den CO-Gehalt"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Kohlendioxid und Kohlenmonoxid sind unterschiedliche Stoffe. Der Lehrbrief warnt davor, die AS-Kennzeichnung bei einem A-Wasserheizer als Nachweis aller deutschen Aufstellanforderungen zu behandeln.",
         "hint": "Vergleiche die tatsächlich gemessene Größe.",
         "status": "draft",
@@ -1287,9 +1537,15 @@
           {
             "id": "c",
             "text": "Weil ein GS jede Wärmeeinwirkung schon vor einem Schaden erkennt"
+          },
+          {
+            "id": "d",
+            "text": "Ein GS löst bereits durch Erwärmung aus, auch wenn sein Auslösedurchfluss nicht erreicht wird"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Der Geräte-Regelblock kann im Brandfall versagen, bevor eine verdeckte Leitung beschädigt wird. Die TAE soll thermisch schließen; der GS hat ein anderes Auslöseprinzip.",
         "hint": "Denke an die Größe, die die Einrichtung auslöst.",
         "status": "draft",
@@ -1315,9 +1571,15 @@
           {
             "id": "c",
             "text": "Alle Flüssiggasgeräte dürfen ohne Einschränkung steckbar angeschlossen werden"
+          },
+          {
+            "id": "d",
+            "text": "Ein Anschluss mit Schlauch gilt unabhängig von den Endverbindungen stets als lösbarer Anschluss"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Fest bedeutet nur mit Werkzeug lösbar; biegsam beschreibt die Anschlussleitung. Der Kurs erlaubt den werkzeuglos lösbaren Flüssiggasanschluss nur für Art A unter den genannten Bedingungen.",
         "hint": "Verwechsle Beweglichkeit nicht mit der Art der Trennstelle.",
         "status": "draft",
@@ -1343,9 +1605,15 @@
           {
             "id": "c",
             "text": "Ein dafür vorgesehener zündgesicherter Herd, passende spezielle Steckverbindung und eine vom VIU installierte Gassteckdose"
+          },
+          {
+            "id": "d",
+            "text": "Eine eingewiesene Person darf für den Herd auch die Gassteckdose selbst in die feste Leitung einbauen"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Die Ausnahme gilt für das dafür vorgesehene Anschlusssystem. Im Haushalt beschreibt der Kurs üblicherweise Schlauch-Ausführung M mit metallischem Innenschlauch; Erwärmung und das Verbinden mehrerer Schläuche sind zu vermeiden. Die Aufstellbedingungen bleiben zu prüfen.",
         "hint": "Die Ausnahme setzt ein bestimmtes System und eine vorbereitete Installation voraus.",
         "status": "draft",
@@ -1371,9 +1639,15 @@
           {
             "id": "c",
             "text": "Ventilüberwachung dient nur der Raumheizung"
+          },
+          {
+            "id": "d",
+            "text": "Die Ventilüberwachung prüft allein die elektrische Ansteuerung; die Dichtheit der Ventile gehört nicht zu ihrer Funktion"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Die Gasstraße des Kurses enthält Absperrung mit TAE, Filter, Regler, Druckwächter und zwei automatische Ventile. Ein SAV schützt bei unzulässigem Druck durch Absperren; eine Ausschwenksicherung verhindert Brennerbetrieb in Wartungsstellung.",
         "hint": "Ordne jeder Einrichtung ihre eigene Mess- oder Schutzaufgabe zu.",
         "status": "draft",
@@ -1399,9 +1673,15 @@
           {
             "id": "c",
             "text": "Sie ist nur eine andere Bezeichnung für die thermische Absperrung"
+          },
+          {
+            "id": "d",
+            "text": "Nach einmaliger Freigabe erkennt sie unter allen Betriebsbedingungen sicher jeden später abgezogenen Einzelschlauch"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "Der Kurs verlangt eine gegen unbefugtes Öffnen geschützte zentrale Absperrung. Im Unterrichtsraum können ausschließlich verwendete Labor-Gassteckdosen die Geschlossenstellungskontrolle entbehrlich machen; für professionelle Labore gelten andere Voraussetzungen. Werkseitige Labormöbel sind auf Eignung zu prüfen.",
         "hint": "Vor Freigabe prüfen ist etwas anderes als jeden Vorgang während des Betriebs erkennen.",
         "status": "draft",
@@ -1427,9 +1707,15 @@
           {
             "id": "c",
             "text": "Die Gasfreigabe wird mit dem nachgewiesenen ausreichenden Luftvolumenstrom der RLT-Anlage verknüpft"
+          },
+          {
+            "id": "d",
+            "text": "Die elektrische Einschaltmeldung des Lüftermotors genügt auch ohne Nachweis des erforderlichen Luftvolumenstroms"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "Die anrechenbare Belastung berücksichtigt vorgeschriebene Gleichzeitigkeit. Wird Abgas über die Lüftung abgeführt, ist deren Funktion auch unterhalb der Schwelle relevant. Die im Kurs beschriebene Notkochlösung ist ein eng begrenzter Sonderfall.",
         "hint": "Eingeschaltet ist nicht gleich ausreichende Luftförderung.",
         "status": "draft",
@@ -1466,9 +1752,15 @@
           {
             "id": "c",
             "text": "Ein beliebiger ferner Raum ohne Luftverbindung kann mitgezählt werden"
+          },
+          {
+            "id": "d",
+            "text": "Eine einzelne Öffnung mit 300 cm² erfüllt ohne Prüfung ihrer Anordnung automatisch dieselbe Funktion wie die zwei geforderten Öffnungen"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Der Kurs setzt für den Anfahrzustand 1 m³/kW an: 20 − 12 = 8 m³ fehlen. Die beiden Öffnungen ermöglichen Zirkulation; eine AÜE ersetzt Luftbevorratung und Abgasverdünnung nicht.",
         "hint": "Am Anfang fehlt noch der Förderunterdruck.",
         "status": "draft",
@@ -1494,9 +1786,15 @@
           {
             "id": "c",
             "text": "100 m³ Raumvolumen, unabhängig vom Luftstrom"
+          },
+          {
+            "id": "d",
+            "text": "25 m³/h"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "1,6 × 25 = 40 m³/h. Der verfügbare nachströmende Luftvolumenstrom ist mit dem Bedarf zu vergleichen. Außenfugenräume derselben Nutzungseinheit können beitragen; ein innenliegender Flur ist gegebenenfalls nur Transportweg.",
         "hint": "Multipliziere Bedarf je kW mit der Leistung; achte auf m³/h.",
         "status": "draft",
@@ -1522,9 +1820,15 @@
           {
             "id": "c",
             "text": "170 cm²"
+          },
+          {
+            "id": "d",
+            "text": "120 cm²"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "explanation": "150 + (60 − 50) × 2 = 170 cm². Eine nachgeschaltete Luftleitung braucht eine eigene Widerstandsbetrachtung; sie darf nicht ungeprüft den Querschnitt der direkten Öffnung übernehmen.",
         "hint": "Nur die 10 kW oberhalb des Basiswerts erhalten einen Zuschlag.",
         "status": "draft",
@@ -1550,9 +1854,16 @@
           {
             "id": "c",
             "text": "Ein B22-Trockner benötigt wegen seines Lüfters grundsätzlich keine zugeführte Luft"
+          },
+          {
+            "id": "d",
+            "text": "Richtungsänderungen einer Luftleitung können bei der Berechnungslänge grundsätzlich unberücksichtigt bleiben"
           }
         ],
-        "correct": ["a", "b"],
+        "correct": [
+          "a",
+          "b"
+        ],
         "explanation": "Der Kurs rechnet für einen 90°-Bogen 3 m und für 45° 1,5 m Zusatzlänge. Beim B22-Trockner ersetzt das Gebläse die räumliche Schutzziel-1-Anforderung, nicht den Luftbedarf. Dessen Trockenluftmenge richtet sich nach dem Hersteller.",
         "hint": "Ein Lüfter fördert Luft, erzeugt aber keine neue Luft im Raum.",
         "status": "draft",
@@ -1578,9 +1889,15 @@
           {
             "id": "c",
             "text": "Weil Art A keine Abgasanlage hat, braucht es keine Luftbetrachtung"
+          },
+          {
+            "id": "d",
+            "text": "Ein großer Raum allein erfüllt die vereinfachte Regel auch ohne Fenster oder Tür ins Freie"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "explanation": "Die Kurs-Grundregel für Herde bis 11 kW nennt mehr als 15 m³ Raumvolumen sowie ein öffenbares Fenster oder eine Außentür. Abweichende Fälle können eine verriegelte Ablufthaube mit Gas-Magnetventil erfordern. Nicht zündgesicherte Kochstellen werden besonders behandelt.",
         "hint": "Die Abgase bleiben bei Art A zunächst im Aufstellraum.",
         "status": "draft",
@@ -1606,9 +1923,15 @@
           {
             "id": "c",
             "text": "30 m³"
+          },
+          {
+            "id": "d",
+            "text": "7,5 m³"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "explanation": "30 × 4 = 120 m³. Diese Kursregel gehört zur gewerblichen Küche, nicht als pauschaler Ersatz zum Luftstromnachweis häuslicher B-Geräte. Bei Außenöffnungen oder RLT gelten andere, jeweils vollständige Bedingungen.",
         "hint": "Die Raumnutzung gehört zur Formel.",
         "status": "draft",

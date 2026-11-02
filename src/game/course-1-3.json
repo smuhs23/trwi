@@ -26,9 +26,15 @@
           {
             "id": "c",
             "text": "Die Regel ohne weitere Prüfung verwerfen"
+          },
+          {
+            "id": "d",
+            "text": "Nur den Wortlaut des Beispiels anwenden, ohne das darin verfolgte Schutzziel zu prüfen"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "lesson": "Technische Regeln formulieren Anforderungen. Ihre Anwendung setzt Fachwissen voraus, weil nicht jede mögliche Bausituation einzeln beschrieben werden kann.",
         "explanation": "Lehrbrief 1 betont die situationsbezogene Anwendung und das Schutzziel. Mindestanforderungen ersetzen die fachliche Beurteilung nicht.",
         "hint": "Welche Antwort verbindet Regel und Einzelfall?",
@@ -54,9 +60,15 @@
           {
             "id": "c",
             "text": "G 459-1"
+          },
+          {
+            "id": "d",
+            "text": "G 685"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "lesson": "Im DVGW-Regelwerk haben Arbeitsblätter unterschiedliche Aufgaben: Gasbeschaffenheit, Installation und Hausanschluss sind getrennte Themen.",
         "explanation": "G 600 trägt den Titel Technische Regeln für Gas-Installationen. Der Lehrbrief bezieht sich auf die Ausgabe 2018.",
         "hint": "Gesucht ist das Installationsregelwerk.",
@@ -82,9 +94,15 @@
           {
             "id": "c",
             "text": "Den Technischen Regeln Flüssiggas, TRF"
+          },
+          {
+            "id": "d",
+            "text": "Den TRGI-Anwendungsbereich allein nach dem niedrigen Versorgungsdruck auswählen"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "lesson": "Erdgasversorgung aus einem Netz und Flüssiggasversorgung mit Tank oder Flaschen haben unterschiedliche Systemgrenzen. Die Regelwerksauswahl beginnt mit der Gasart.",
         "explanation": "Im Kurs werden Flüssiggasanlagen den TRF zugeordnet; der Anwendungsbereich der TRGI klammert Flüssiggas aus.",
         "hint": "Auch die Versorgungseinrichtungen müssen erfasst sein.",
@@ -110,9 +128,15 @@
           {
             "id": "c",
             "text": "Erdverlegte Außenleitung: ausschließlich TRF; europäische Gebäude-Gasleitungen: G 260"
+          },
+          {
+            "id": "d",
+            "text": "Erdverlegte Außenleitung: EN 1775; europäische Gebäude-Gasleitungen: G 459-1"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "lesson": "Ein Projekt kann mehrere Quellen benötigen. Ein nationales Arbeitsblatt für einen Leitungstyp und europäische Anforderungen erfüllen dabei unterschiedliche Aufgaben.",
         "explanation": "Der Lehrbrief verweist für erdverlegte Außenleitungen auf G 459-1 und nennt DIN EN 1775 für europäische Anforderungen an Gebäude-Gasleitungen.",
         "hint": "Unterscheide Leitungslage und europäische Ebene.",
@@ -138,9 +162,15 @@
           {
             "id": "c",
             "text": "Eine Flüssiggas-Tankanlage allein aufgrund ihres niedrigen Drucks"
+          },
+          {
+            "id": "d",
+            "text": "Eine Gebäudeinstallation mit 2 bar Betriebsdruck allein aufgrund der Gasart Erdgas"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "lesson": "Der Kurs grenzt seinen Gegenstand über Nutzung, Gasart und Druck ab. Er behandelt Niederdruck bis 100 hPa und Mitteldruck über 100 bis 1000 hPa.",
         "explanation": "Das Wohngebäude mit Erdgas und niedrigem Betriebsdruck entspricht dem beschriebenen Rahmen. Andere Anwendungen benötigen eine eigene Regelwerkszuordnung.",
         "hint": "Nutzung und Gasart sind ebenso wichtig wie der Druck.",
@@ -166,9 +196,15 @@
           {
             "id": "c",
             "text": "Als Interpretation der Autoren, die beim Verständnis hilft"
+          },
+          {
+            "id": "d",
+            "text": "Als verbindliche Neufassung, die bei Widersprüchen stets dem Arbeitsblatt vorgeht"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "lesson": "Der Kurs unterscheidet technische Anforderungen, erläuternde Literatur und Arbeitsschutz. Für Letzteren nennt er unter anderem DGUV-Regeln und die Betriebssicherheitsverordnung.",
         "explanation": "Ein Kommentar liefert Hintergründe und Autoreninterpretationen. Er wird dadurch nicht selbst zur Ergänzung des Arbeitsblatts.",
         "hint": "Eine Erklärung und eine verbindlich vereinbarte Anforderung haben unterschiedliche Rollen.",
@@ -205,9 +241,15 @@
           {
             "id": "c",
             "text": "Ein Installateurausweis ohne zugeordneten Betrieb"
+          },
+          {
+            "id": "d",
+            "text": "Die Gewerbeanmeldung ersetzt die Eintragung, wenn ein Meister im Betrieb beschäftigt ist"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "lesson": "Der Kurs behandelt die Eintragung als betriebliche Voraussetzung für verantwortliche Arbeiten an Gasinstallationen. Der Installateurausschuss umfasst Vertreter von Netzbetreiber und Installationsunternehmen.",
         "explanation": "Der Installateurvertrag regelt die Partnerschaft; daran knüpfen Eintragung und Installateurausweis an. Der Sicherheitsgedanke verlangt qualifizierte Fachleute.",
         "hint": "Gesucht ist mehr als ein persönliches Dokument.",
@@ -233,9 +275,15 @@
           {
             "id": "c",
             "text": "Eine lange Kundenliste ohne Nachweis von Fachkenntnissen"
+          },
+          {
+            "id": "d",
+            "text": "Allein eine Herstellerunterweisung für ein einzelnes Gasgerät als vollständiger Qualifikationsnachweis"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "lesson": "Die Unterlagen beschreiben mehrere Wege der fachlichen Befähigung, darunter Meisterqualifikation, einschlägiges Studium mit weiteren Voraussetzungen und nachgewiesene Kenntnisse mit Praxis.",
         "explanation": "Entscheidend ist die nachgewiesene fachliche Befähigung des verantwortlichen Fachmanns. Die genannten Alternativen haben jeweils eigene Voraussetzungen; sie sind keine pauschale Zulassung.",
         "hint": "Erfahrung muss mit fachlicher Befähigung verbunden sein.",
@@ -261,9 +309,15 @@
           {
             "id": "c",
             "text": "Erforderliche Regeln, Werkzeuge, Messgeräte, Schulung und Versicherungsnachweis"
+          },
+          {
+            "id": "d",
+            "text": "Eine Meisterurkunde allein; Messgeräte und Regelwerke sind erst nach dem ersten Auftrag erforderlich"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "lesson": "Fachkunde benötigt eine betriebliche Grundlage: zugängliche Fachunterlagen, geeignete Ausstattung und laufende Weiterbildung. Der Kurs nennt auch Gewerbeanzeige und Haftpflicht.",
         "explanation": "Der Lehrbrief verlangt organisatorische und technische Voraussetzungen gemeinsam. Zur Zusammenarbeit gehört außerdem Unterstützung des Netzbetreibers in besonderen Versorgungssituationen.",
         "hint": "Denke an Wissen, Ausstattung und Organisation.",
@@ -289,9 +343,15 @@
           {
             "id": "c",
             "text": "Der Fachmann muss nur bei der Einstellung einmal erscheinen"
+          },
+          {
+            "id": "d",
+            "text": "Telefonische Erreichbarkeit genügt auch dann, wenn zeitnahe Hilfe vor Ort ausgeschlossen ist"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "lesson": "Verantwortung wird im Lehrbrief als reale fachliche Leitung verstanden. Ein Name in den Akten allein gewährleistet keine Betreuung der Arbeiten.",
         "explanation": "Der Kurs begründet seine Anwesenheits- und Entfernungsanforderungen damit, dass fachliche Hilfe an der Arbeitsstelle rechtzeitig möglich sein muss.",
         "hint": "Was benötigt das Baustellenteam, wenn eine Fachfrage auftritt?",
@@ -317,9 +377,15 @@
           {
             "id": "c",
             "text": "Damit ein Betrieb automatisch ohne Regeln arbeiten darf"
+          },
+          {
+            "id": "d",
+            "text": "Weil die technische Befähigung nach Fristablauf ohne erneute Prüfung als dauerhaft bestätigt gilt"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "lesson": "Die Partnerschaft umfasst Rechte und Pflichten beider Seiten. Fachliche Voraussetzungen müssen während des Betriebs erhalten bleiben, etwa durch Schulung bei Regeländerungen.",
         "explanation": "Die wiederkehrende Verlängerung ermöglicht eine erneute Prüfung der Voraussetzungen. Bei Tätigkeiten in anderen Netzgebieten behandelt der Kurs auch Anmeldung und örtliche Anschlussbedingungen.",
         "hint": "Ein anfänglicher Nachweis ist keine dauerhafte Zustandskontrolle.",
@@ -345,9 +411,15 @@
           {
             "id": "c",
             "text": "Eine fachliche Bestätigung darf keine bloße Gefälligkeit sein"
+          },
+          {
+            "id": "d",
+            "text": "Die Unterschrift ist ohne Prüfung zulässig, wenn die Haftung schriftlich dem Auftraggeber übertragen wird"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "lesson": "Eine Bestätigung muss auf eigener verantwortlicher Arbeit oder belastbarer Prüfung beruhen. Die Herkunft der Ausführung und der tatsächliche Prüfstand sind dafür wesentlich.",
         "explanation": "Der Lehrbrief warnt ausdrücklich vor Gefälligkeitsunterschriften für weder erstellte noch überprüfte Anlagen.",
         "hint": "Was kann der Unterzeichnende tatsächlich fachlich bestätigen?",
@@ -384,9 +456,15 @@
           {
             "id": "c",
             "text": "Automatisch nur dem letzten Besucher des Kellers"
+          },
+          {
+            "id": "d",
+            "text": "Dem Netzbetreiber für die gesamte Kundeninstallation allein aufgrund des Netzanschlusses"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "lesson": "Der Lehrbrief beschreibt den Netzanschlussvertrag auf Basis der NDAV. Dabei trennt er den Netzanschluss bis zur Hauptabsperreinrichtung von der Kundeninstallation.",
         "explanation": "Nach der Darstellung des Kurses trägt der Anschlussnehmer die Zustandsverantwortung; fachliche Arbeiten und Bewertungen gehören in qualifizierte Hände. Das ist eine Wiedergabe des Kursmodells.",
         "hint": "Denke an den Vertragspartner des Netzanschlusses.",
@@ -412,9 +490,15 @@
           {
             "id": "c",
             "text": "Die Anlage allein wegen des fehlenden Auftrags als mängelfrei bestätigen"
+          },
+          {
+            "id": "d",
+            "text": "Die Meldung zurückstellen, bis aus dem dokumentierten Mangel eine akute Gefahr wird"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "lesson": "Die Unterlagen verbinden anerkannte Regeln der Technik mit den Vertragsgrundlagen. Sie beschreiben die Mängelmeldung als Teil des Umgangs mit offen gebliebenen Befunden.",
         "explanation": "Lehrbrief und Lösung nennen die Meldung an den Netzbetreiber, wenn die Beseitigung nicht möglich ist oder nicht beauftragt wird. Eine Überprüfung durch den Netzbetreiber wird im Kurs als Recht, nicht als automatische Pflicht beschrieben.",
         "hint": "Ein fehlender Auftrag beseitigt den Befund nicht.",
@@ -440,9 +524,15 @@
           {
             "id": "c",
             "text": "Hausanschlussnische, Hausanschlusswand, Hausanschlussraum"
+          },
+          {
+            "id": "d",
+            "text": "Hausanschlussnische, Gaszählerkasten, Heizraum als die drei in DIN 18012 genannten Anschlussbereiche"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "lesson": "Hauptabsperreinrichtungen, Regler und Zähler benötigen einen geeigneten Platz. Zugänglichkeit für Fachpersonal ist ein zentrales Planungsziel.",
         "explanation": "Diese drei Formen werden im Kurs auf DIN 18012 bezogen. Planung und Lage werden mit den Versorgungsunternehmen abgestimmt.",
         "hint": "Gesucht sind drei Varianten speziell für Hausanschlüsse.",
@@ -468,9 +558,15 @@
           {
             "id": "c",
             "text": "Nur ein Industriegebäude mit eigener Gasproduktion"
+          },
+          {
+            "id": "d",
+            "text": "Ein nicht unterkellertes Mehrfamilienhaus mit beliebig vielen Wohneinheiten"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "lesson": "Kurze und erreichbare Leitungswege sind ein Anliegen bei der Anordnung des Anschlussbereichs. Auch Belüftung und Zugänglichkeit gehören zur Planung.",
         "explanation": "Der Kurs nennt die Nische für nicht unterkellerte Einfamilienhäuser und einen maximalen Abstand von 3 m zur Außenwand. Dieser Zahlenwert wird hier als Kursstand wiedergegeben.",
         "hint": "Welche Gebäudegröße passt zum kleinsten Anschlussbereich?",
@@ -496,9 +592,15 @@
           {
             "id": "c",
             "text": "Beleuchtung ersetzt den freien Arbeitsraum"
+          },
+          {
+            "id": "d",
+            "text": "Der Anschlussbereich darf im Betrieb zugestellt sein, wenn er zur Inbetriebnahme frei war"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "lesson": "Der Anschlussbereich soll frostfrei, ausreichend beleuchtet sowie be- und entlüftet sein. Seine Funktion muss auch nach dem Einzug erhalten bleiben.",
         "explanation": "Zugestellte Einrichtungen widersprechen der vorgesehenen Erreichbarkeit. Der Kursstand nennt vor der Anschlusszone einen freien Arbeitsplatz von mindestens 1,20 m.",
         "hint": "Kann Fachpersonal die Einrichtung erreichen und dort arbeiten?",
@@ -524,9 +626,15 @@
           {
             "id": "c",
             "text": "Einen Hausanschlussraum"
+          },
+          {
+            "id": "d",
+            "text": "Eine Hausanschlusswand genügt unabhängig von der Anzahl der Wohneinheiten"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "lesson": "Die Größe des Gebäudes beeinflusst die Unterbringung. Der Kurs nennt die Anschlusswand bis zu vier Wohneinheiten und erläutert beim Raum den Schutz vor unbefugtem Zugriff.",
         "explanation": "Für mehr als vier Wohneinheiten ist im dargestellten Kursstand ein Hausanschlussraum vorgesehen. Er soll allgemein erreichbar, gekennzeichnet und für Fachpersonal zugänglich sein.",
         "hint": "Welche Variante ist für größere Wohngebäude vorgesehen?",
@@ -563,9 +671,15 @@
           {
             "id": "c",
             "text": "Nur die Dauer der Betriebszugehörigkeit"
+          },
+          {
+            "id": "d",
+            "text": "Der Unterweisungsnachweis allein berechtigt zu jeder selbstständigen Arbeit an Gasanlagen"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "lesson": "Der Kurs fordert regelmäßige Unterweisung mit schriftlichem Nachweis und Zugang zu den Arbeitsschutzregeln. Er behandelt außerdem die persönliche Eignung für die konkrete Aufgabe.",
         "explanation": "Unterweisung allein genügt dem beschriebenen Eignungsprofil nicht. Erfahrung, Zuverlässigkeit und Schulung kommen hinzu. Die rechtlichen Fallbeispiele werden hier nicht als pauschale Haftungsregeln übernommen.",
         "hint": "Passt die gesamte Qualifikation zur Aufgabe?",
@@ -591,9 +705,15 @@
           {
             "id": "c",
             "text": "Weil die obere Grenze gleichzeitig die Zündtemperatur ist"
+          },
+          {
+            "id": "d",
+            "text": "Weil oberhalb der oberen Explosionsgrenze grundsätzlich genügend Sauerstoff für eine Explosion vorhanden ist"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "lesson": "Eine Zündung setzt ein geeignetes Brenngas-Luft-Gemisch und eine wirksame Zündquelle voraus. Die Konzentration kann sich durch weitere Gaszufuhr oder Luftzutritt verändern.",
         "explanation": "Beim Abbau eines zu fetten Gemischs kann ein explosionsfähiges Mischungsverhältnis entstehen. UEG und OEG beschreiben Konzentrationsgrenzen, keine Temperaturgrenzen.",
         "hint": "Betrachte auch die Veränderung des Gemischs.",
@@ -619,9 +739,15 @@
           {
             "id": "c",
             "text": "Örtliche Ansammlungen sind möglich; Geruchsintensität ersetzt keine Konzentrationsmessung"
+          },
+          {
+            "id": "d",
+            "text": "Die berechnete mittlere Konzentration begrenzt zugleich die höchste örtliche Konzentration"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "lesson": "Relative Dichte und Luftströmungen beeinflussen die Gasverteilung. Odorierung macht Erdgas wahrnehmbar; eine veränderte Odormittelzugabe verändert jedoch auch den Geruchseindruck.",
         "explanation": "Der Kurs warnt sowohl vor dem Raumdurchschnitt als auch vor der Nase als Messgerät. Erdgas kann sich oben und Flüssiggas unten ansammeln; Strömungen verändern das Bild.",
         "hint": "Was sagt der Mittelwert über eine einzelne Raumecke?",
@@ -647,9 +773,15 @@
           {
             "id": "c",
             "text": "Grundsätzlich allein arbeiten, sobald eine Leitung abgesperrt ist"
+          },
+          {
+            "id": "d",
+            "text": "Die Störungsplanung kann entfallen, wenn bereits eine Sicherheitsunterweisung dokumentiert ist"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "lesson": "Arbeitsschutz betrifft auch Umgebung und Organisation: Durchlüftung, mögliche Zündquellen, Absicherung gegen Dritte und ein freier Rückzugsweg wirken zusammen.",
         "explanation": "Die Gefahrenanalyse betrachtet vorhersehbare Störungen. Eine zweite Person kann auch ohne allgemeine Aufsichtspflicht für Handreichungen oder Hilfe nötig sein.",
         "hint": "Denke über den normalen Ablauf hinaus.",
@@ -675,9 +807,15 @@
           {
             "id": "c",
             "text": "Sie entfernt selbstständig sämtliches Restgas"
+          },
+          {
+            "id": "d",
+            "text": "Sie verschließt zugleich den freien Rohrquerschnitt am offenen Leitungsende"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "lesson": "Der Kurs unterscheidet das Sichern der Gaszufuhr gegen unbefugtes Öffnen vom dichten Verschließen eines freien Anschlusses. Diese Schutzaufgaben sind verschieden.",
         "explanation": "Eine geschlossene Armatur kann undicht sein. Deshalb ersetzt die Betätigungssicherung nicht den geeigneten Verschluss des offenen Leitungsendes.",
         "hint": "Mechanische Betätigungssperre und Gasdichtheit sind zwei Eigenschaften.",
@@ -703,9 +841,15 @@
           {
             "id": "c",
             "text": "Sie kann noch Brenngas enthalten; drucklos und brenngasfrei sind verschieden"
+          },
+          {
+            "id": "d",
+            "text": "Ein Manometerstand von null bestätigt zugleich die Brenngasfreiheit"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "lesson": "Bei Arbeiten mit möglicher Zündwirkung behandelt der Kurs zusätzlich den brenngasfreien Zustand. Er unterscheidet dafür Leitungsspülung und Reinigung.",
         "explanation": "Der Abbau des Überdrucks entfernt nicht den gesamten Leitungsinhalt. Der Lehrbrief nennt Stickstoff als Inertgas und warnt bei CO₂ vor statischer Aufladung sowie vor Sauerstoff als Spülgas.",
         "hint": "Druck beschreibt nicht die Zusammensetzung des Inhalts.",
@@ -742,9 +886,15 @@
           {
             "id": "c",
             "text": "Eine Erhöhung des Heizwerts"
+          },
+          {
+            "id": "d",
+            "text": "Die Überbrückung soll austretendes Gas durch elektrische Neutralisierung unbrennbar machen"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "lesson": "Metallene Rohrleitungen können trotz vorgesehener Trennung von elektrischen Funktionen unerwartet Strom führen. Daher betrachtet die Vorbereitung auch elektrische Gefährdungen.",
         "explanation": "Der Lehrbrief begründet die Überbrückung vor der Trennung mit dem Erhalt des Strompfads. Beim Zählerausbau behandelt er außerdem den sofortigen Verschluss gegen Luft und Schmutz.",
         "hint": "Was passiert beim Unterbrechen einer leitfähigen Verbindung?",
@@ -770,9 +920,15 @@
           {
             "id": "c",
             "text": "Beim Druckabbau strömt grundsätzlich unbegrenzt Gas nach"
+          },
+          {
+            "id": "d",
+            "text": "Beim Entlüften ist nach Abbau des anfänglichen Leitungsdrucks kein weiterer Gasaustritt möglich"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "lesson": "Entspannen baut einen vorhandenen Überdruck nach dem Absperren ab. Beim Entlüften wird Luft durch einströmendes Brenngas verdrängt; der Kurs behandelt dies als gesonderten Vorgang.",
         "explanation": "Die Gasmenge ist beim Entlüften nicht allein durch den abgesperrten Leitungsinhalt begrenzt. Deshalb beschreibt der Kurs eine gesicherte Ableitung ins Freie und Beaufsichtigung des Austritts.",
         "hint": "Vergleiche den Zustand der Gaszufuhr.",
@@ -798,9 +954,15 @@
           {
             "id": "c",
             "text": "Das gesamte Gebäude ist damit sicher gasfrei"
+          },
+          {
+            "id": "d",
+            "text": "Ein späterer Gasaustritt kann eine erneute Beurteilung erforderlich machen"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "lesson": "Gasgeruchsmeldungen behandelt der Kurs mit dem Ziel, Zündquellen zu vermeiden und fachliche Hilfe sicherzustellen. Konzentrationsmessung muss die tatsächliche Verteilung erfassen.",
         "explanation": "Ein Messpunkt schließt lokale Ansammlungen an anderer Stelle nicht aus. Ein einfaches Gasspürgerät zur Lecksuche wird im Kurs zudem von einem Konzentrationsmessgerät unterschieden.",
         "hint": "Eine örtliche Messung ist keine flächendeckende Aussage.",
@@ -826,9 +988,15 @@
           {
             "id": "c",
             "text": "Weil die relative Dichte eine Längeneinheit ist"
+          },
+          {
+            "id": "d",
+            "text": "Weil ein Kubikmeter Gas unabhängig von Druck und Temperatur stets dieselbe Gasmenge enthält"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "lesson": "Gasvolumen werden meist in m³, Flüssiggasmengen häufig in kg angegeben. Die relative Dichte vergleicht Gas und Luft; Werte unter oder über 1 beschreiben leichter oder schwerer als Luft.",
         "explanation": "Ein definierter trockener Zustand bei festgelegter Temperatur und festgelegtem Druck ermöglicht Vergleiche. Der Kurs nennt 0 °C und 1013,25 hPa für diesen Bezug.",
         "hint": "Ein Vergleich braucht dieselben Randbedingungen.",
@@ -854,9 +1022,15 @@
           {
             "id": "c",
             "text": "Sie haben zwingend dieselbe relative Dichte"
+          },
+          {
+            "id": "d",
+            "text": "Sie haben zwingend denselben Brennwert je Normkubikmeter"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "lesson": "Heizwert und Brennwert unterscheiden sich durch die berücksichtigte Kondensationswärme; der Betriebsbezug berücksichtigt die örtlichen Zustandsbedingungen. Der Wobbe-Index verknüpft Wärmewert und relative Dichte.",
         "explanation": "Gleicher Wobbe-Index beschreibt unter diesen Bedingungen die gleiche Wärmebelastung. Er sagt nicht alles über die Verbrennung aus. Für die Flammenstabilität betrachtet der Kurs zusätzlich Zünd- und Ausströmgeschwindigkeit.",
         "hint": "Die Kennzahl beantwortet eine bestimmte Austauschbarkeitsfrage.",
@@ -882,9 +1056,15 @@
           {
             "id": "c",
             "text": "Nennbelastung = zugeführter Wärmestrom; Nennleistung = nutzbar abgegebener Wärmestrom"
+          },
+          {
+            "id": "d",
+            "text": "Nennleistung und Nennbelastung sind auch bei Wärmeverlusten des Geräts identische Größen"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "lesson": "Gasdrücke werden im Kurs meist als Fließüberdrücke eingeordnet. Geräteanschlussdruck liegt am Gerätestutzen, Düsendruck vor der Düse eines Brenners mit Luftvormischung.",
         "explanation": "Belastung bezeichnet die Wärmezufuhr, Leistung die nutzbare Wärmeabgabe. Anschlusswert in m³/h und Einstellwert in l/min beschreiben dazugehörige Gasvolumenströme.",
         "hint": "Verfolge die Energie vom Gas zum Nutzwärmestrom.",
@@ -921,9 +1101,15 @@
           {
             "id": "c",
             "text": "Erste Familie: ausschließlich Luft; zweite: Sauerstoff; dritte: Stickstoff"
+          },
+          {
+            "id": "d",
+            "text": "Erste Familie: methanreich; zweite: wasserstoffreich; dritte: Flüssiggase"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "lesson": "Der Kurs ordnet Brenngase anhand ähnlicher Brenneigenschaften. Er nennt historische Kohlegase, Naturgase und Flüssiggase als drei Familien.",
         "explanation": "Steinkohlen-, Wasser- und Stadtgas gehören im Kurs zur ersten Familie. Erdgas gehört zur methanreichen zweiten Familie mit dem Kurzzeichen N; Propan und Butan zur dritten.",
         "hint": "Suche nach ähnlichen Brenneigenschaften, nicht nach dem Rohrmaterial.",
@@ -949,9 +1135,15 @@
           {
             "id": "c",
             "text": "Sie ist wegen der Zähler eine Ausblaseleitung"
+          },
+          {
+            "id": "d",
+            "text": "Steigleitung und Verteilungsleitung schließen sich als Bezeichnungen grundsätzlich aus"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "lesson": "Innen- und Außenleitung beschreiben den Ort. Verteilungs-, Verbrauchs-, Abzweig- und Geräteanschlussleitung beschreiben die Funktion; eine Steigleitung beschreibt den Geschossverlauf.",
         "explanation": "Eine Leitung kann nach mehreren Kriterien benannt werden. Zu mehreren Zählern führende Leitungen sind Verteilungsleitungen, auch wenn sie senkrecht verlaufen. Eine Abzweigleitung versorgt dagegen ein einzelnes Gerät.",
         "hint": "Lage und Versorgungsfunktion können gleichzeitig zutreffen.",
@@ -977,9 +1169,15 @@
           {
             "id": "c",
             "text": "Druck mindern, Schwankungen ausgleichen und den Überdruck auf den Luftdruck beziehen"
+          },
+          {
+            "id": "d",
+            "text": "Den absoluten Ausgangsdruck konstant halten, ohne Änderungen des Luftdrucks zu berücksichtigen"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "lesson": "Die HAE sperrt die Versorgung des Gebäudes. Andere Armaturen haben andere Aufgaben: Das Isolierstück unterbricht elektrische Leitfähigkeit, Regelgeräte beeinflussen den Gasdruck.",
         "explanation": "Die drei genannten Druckaufgaben gehören zum Haus-Druckregelgerät. Steuerleitungen übertragen Druckimpulse; Ausblaseleitungen führen bei entsprechendem Bauteilversagen austretendes Gas nach außen.",
         "hint": "Eine Regelarmatur verändert und stabilisiert eine Druckgröße.",
@@ -1005,9 +1203,15 @@
           {
             "id": "c",
             "text": "GS misst den Heizwert; TAE regelt die Wassertemperatur"
+          },
+          {
+            "id": "d",
+            "text": "GS reagiert auf erhöhte Bauteiltemperatur; TAE auf überschrittenen Durchfluss"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "lesson": "Sicherheitseinrichtungen reagieren auf unterschiedliche Ereignisse. Der Kurs beschreibt außerdem eine Gas-Mangelsicherung und mechanische Maßnahmen gegen unbefugten Zugriff.",
         "explanation": "Der Gas-Strömungswächter sperrt bei Überschreiten seines vorgegebenen Durchflusses. Die thermisch auslösende Absperreinrichtung reagiert auf Temperatur und ist nach Auslösung nicht wieder zu öffnen.",
         "hint": "Die Abkürzungen verraten jeweils die überwachte Größe.",
@@ -1033,9 +1237,15 @@
           {
             "id": "c",
             "text": "Eine grundsätzlich undichte Verbindung"
+          },
+          {
+            "id": "d",
+            "text": "Jede mit einem Schraubenschlüssel zerstörungsfrei trennbare Verschraubung gilt als lösbarer Geräteanschluss"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "lesson": "Der Begriff lösbar muss im Zusammenhang gelesen werden. Eine lösbare Rohrverbindung im Leitungsverlauf und ein lösbarer Geräteanschluss haben im Kurs unterschiedliche Definitionen.",
         "explanation": "Am Geräteanschluss bedeutet lösbar: ohne Werkzeug von Hand trennbar. Im Leitungsverlauf kann eine lösbare Verbindung Werkzeug erfordern; Gewindeverbindungen gelten dort wegen nötiger Demontage als unlösbar.",
         "hint": "Achte ausdrücklich auf den Geräteanschluss.",
@@ -1061,9 +1271,15 @@
           {
             "id": "c",
             "text": "Weil Geräte, Abgasführung und Maßnahmen zur Verbrennungsluftversorgung dazugehören"
+          },
+          {
+            "id": "d",
+            "text": "Die Grenze der Gasinstallation liegt stets vor dem Gasgerät; dessen Luft- und Abgaswege gehören nicht dazu"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "lesson": "Die Leitungsanlage ist nur ein Teil des Gesamtsystems. Bei einer Feuerstätte betrachtet der Lehrbrief den Weg von der HAE bis zur Ausmündung der Abgasanlage.",
         "explanation": "Auch Maßnahmen für die Verbrennungsluft, etwa ein dafür vorgesehenes Türgitter, gehören zur Gasinstallation. Der Kurs bezieht die fachliche Bestätigung auf diese gesamte Installation.",
         "hint": "Was braucht eine Feuerstätte neben Brenngas für ihren Betrieb?",
@@ -1100,9 +1316,15 @@
           {
             "id": "c",
             "text": "F 30 bezeichnet ausschließlich einen Betriebsdruck"
+          },
+          {
+            "id": "d",
+            "text": "HTB und F 30 bestätigen dieselbe Dichtheit unter demselben Temperaturverlauf"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "lesson": "Ein Prüfnachweis gilt unter definierten Bedingungen. Dauer, Temperaturverlauf und zulässige Leckage gehören zusammen und müssen beim Vergleich mitgelesen werden.",
         "explanation": "Der Kurs beschreibt HTB mit einer konstanten Temperaturphase und begrenzter Leckage, F 30 dagegen mit steigenden Temperaturen. Eine gleiche Zeitangabe macht die Nachweise nicht gleichwertig.",
         "hint": "Vergleiche mehr als nur die Minutenangabe.",
@@ -1128,9 +1350,15 @@
           {
             "id": "c",
             "text": "Ein Wasserzähler"
+          },
+          {
+            "id": "d",
+            "text": "Das Überschreiten der Zündtemperatur ersetzt die Notwendigkeit ausreichenden Sauerstoffs"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "lesson": "Der Lehrbrief diskutiert die Grenzen vereinfachter Brandannahmen. Verbrennung benötigt neben Brennstoff und Zündbedingungen auch ein geeignetes Sauerstoffangebot.",
         "explanation": "Bei Sauerstoffmangel ist ein vollständiger Abbrand nicht gewährleistet. Der Kurs warnt deshalb davor, hohe Raumtemperatur allein mit Explosionssicherheit gleichzusetzen.",
         "hint": "Denke an alle Voraussetzungen einer Verbrennung.",
@@ -1156,9 +1384,15 @@
           {
             "id": "c",
             "text": "Verwendbarkeitsnachweise und freiwillige Zusatzqualität haben unterschiedliche Aufgaben"
+          },
+          {
+            "id": "d",
+            "text": "Ein freiwilliges Qualitätszeichen erweitert den zulässigen Verwendungsbereich ohne weiteren Nachweis"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "lesson": "Der Kurs trennt baurechtliche, vertragliche und freiwillige Nachweise. Er nennt CE und Ü-Zeichen, DVGW-Zertifizierung sowie den Werksnachweis über eine passende Produktnorm.",
         "explanation": "Ein zusätzliches DVGW-Qualitätszeichen steht im Kurs für über die Grundanforderungen hinausgehende Qualität. Die rechtlichen Einzelheiten des Kennzeichnungssystems werden als historischer Kursstand behandelt.",
         "hint": "Welche Eigenschaft wird mit dem jeweiligen Zeichen tatsächlich bestätigt?",
@@ -1184,9 +1418,15 @@
           {
             "id": "c",
             "text": "Eine blanke Oberfläche ersetzt jede Kennzeichnung"
+          },
+          {
+            "id": "d",
+            "text": "Ein passender Rohrdurchmesser ersetzt den werkstoffbezogenen Verwendbarkeitsnachweis"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "lesson": "Der Lehrbrief warnt vor der Annahme, dass gleich aussehende Rohre dieselben Eigenschaften haben. Rohrnorm und zusätzliche Prüfanforderungen müssen gemeinsam betrachtet werden.",
         "explanation": "Für Kupfer beschreibt der Kurs die DVGW-Prüfung nach GW 392 und die DV-Nummer, unter anderem zur Absicherung der Wanddicke. Für Gewinderohr nach EN 10255 beschreibt er einen Werksnachweis.",
         "hint": "Die Ausnahmeregel beim Kupferrohr ist der entscheidende Punkt.",
@@ -1212,9 +1452,15 @@
           {
             "id": "c",
             "text": "Ob sie möglichst wenig wiegen"
+          },
+          {
+            "id": "d",
+            "text": "Gleiche Gewindeform belegt bereits die geforderte Werkstoffausführung"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "lesson": "Die europäische Produktnorm unterscheidet mehrere Ausführungen. Eine passende Gewindeform allein beweist nicht dieselbe Werkstofffestigkeit.",
         "explanation": "Der Lehrbrief nennt Design-Symbol A und empfiehlt bei äußerlich nicht unterscheidbaren Ausführungen eine Herstellerbestätigung. Bei Kapillarlötfittings erläutert er außerdem die Prüfkennzeichnung auf der Verpackung.",
         "hint": "Welche Eigenschaft ist von außen nicht zuverlässig erkennbar?",
@@ -1240,9 +1486,15 @@
           {
             "id": "c",
             "text": "Weil Rohr, Verbindungen und zugehörige Sicherheitseinrichtungen zusammenwirken müssen"
+          },
+          {
+            "id": "d",
+            "text": "Gleicher Nenndurchmesser erlaubt die freie Kombination von Rohren und Verbindern verschiedener Systeme"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "lesson": "Materialwahl berücksichtigt Gasart, Verlegeort, mechanische Belastung und Korrosionsschutz. Für Kunststoff beschreibt der Kurs außerdem werkstoffgerechte Lagerung und Schutz vor aggressiven Stoffen.",
         "explanation": "Die thermische Sicherheit wird im beschriebenen Niederdrucksystem mit TAE und GS erreicht. Außenleitungen zur Versorgung weiterer Gebäude benötigen die dafür beschriebenen Rohrarten; die Innenrohr-Zuordnung ist nicht pauschal übertragbar.",
         "hint": "Entscheidend ist die Funktion der gesamten Kombination.",
@@ -1279,9 +1531,15 @@
           {
             "id": "c",
             "text": "Weil jede Schweißverbindung einen offenen Rohrquerschnitt erzeugt"
+          },
+          {
+            "id": "d",
+            "text": "Eine ausreichend dicke Außenbeschichtung hebt die mechanische Schwächung im Gewinde auf"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "lesson": "Die Eignung des Rohres allein beantwortet nicht die Eignung der Verbindung. Eine Verbindung muss auch die mechanischen Belastungen der Verlegesituation aufnehmen.",
         "explanation": "Der Kurs nennt Schweißen oder dafür geeignete Glattrohrverbinder als Alternativen. Für Gewinderohre der schweren Reihe beschreibt er wegen ihrer Wanddicke eine andere Situation.",
         "hint": "Was verändert das Gewindeschneiden an der Rohrwand?",
@@ -1307,9 +1565,15 @@
           {
             "id": "c",
             "text": "Ein Mantel macht jede Verbindung automatisch schweißbar"
+          },
+          {
+            "id": "d",
+            "text": "Die Eignung des Edelstahlrohrs überträgt sich automatisch auf jeden dazu passenden Pressverbinder"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "lesson": "Zulässigkeit ist eine Kombination aus Rohr, Verbindung und Einbauort. Auch Präzisionsstahl- und Wellrohrsysteme haben im Kurs eigene Einsatzgrenzen.",
         "explanation": "Der Lehrbrief lässt die beschriebenen Edelstahl-Pressleitungen nicht zur Erdverlegung zu. Der Korrosionsschutz erweitert den Verwendungsbereich der Verbindung nicht.",
         "hint": "Welche Begrenzung bleibt trotz geschützter Rohroberfläche bestehen?",
@@ -1335,9 +1599,15 @@
           {
             "id": "c",
             "text": "Weil Wärme-, Schall- und Korrosionsschutz verschiedene Anforderungen erfüllen"
+          },
+          {
+            "id": "d",
+            "text": "Geschlossene Dämmung weist unabhängig von Werkstoff und Ausführung immer ausreichenden Korrosionsschutz nach"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "lesson": "Der Kurs trennt die Funktionen einer Umhüllung. Ein Material kann für eine Aufgabe geeignet sein, ohne Feuchtigkeit oder chemische Einwirkungen zuverlässig vom Rohr fernzuhalten.",
         "explanation": "Eine Dämmung ersetzt keinen nachgewiesenen Korrosionsschutz. Als Kursbeispiel wird eine Kupferleitung unter Estrich mit geeigneter Ummantelung behandelt; zusätzlich kann Schallschutz nötig sein.",
         "hint": "Welche Schutzwirkung wurde tatsächlich nachgewiesen?",
@@ -1363,9 +1633,15 @@
           {
             "id": "c",
             "text": "Ob auf der Verpackung nur allgemein Außenlagerung erwähnt wird"
+          },
+          {
+            "id": "d",
+            "text": "Die allgemeine Eignung für Erdverlegung belegt zugleich die Beständigkeit bei dauerhafter Sonneneinstrahlung"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "lesson": "Der Lehrbrief nennt Beschichtungen, Umhüllungen und Bänder als Schutzmöglichkeiten. Ihre Eignung hängt von Atmosphäre, Sonneneinwirkung und Verarbeitung ab.",
         "explanation": "Eine begrenzte UV-Beständigkeit für die Lagerung genügt nicht automatisch für dauerhaften Außeneinsatz. Für Beschichtungen beschreibt der Kurs ein abgestimmtes System, etwa Grund- und Deckschichten, sowie spätere Kontrolle.",
         "hint": "Lagerdauer und dauerhafte Nutzung sind unterschiedliche Belastungen.",
@@ -1391,9 +1667,15 @@
           {
             "id": "c",
             "text": "Kupfer benötigt im Freien grundsätzlich keinerlei Schutz"
+          },
+          {
+            "id": "d",
+            "text": "Eine bestandene Dichtheitsprüfung ersetzt den Korrosionsschutz der blanken Verbindungsstelle"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "lesson": "Der Lehrbrief behandelt Rohrfläche und Verbindungsstelle als zusammengehörige Schutzaufgabe. Werkseitiger Schutz muss nach der Montage fachgerecht ergänzt werden.",
         "explanation": "Für Außen-Kupferleitungen nennt der Kurs eine Kunststoffummantelung und geeigneten Schutz der Verbindungen, etwa PE-Band oder Schrumpfschlauch. Ein beliebiges Klebeband genügt nicht.",
         "hint": "Wo wurde der durchgehende Schutz bei der Montage unterbrochen?",
@@ -1419,9 +1701,15 @@
           {
             "id": "c",
             "text": "Trockene, zeitweise feuchte und dauerhaft nasse Bereiche müssen unterschieden werden"
+          },
+          {
+            "id": "d",
+            "text": "Für die Schutzwahl zählt allein der Rohrwerkstoff; Feuchte am Einbauort ist ohne Bedeutung"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "lesson": "Die Schutzanforderung richtet sich nach der Umgebung. Der Kurs unterscheidet Wohnraumatmosphäre, gelegentliche Feuchte und nasse Bereiche; bei Erdleitungen zusätzlich die Bodenbeanspruchung.",
         "explanation": "Für nasse Bereiche wie die behandelte Waschküche beschreibt der Lehrbrief einen Schutz entsprechend erdverlegten Außenleitungen. Eine Verzinkung reicht nach seiner Erläuterung nicht für jede dauerhafte Nässe aus.",
         "hint": "Beurteile Dauer und Stärke der Feuchtebelastung.",
@@ -1458,9 +1746,15 @@
           {
             "id": "c",
             "text": "Befestigungsgewinde dichtet nur durch seine Gewindegänge"
+          },
+          {
+            "id": "d",
+            "text": "Anschlussgewinde dichtet nur an einer Flachdichtung; Befestigungsgewinde dichtet in den Gewindegängen"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "lesson": "Nicht jedes Gewinde erfüllt dieselbe Aufgabe. Der Lehrbrief unterscheidet das kegelige Außengewinde mit zylindrischem Innengewinde von Verbindungen mit gesonderten Dichtflächen.",
         "explanation": "Das Anschlussgewinde wird im Kurs auf EN 10226-1 bezogen, das Befestigungsgewinde auf ISO 228-1. Für Gewindeverbindungen im Leitungsverlauf nennt er außerdem Einsatzgrenzen und die Prüfung gebrauchter Gewinde.",
         "hint": "Achte auf die Lage der eigentlichen Dichtfläche.",
@@ -1486,9 +1780,15 @@
           {
             "id": "c",
             "text": "Weil ein Gewinde grundsätzlich nie Dichtmittel enthalten darf"
+          },
+          {
+            "id": "d",
+            "text": "Eine möglichst dicke Hanfschicht entlastet das Fitting unabhängig vom Anzugsmoment"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "lesson": "Bei der Gewindeverbindung sollen passende Geometrie und Toleranzen zusammenwirken. Zusätzliche Dichtmittel dürfen diese Funktion nicht verdrängen.",
         "explanation": "Der Kurs beschreibt dünnen, sparsamen Dichtmittelträger im Bereich der Handanzugslänge und geeignete nicht aushärtende Dichtmittel. Überfüllung kann die Pressdichtung verhindern und Risse begünstigen.",
         "hint": "Mehr Material verändert die mechanische Beanspruchung.",
@@ -1514,9 +1814,15 @@
           {
             "id": "c",
             "text": "Eine mit geeignetem Muffenwerkzeug hergestellte Muffe mit passender Geometrie"
+          },
+          {
+            "id": "d",
+            "text": "Eine stumpf aneinandergesetzte Hartlötverbindung ohne Muffe oder Überlappung"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "lesson": "Kapillarwirkung verlangt einen geeigneten Lötspalt und ausreichende Überlappung. Der Kurs sieht grundsätzlich geprüfte Kapillarlötfittings vor und behandelt eine begrenzte Ausnahme.",
         "explanation": "Handwerklich hergestellte Muffen mit geeignetem Werkzeug sind die beschriebene Ausnahme; Abzweige benötigen Fittings. Der Kurs behandelt außerdem passende Lote, Flussmittel und Arbeitstemperatur.",
         "hint": "Die Ausnahme setzt eine kontrollierte Muffengeometrie voraus.",
@@ -1542,9 +1848,15 @@
           {
             "id": "c",
             "text": "Eine bestandene Prüfung beweist bei jedem Fitting automatisch, dass verpresst wurde"
+          },
+          {
+            "id": "d",
+            "text": "Die Verpressung ersetzt den Dichtring; dieser wird nur bis zur Montage benötigt"
           }
         ],
-        "correct": ["a"],
+        "correct": [
+          "a"
+        ],
         "lesson": "Der Kurs unterscheidet das Abdichten vom längskraftschlüssigen Verbinden. Er warnt deshalb vor unbemerkten, unverpressten Stellen und beschreibt spezielle unverpresst undichte Verbinder.",
         "explanation": "Der geeignete Gas-Dichtring und die korrekte Verpressung sind beide notwendig. Entgraten, Einstecktiefe markieren und vor jeder Verpressung kontrollieren gehören zur beschriebenen Verarbeitung.",
         "hint": "Welche Funktion kann schon beim bloßen Aufstecken vorhanden sein?",
@@ -1570,9 +1882,15 @@
           {
             "id": "c",
             "text": "Jeder Klemmverbinder darf ohne weitere Prüfung jede Regelverbindung ersetzen"
+          },
+          {
+            "id": "d",
+            "text": "Nach bestandener Dichtheitsprüfung dürfen weich dichtende Verschraubungen in Innenleitungen unzugänglich eingeputzt werden"
           }
         ],
-        "correct": ["b"],
+        "correct": [
+          "b"
+        ],
         "lesson": "Metallisch und weich dichtende Verbinder haben unterschiedliche Einsatzbedingungen. Der Lehrbrief behandelt außerdem Flansche für größere Leitungen und jeweils passende Dichtungen.",
         "explanation": "Weich dichtende Verschraubungen müssen in Innenleitungen erreichbar bleiben. Für weich dichtende Glattrohrverbinder innen verlangt der Kurs HTB; Dichtelemente sind beim erneuten Schließen zu erneuern. Metallische Klemmverbinder und Reparaturverbinder sind gesondert einzuordnen.",
         "hint": "Werkstoff der Dichtung und Erreichbarkeit gehören zur Auswahl.",
@@ -1598,9 +1916,15 @@
           {
             "id": "c",
             "text": "Von Werkstoff, Druckbereich, Wanddicke und weiteren Anforderungen der Situation"
+          },
+          {
+            "id": "d",
+            "text": "Eine vorhandene Schweißerprüfung gilt ohne Prüfung ihres Geltungsbereichs für jeden Werkstoff und Druckbereich"
           }
         ],
-        "correct": ["c"],
+        "correct": [
+          "c"
+        ],
         "lesson": "Der Kurs differenziert Schweißarbeiten an Stahl, Kupfer und PE. Auch innerhalb der Stahlleitungen werden unterschiedliche Qualifikationsanforderungen und Kontrollen beschrieben.",
         "explanation": "Eine pauschale Aussage wie ein Schein genügt immer wäre falsch. Der Lehrbrief unterscheidet etwa dünnwandige Niederdruck-Stahlleitungen von Mitteldruckleitungen und verweist auf qualifizierte Ausführung und Schweißaufsicht. Die alten Normverweise sind Kursstand.",
         "hint": "Welche technischen Merkmale ändern den Anspruch an die Ausführung?",

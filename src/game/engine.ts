@@ -90,6 +90,8 @@ export const getDue = (s: GameState, now: string) =>
     .filter(([, m]) => new Date(m.due).getTime() <= new Date(now).getTime())
     .map(([id]) => id);
 export const isUnlocked = (s: GameState, id: string) => {
+  const job = findQuest(id)?.contract;
+  if (job) return job.requires.every((id) => s.purchases.includes(id));
   const i = quests.findIndex((q) => q.id === id);
   return i >= 0 && (i === 0 || s.completed.includes(quests[i - 1].id));
 };
@@ -205,15 +207,41 @@ export function reduceGame(s: GameState, a: Action): GameState {
     a.type === "finish" &&
     session.answers.length === quest.questions.length
   ) {
-    const first = !s.completed.includes(quest.id);
-    const token = first ? `quest:${quest.id}` : session.reviewToken;
-    const eligible = !!token && !s.rewarded.includes(token);
-    const xp = eligible ? (first ? (quest.boss ? 200 : 100) : 30) : 0;
-    const marks = eligible ? (first ? (quest.boss ? 40 : 20) : 5) : 0;
+    const contract = !!quest.contract;
+    const score = session.answers.filter((a) => a.correct && !a.hinted).length;
+    const passed =
+      !contract || score >= Math.ceil(quest.questions.length * 0.8);
+    const first = contract
+      ? !s.rewarded.includes(`contract:${quest.id}`)
+      : !s.completed.includes(quest.id);
+    const token = contract
+      ? `contract:${quest.id}`
+      : first
+        ? `quest:${quest.id}`
+        : session.reviewToken;
+    const eligible = passed && !!token && !s.rewarded.includes(token);
+    const xp = eligible
+      ? contract
+        ? 120
+        : first
+          ? quest.boss
+            ? 200
+            : 100
+          : 30
+      : 0;
+    const marks = eligible
+      ? contract
+        ? 40
+        : first
+          ? quest.boss
+            ? 40
+            : 20
+          : 5
+      : 0;
     return {
       ...s,
       session: null,
-      completed: first ? [...s.completed, quest.id] : s.completed,
+      completed: first && !contract ? [...s.completed, quest.id] : s.completed,
       rewarded: eligible ? [...s.rewarded, token!] : s.rewarded,
       xp: s.xp + xp,
       marks: s.marks + marks,

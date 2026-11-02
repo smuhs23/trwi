@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import { quests } from "../src/game/content";
+import { quests, upgrades } from "../src/game/content";
 import { mkdirSync } from "node:fs";
 test("mission survives reload with hint and selected answer", async ({
   page,
@@ -141,7 +141,7 @@ test("complete campaign and buy every upgrade", async ({ page }) => {
       .getByRole("button", { name: `${name} freischalten`, exact: true })
       .click();
   await expect(
-    page.getByText("3 / 3 Ausbauten", { exact: true }),
+    page.getByText(`3 / ${upgrades.length} Ausbauten`, { exact: true }),
   ).toBeVisible();
   await page.reload();
   await expect(page.getByTestId("xp-total")).toHaveText(

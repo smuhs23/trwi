@@ -1,7 +1,7 @@
 import { z } from "zod";
 import type { GameState } from "./types";
 import { CONTENT_VERSION, findQuest, quests, upgrades } from "./content";
-import { evaluate } from "./engine";
+import { evaluate, isUnlocked } from "./engine";
 const id = z.string().min(1).max(500);
 const ids = z
   .array(id)
@@ -90,6 +90,11 @@ export function validate(value: unknown): GameState {
       if (!q || !s.completed.includes(q.id)) fail();
       xp += q!.boss ? 200 : 100;
       marks += q!.boss ? 40 : 20;
+    } else if (r.startsWith("contract:")) {
+      const q = findQuest(r.slice(9));
+      if (!q?.contract || !isUnlocked(s, q.id)) fail();
+      xp += 120;
+      marks += 40;
     } else if (r.startsWith("review:")) {
       if (!findQuest(r.split(":")[1])) fail();
       xp += 30;
@@ -111,7 +116,7 @@ export function validate(value: unknown): GameState {
   if (s.session && s.session.version === CONTENT_VERSION) {
     const t = s.session,
       q = findQuest(t.questId);
-    if (!q) fail();
+    if (!q || !isUnlocked(s, t.questId)) fail();
     if (t.reviewToken !== null) {
       const prefix = `review:${t.questId}:`;
       if (!t.reviewToken.startsWith(prefix)) fail();
@@ -167,7 +172,11 @@ export function reconcile(s: GameState): GameState {
     ...s,
     contentVersion: CONTENT_VERSION,
     session: stale ? null : s.session,
-    mastery: stale ? {} : s.mastery,
+    mastery:
+      stale &&
+      !(s.contentVersion === "course-1" && CONTENT_VERSION === "business-1")
+        ? {}
+        : s.mastery,
   };
 }
 export function parseImport(text: string): GameState {
